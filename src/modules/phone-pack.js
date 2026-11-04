@@ -6,10 +6,12 @@
 const fs = require('fs');
 const path = require('path');
 const { escapeHtml: e, localYmd, zonedParts } = require('../core/util');
+const { hero, score } = require('./formats');
+const { loadCatalog } = require('../providers/research/fraternity-catalog');
 
 const LIVE = ['scheduled', 'ready', 'pending-approval', 'export-ready', 'in-tiktok-inbox'];
 
-function pickPosts(store, cfg, now = new Date(), days = 3) {
+function pickPosts(store, cfg, now = new Date(), days = 31) {
   const tz = cfg.schedule.timezone;
   const today = localYmd(now, tz);
   const until = new Date(now.getTime() + days * 864e5);
@@ -23,29 +25,46 @@ function whenLabel(iso, tz, now) {
   return `${day} ${String(z.hh).padStart(2, '0')}:${String(z.mm).padStart(2, '0')}`;
 }
 
-function buildPhonePack(ctx, { now = new Date() } = {}) {
+function dayLabel(ymd, tz, now) {
+  if (ymd === localYmd(now, tz)) return 'Vandaag';
+  if (ymd === localYmd(new Date(now.getTime() + 864e5), tz)) return 'Morgen';
+  return new Date(ymd + 'T12:00:00Z').toLocaleDateString('nl-NL', { weekday: 'long', day: 'numeric', month: 'long', timeZone: 'UTC' });
+}
+
+// linked = true: slides are published as separate files next to the page (light page, fast on a
+// phone); `files` maps each published path to the local slide. false = everything embedded.
+function buildPhonePack(ctx, { now = new Date(), linked = true } = {}) {
   const { store, config } = ctx;
   const tz = config.schedule.timezone;
+  const files = {};
+  const cat = Object.fromEntries(loadCatalog(config).map((m) => [m.slug, m]));
+  const matchLines = (p) => (p.slugs || []).map((sl) => cat[sl]).filter(Boolean).map((m) => { const h = hero(m); return { match: score(m), moment: [h.short, h.minute].filter(Boolean).join(' ') }; });
   const posts = pickPosts(store, config, now).map((p) => ({
+    matches: matchLines(p),
     id: p.id, format: p.formatLabel, when: whenLabel(p.scheduledAt, tz, now), date: localYmd(new Date(p.scheduledAt), tz),
     title: p.title, text: `${p.caption}\n\n${p.hashtags.join(' ')}`, flagged: p.status === 'pending-approval' ? (p.qa.reasons || []).join('; ') : '',
     ai: !!p.aiGenerated,
-    slides: p.slides.map((s) => `data:image/jpeg;base64,${fs.readFileSync(s.path).toString('base64')}`),
+    day: dayLabel(localYmd(new Date(p.scheduledAt), tz), tz, now),
+    slides: p.slides.map((s) => {
+      if (!linked) return `data:image/jpeg;base64,${fs.readFileSync(s.path).toString('base64')}`;
+      const pub = `slides/${p.id}/${s.file}`; files[pub] = s.path; return pub;
+    }),
   }));
   const made = now.toLocaleString('nl-NL', { timeZone: tz, weekday: 'long', day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit' });
-  return template(posts, { made, handle: config.brand.handle });
+  return { html: template(posts, { made, handle: config.brand.handle }), files, count: posts.length };
 }
 
 function template(posts, { made, handle }) {
-  const cards = posts.map((p, n) => `
+  const cards = posts.map((p, n) => `${n === 0 || posts[n - 1].day !== p.day ? `<h2 class="day">${e(p.day)}</h2>` : ''}
   <article class="post" data-i="${n}">
     <header class="post-head">
-      <span class="when">${e(p.when)}</span>
+      <span class="when">${e(p.when.split(' ').slice(-1)[0])}</span>
       <span class="fmt">${e(p.format)} · ${p.slides.length} foto's</span>
     </header>
+    <ul class="matches">${p.matches.map((x) => `<li><b>${e(x.match)}</b><span>${e(x.moment)}</span></li>`).join('')}</ul>
     ${p.flagged ? `<p class="flag">Eerst zelf checken: ${e(p.flagged)}</p>` : ''}
     ${p.ai ? `<p class="flag">Bevat een AI-beeld: zet in TikTok "AI-gegenereerde content" aan.</p>` : ''}
-    <div class="strip" role="list">${p.slides.map((s, i) => `<figure role="listitem"><img src="${s}" alt="Slide ${i + 1} van ${p.slides.length}"><figcaption>${i + 1}</figcaption><button class="one" type="button" id="one-${n}-${i}" data-post="${n}" data-slide="${i}">Download foto ${i + 1}</button></figure>`).join('')}</div>
+    <div class="strip" role="list">${p.slides.map((s, i) => `<figure role="listitem"><img src="${s}" loading="${n < 2 ? 'eager' : 'lazy'}" alt="Slide ${i + 1} van ${p.slides.length}"><figcaption>${i + 1}</figcaption><button class="one" type="button" id="one-${n}-${i}" data-post="${n}" data-slide="${i}">Download foto ${i + 1}</button></figure>`).join('')}</div>
     <div class="steps">
       <button class="btn save" type="button" id="save-${n}"><b>1</b> Bewaar alle ${p.slides.length} foto's</button>
       <button class="btn copy" type="button" id="copy-${n}"><b>2</b> Kopieer caption</button>
@@ -80,6 +99,10 @@ h1{font-family:var(--display);font-weight:400;font-size:clamp(34px,9vw,48px);lin
 .post-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}
 .when{font-family:var(--display);font-size:26px;text-transform:uppercase;line-height:1}
 .fmt{font-family:var(--label);text-transform:uppercase;letter-spacing:.08em;font-size:12px;color:var(--muted)}
+.matches{list-style:none;margin:-4px 0 0;padding:0;display:grid;gap:4px}
+.matches li{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:16px}
+.matches b{font-weight:600}
+.matches span{font-family:var(--label);text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-size:13px;align-self:center}
 .flag{margin:0;padding:8px 10px;border-radius:8px;background:var(--flagbg);color:var(--flag);font-size:13.5px}
 .strip{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px;-webkit-overflow-scrolling:touch}
 .strip figure{margin:0;flex:0 0 46%;max-width:240px;scroll-snap-align:start;position:relative}
@@ -102,6 +125,8 @@ h1{font-family:var(--display);font-weight:400;font-size:clamp(34px,9vw,48px);lin
 .done{display:flex;gap:8px;align-items:center;font-size:14px}
 .done input{width:20px;height:20px;accent-color:var(--ok)}
 .post.is-done{opacity:.6}
+.day{font-family:var(--display);font-weight:400;font-size:30px;text-transform:uppercase;margin:14px 0 -6px;letter-spacing:.01em}
+.day:first-of-type{margin-top:0}
 .empty{background:var(--card);border:1px dashed var(--line);border-radius:14px;padding:20px;text-align:center;color:var(--muted)}
 footer{color:var(--muted);font-size:12.5px}
 @media (max-width:360px){.one{margin-top:6px;width:100%;font:600 13px/1.2 var(--label);text-transform:uppercase;letter-spacing:.05em;padding:10px 6px;border-radius:8px;border:1.5px solid var(--ink);background:var(--card);color:var(--ink);cursor:pointer;min-height:40px}
@@ -131,19 +156,34 @@ footer{color:var(--muted);font-size:12.5px}
 <script>
 (function(){
   var POSTS = ${JSON.stringify(posts.map((p) => ({ id: p.id, date: p.date, n: p.slides.length, text: p.text })))};
-  function blobAt(i, j){
-    var src = document.querySelectorAll('.post')[i].querySelectorAll('.strip img')[j].src;
-    var bin = atob(src.split(',')[1]); var a = new Uint8Array(bin.length);
-    for (var k = 0; k < bin.length; k++) a[k] = bin.charCodeAt(k);
-    return new Blob([a], { type: 'image/jpeg' });
+  var cache = {};
+  function imgAt(i, j){ return document.querySelectorAll('.post')[i].querySelectorAll('.strip img')[j]; }
+  function getBlob(i, j){
+    var k = i + '-' + j; if (cache[k]) return cache[k];
+    var src = imgAt(i, j).src;
+    if (src.indexOf('data:') === 0) {
+      var bin = atob(src.split(',')[1]); var a = new Uint8Array(bin.length);
+      for (var x = 0; x < bin.length; x++) a[x] = bin.charCodeAt(x);
+      cache[k] = Promise.resolve(new Blob([a], { type: 'image/jpeg' }));
+    } else cache[k] = fetch(src).then(function(r){ if (!r.ok) throw new Error(r.status); return r.blob(); });
+    return cache[k];
   }
+  // Fetch each photo once it has been shown, so a later tap can save it immediately.
+  document.querySelectorAll('.post').forEach(function(card, i){
+    card.querySelectorAll('.strip img').forEach(function(img, j){
+      function warm(){ getBlob(i, j).catch(function(){ delete cache[i + '-' + j]; }); }
+      if (img.complete && img.naturalWidth) warm(); else img.addEventListener('load', warm);
+    });
+  });
+  async function fileAt(i, j){ var p = POSTS[i]; return new File([await getBlob(i, j)], 'fraternity-' + p.date + '-' + (i + 1) + '-' + String(j + 1).padStart(2, '0') + '.jpg', { type: 'image/jpeg' }); }
   function setStatus(i, msg, ok){ var s = document.getElementById('status-' + i); s.textContent = msg; s.className = 'status' + (ok ? ' ok' : ''); }
   var dl = null;
   if (window.claude && window.claude.use) window.claude.use('downloads').then(function(d){ dl = d; }).catch(function(){});
   function key(i){ return 'fraternity-done-' + POSTS[i].id; }
   async function saveOne(i, j, btn){
     var p = POSTS[i];
-    var file = new File([blobAt(i, j)], 'fraternity-' + p.date + '-' + (i + 1) + '-' + String(j + 1).padStart(2, '0') + '.jpg', { type: 'image/jpeg' });
+    var file;
+    try { file = await fileAt(i, j); } catch (e) { setStatus(i, 'Foto nog niet geladen. Probeer het zo opnieuw.'); return; }
     if (!dl && navigator.canShare && navigator.canShare({ files: [file] })) {
       try { await navigator.share({ files: [file] }); btn.textContent = '✓ Foto ' + (j + 1); btn.classList.add('ok'); } catch (e) {}
       return;
@@ -168,7 +208,8 @@ footer{color:var(--muted);font-size:12.5px}
 
     var btn = document.getElementById('save-' + i);
     btn.addEventListener('click', async function(){
-      var files = []; for (var j = 0; j < p.n; j++) files.push(new File([blobAt(i, j)], 'fraternity-' + p.date + '-' + (i + 1) + '-' + String(j + 1).padStart(2, '0') + '.jpg', { type: 'image/jpeg' }));
+      var files = [];
+      try { for (var j = 0; j < p.n; j++) files.push(await fileAt(i, j)); } catch (e) { setStatus(i, 'Foto\u2019s nog niet geladen. Probeer het zo opnieuw.'); return; }
       // Outside the Claude app (normal phone browser): one share sheet with all photos.
       if (!dl && navigator.canShare && navigator.canShare({ files: files })) {
         try { await navigator.share({ files: files }); setStatus(i, 'Gedeeld. Kies "Bewaar ' + p.n + ' afbeeldingen".', true); } catch (e) { setStatus(i, 'Niet opgeslagen.'); }
@@ -194,11 +235,15 @@ footer{color:var(--muted);font-size:12.5px}
 `;
 }
 
-function writePhonePack(ctx, file) {
-  const html = buildPhonePack(ctx);
+// Writes the page plus <page>.files.json: {publishedPath: localSlidePath} to pass as the
+// Artifact tool's `files` when publishing (slides are served next to the page).
+function writePhonePack(ctx, file, opts = {}) {
+  const { html, files, count } = buildPhonePack(ctx, opts);
   const out = file || path.join(ctx.config.paths.data, 'phone', 'klaar-om-te-posten.html');
   fs.mkdirSync(path.dirname(out), { recursive: true });
   fs.writeFileSync(out, html);
-  return out;
+  const map = out.replace(/\.html$/, '') + '.files.json';
+  fs.writeFileSync(map, JSON.stringify(files, null, 2));
+  return { page: out, files: map, posts: count, slides: Object.keys(files).length };
 }
 module.exports = { buildPhonePack, writePhonePack, pickPosts };

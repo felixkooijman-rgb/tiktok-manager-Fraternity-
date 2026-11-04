@@ -90,6 +90,7 @@ const FORMATS = {
       const h = hero(m);
       const comp1 = comp(m).replace(/\s*\d{4}$/, '');
       return [
+        { type: 'cover', image: await posterImg(m, ctx, 'framed'), kicker: 'Fraternity voetbalquiz', title: 'Raad de poster', sub: 'Welk moment zit hierachter?', footer: 'Swipe voor hint 1 →', size: 170 },
         { type: 'clue', image: img, zoom: 3.2, fx: 0.5, fy: 0.69, kicker: 'Raad de poster · hint 1', title: 'Welk moment is dit?', footer: 'Swipe voor hint 2 →', size: 130 },
         { type: 'clue', image: img, zoom: 1, fx: 0.5, fy: 0.5, blur: 48, kicker: 'Hint 2', title: 'Nog steeds niet?', hints: [`Jaar: ${m.match.date.slice(0, 4)}`, `Toernooi: ${comp1}`, ...(h.number ? [`Rugnummer: ${h.number}`] : [])], footer: 'Antwoord in de comments, dan swipen →', size: 120 },
         { type: 'poster', image: await posterImg(m, ctx, 'framed'), label: `${h.short} ${h.minute || ''}`.trim(), sub: `${scoreUp(m)} · ${dotDate(m.match.date)}` },
@@ -101,7 +102,7 @@ const FORMATS = {
       const lines = [
         `Raad de poster 🔍 Hint: ${hint}. Welk moment zit hierachter? Zet je gok in de comments vóór je doorswipet.`,
         `Herken jij dit shirt? 👀 ${hint}. Gok eerst, swipe daarna.`,
-        `Eén cijfer, één shirt, één moment. ${hint}. Weet jij welke poster dit is? Comment je antwoord vóór slide 3.`,
+        `Eén cijfer, één shirt, één moment. ${hint}. Weet jij welke poster dit is? Comment je antwoord vóór slide 4.`,
       ];
       return lines[[...m.slug].reduce((a, c) => a + c.charCodeAt(0), 0) % lines.length];
     },

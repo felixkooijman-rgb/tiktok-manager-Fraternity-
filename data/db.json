@@ -1130,13 +1130,13 @@
       "captionSource": "template",
       "slides": [
         {
-          "file": "01-clue.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw287rf5d5b724/01-clue.jpg",
-          "type": "clue",
+          "file": "01-cover.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw287rf5d5b724/01-cover.jpg",
+          "type": "cover",
           "width": 1080,
           "height": 1920,
           "overflow": [],
-          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+          "text": "Fraternity voetbalquiz | Raad de poster | Welk moment zit hierachter? | Swipe voor hint 1 →"
         },
         {
           "file": "02-clue.jpg",
@@ -1145,11 +1145,20 @@
           "width": 1080,
           "height": 1920,
           "overflow": [],
+          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+        },
+        {
+          "file": "03-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw287rf5d5b724/03-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
           "text": "Hint 2 | Nog steeds niet? | Antwoord in de comments, dan swipen →"
         },
         {
-          "file": "03-poster.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw287rf5d5b724/03-poster.jpg",
+          "file": "04-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw287rf5d5b724/04-poster.jpg",
           "type": "poster",
           "width": 1080,
           "height": 1920,
@@ -1157,8 +1166,8 @@
           "text": "NEDERLAND 2:1 BRAZILIË · 02.07.2010"
         },
         {
-          "file": "04-cta.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw287rf5d5b724/04-cta.jpg",
+          "file": "05-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw287rf5d5b724/05-cta.jpg",
           "type": "cta",
           "width": 1080,
           "height": 1920,
@@ -1254,9 +1263,9 @@
         ],
         "needsApproval": false,
         "reasons": [],
-        "checkedAt": "2026-11-04T14:48:14.837Z"
+        "checkedAt": "2026-11-04T14:54:08.149Z"
       },
-      "updatedAt": "2026-11-04T14:48:14.837Z",
+      "updatedAt": "2026-11-04T14:54:08.150Z",
       "scheduledAt": "2026-11-05T15:00:00.000Z"
     },
     {
@@ -1284,13 +1293,13 @@
       "captionSource": "template",
       "slides": [
         {
-          "file": "01-clue.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw287sa149e3f8/01-clue.jpg",
-          "type": "clue",
+          "file": "01-cover.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw287sa149e3f8/01-cover.jpg",
+          "type": "cover",
           "width": 1080,
           "height": 1920,
           "overflow": [],
-          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+          "text": "Fraternity voetbalquiz | Raad de poster | Welk moment zit hierachter? | Swipe voor hint 1 →"
         },
         {
           "file": "02-clue.jpg",
@@ -1299,11 +1308,20 @@
           "width": 1080,
           "height": 1920,
           "overflow": [],
+          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+        },
+        {
+          "file": "03-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw287sa149e3f8/03-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
           "text": "Hint 2 | Nog steeds niet? | Antwoord in de comments, dan swipen →"
         },
         {
-          "file": "03-poster.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw287sa149e3f8/03-poster.jpg",
+          "file": "04-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw287sa149e3f8/04-poster.jpg",
           "type": "poster",
           "width": 1080,
           "height": 1920,
@@ -1311,8 +1329,8 @@
           "text": "REAL MADRID 1:4 AJAX · 05.03.2019"
         },
         {
-          "file": "04-cta.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw287sa149e3f8/04-cta.jpg",
+          "file": "05-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw287sa149e3f8/05-cta.jpg",
           "type": "cta",
           "width": 1080,
           "height": 1920,
@@ -1407,9 +1425,9 @@
         ],
         "needsApproval": false,
         "reasons": [],
-        "checkedAt": "2026-11-04T14:48:14.842Z"
+        "checkedAt": "2026-11-04T14:54:09.377Z"
       },
-      "updatedAt": "2026-11-04T14:48:14.842Z",
+      "updatedAt": "2026-11-04T14:54:09.377Z",
       "scheduledAt": "2026-11-06T11:15:00.000Z"
     },
     {
@@ -1424,7 +1442,7 @@
       ],
       "signal": null,
       "why": "Op verzoek: meer raad-de-poster",
-      "caption": "Eén cijfer, één shirt, één moment. UEFA Cup, 2002, rugnummer 9. Weet jij welke poster dit is? Comment je antwoord vóór slide 3.",
+      "caption": "Eén cijfer, één shirt, één moment. UEFA Cup, 2002, rugnummer 9. Weet jij welke poster dit is? Comment je antwoord vóór slide 4.",
       "title": "Raad de poster: welk moment is dit?",
       "hashtags": [
         "#fraternity",
@@ -1437,13 +1455,13 @@
       "captionSource": "template",
       "slides": [
         {
-          "file": "01-clue.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw287syoa8cd2e/01-clue.jpg",
-          "type": "clue",
+          "file": "01-cover.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw287syoa8cd2e/01-cover.jpg",
+          "type": "cover",
           "width": 1080,
           "height": 1920,
           "overflow": [],
-          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+          "text": "Fraternity voetbalquiz | Raad de poster | Welk moment zit hierachter? | Swipe voor hint 1 →"
         },
         {
           "file": "02-clue.jpg",
@@ -1452,11 +1470,20 @@
           "width": 1080,
           "height": 1920,
           "overflow": [],
+          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+        },
+        {
+          "file": "03-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw287syoa8cd2e/03-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
           "text": "Hint 2 | Nog steeds niet? | Antwoord in de comments, dan swipen →"
         },
         {
-          "file": "03-poster.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw287syoa8cd2e/03-poster.jpg",
+          "file": "04-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw287syoa8cd2e/04-poster.jpg",
           "type": "poster",
           "width": 1080,
           "height": 1920,
@@ -1464,8 +1491,8 @@
           "text": "FEYENOORD 3:2 DORTMUND · 08.05.2002"
         },
         {
-          "file": "04-cta.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw287syoa8cd2e/04-cta.jpg",
+          "file": "05-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw287syoa8cd2e/05-cta.jpg",
           "type": "cta",
           "width": 1080,
           "height": 1920,
@@ -1554,9 +1581,9 @@
         ],
         "needsApproval": false,
         "reasons": [],
-        "checkedAt": "2026-11-04T14:48:14.845Z"
+        "checkedAt": "2026-11-04T14:54:10.509Z"
       },
-      "updatedAt": "2026-11-04T14:48:14.845Z",
+      "updatedAt": "2026-11-04T14:54:10.509Z",
       "scheduledAt": "2026-11-06T18:30:00.000Z"
     },
     {
@@ -1584,13 +1611,13 @@
       "captionSource": "template",
       "slides": [
         {
-          "file": "01-clue.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28axrk943d0d/01-clue.jpg",
-          "type": "clue",
+          "file": "01-cover.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28axrk943d0d/01-cover.jpg",
+          "type": "cover",
           "width": 1080,
           "height": 1920,
           "overflow": [],
-          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+          "text": "Fraternity voetbalquiz | Raad de poster | Welk moment zit hierachter? | Swipe voor hint 1 →"
         },
         {
           "file": "02-clue.jpg",
@@ -1599,11 +1626,20 @@
           "width": 1080,
           "height": 1920,
           "overflow": [],
+          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+        },
+        {
+          "file": "03-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28axrk943d0d/03-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
           "text": "Hint 2 | Nog steeds niet? | Antwoord in de comments, dan swipen →"
         },
         {
-          "file": "03-poster.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28axrk943d0d/03-poster.jpg",
+          "file": "04-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28axrk943d0d/04-poster.jpg",
           "type": "poster",
           "width": 1080,
           "height": 1920,
@@ -1611,8 +1647,8 @@
           "text": "AJAX 1:0 MILAN · 24.05.1995"
         },
         {
-          "file": "04-cta.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28axrk943d0d/04-cta.jpg",
+          "file": "05-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28axrk943d0d/05-cta.jpg",
           "type": "cta",
           "width": 1080,
           "height": 1920,
@@ -1707,9 +1743,9 @@
         ],
         "needsApproval": false,
         "reasons": [],
-        "checkedAt": "2026-11-04T14:48:14.847Z"
+        "checkedAt": "2026-11-04T14:54:11.810Z"
       },
-      "updatedAt": "2026-11-04T14:48:14.847Z",
+      "updatedAt": "2026-11-04T14:54:11.810Z",
       "scheduledAt": "2026-11-07T11:15:00.000Z"
     },
     {
@@ -1737,13 +1773,13 @@
       "captionSource": "template",
       "slides": [
         {
-          "file": "01-clue.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28ayp9557f47/01-clue.jpg",
-          "type": "clue",
+          "file": "01-cover.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28ayp9557f47/01-cover.jpg",
+          "type": "cover",
           "width": 1080,
           "height": 1920,
           "overflow": [],
-          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+          "text": "Fraternity voetbalquiz | Raad de poster | Welk moment zit hierachter? | Swipe voor hint 1 →"
         },
         {
           "file": "02-clue.jpg",
@@ -1752,11 +1788,20 @@
           "width": 1080,
           "height": 1920,
           "overflow": [],
+          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+        },
+        {
+          "file": "03-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28ayp9557f47/03-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
           "text": "Hint 2 | Nog steeds niet? | Antwoord in de comments, dan swipen →"
         },
         {
-          "file": "03-poster.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28ayp9557f47/03-poster.jpg",
+          "file": "04-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28ayp9557f47/04-poster.jpg",
           "type": "poster",
           "width": 1080,
           "height": 1920,
@@ -1764,8 +1809,8 @@
           "text": "SPANJE 1:5 NEDERLAND · 13.06.2014"
         },
         {
-          "file": "04-cta.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28ayp9557f47/04-cta.jpg",
+          "file": "05-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28ayp9557f47/05-cta.jpg",
           "type": "cta",
           "width": 1080,
           "height": 1920,
@@ -1866,9 +1911,9 @@
         ],
         "needsApproval": false,
         "reasons": [],
-        "checkedAt": "2026-11-04T14:48:14.849Z"
+        "checkedAt": "2026-11-04T14:54:13.109Z"
       },
-      "updatedAt": "2026-11-04T14:48:14.849Z",
+      "updatedAt": "2026-11-04T14:54:13.109Z",
       "scheduledAt": "2026-11-08T11:15:00.000Z"
     },
     {
@@ -1883,7 +1928,7 @@
       ],
       "signal": null,
       "why": "Op verzoek: nog meer raad-de-poster",
-      "caption": "Eén cijfer, één shirt, één moment. European Cup, 1972, rugnummer 14. Weet jij welke poster dit is? Comment je antwoord vóór slide 3.",
+      "caption": "Eén cijfer, één shirt, één moment. European Cup, 1972, rugnummer 14. Weet jij welke poster dit is? Comment je antwoord vóór slide 4.",
       "title": "Raad de poster: welk moment is dit?",
       "hashtags": [
         "#fraternity",
@@ -1896,13 +1941,13 @@
       "captionSource": "template",
       "slides": [
         {
-          "file": "01-clue.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28azk2251da1/01-clue.jpg",
-          "type": "clue",
+          "file": "01-cover.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28azk2251da1/01-cover.jpg",
+          "type": "cover",
           "width": 1080,
           "height": 1920,
           "overflow": [],
-          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+          "text": "Fraternity voetbalquiz | Raad de poster | Welk moment zit hierachter? | Swipe voor hint 1 →"
         },
         {
           "file": "02-clue.jpg",
@@ -1911,11 +1956,20 @@
           "width": 1080,
           "height": 1920,
           "overflow": [],
+          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+        },
+        {
+          "file": "03-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28azk2251da1/03-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
           "text": "Hint 2 | Nog steeds niet? | Antwoord in de comments, dan swipen →"
         },
         {
-          "file": "03-poster.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28azk2251da1/03-poster.jpg",
+          "file": "04-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28azk2251da1/04-poster.jpg",
           "type": "poster",
           "width": 1080,
           "height": 1920,
@@ -1923,8 +1977,8 @@
           "text": "AJAX 2:0 INTER · 31.05.1972"
         },
         {
-          "file": "04-cta.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28azk2251da1/04-cta.jpg",
+          "file": "05-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28azk2251da1/05-cta.jpg",
           "type": "cta",
           "width": 1080,
           "height": 1920,
@@ -2013,9 +2067,9 @@
         ],
         "needsApproval": false,
         "reasons": [],
-        "checkedAt": "2026-11-04T14:48:14.852Z"
+        "checkedAt": "2026-11-04T14:54:14.265Z"
       },
-      "updatedAt": "2026-11-04T14:48:14.852Z",
+      "updatedAt": "2026-11-04T14:54:14.265Z",
       "scheduledAt": "2026-11-09T17:00:00.000Z"
     },
     {
@@ -2030,7 +2084,7 @@
       ],
       "signal": null,
       "why": "Op verzoek: nog meer raad-de-poster",
-      "caption": "Eén cijfer, één shirt, één moment. KNVB Beker, 2025, rugnummer 2. Weet jij welke poster dit is? Comment je antwoord vóór slide 3.",
+      "caption": "Eén cijfer, één shirt, één moment. KNVB Beker, 2025, rugnummer 2. Weet jij welke poster dit is? Comment je antwoord vóór slide 4.",
       "title": "Raad de poster: welk moment is dit?",
       "hashtags": [
         "#fraternity",
@@ -2043,13 +2097,13 @@
       "captionSource": "template",
       "slides": [
         {
-          "file": "01-clue.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b0f967aaef/01-clue.jpg",
-          "type": "clue",
+          "file": "01-cover.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b0f967aaef/01-cover.jpg",
+          "type": "cover",
           "width": 1080,
           "height": 1920,
           "overflow": [],
-          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+          "text": "Fraternity voetbalquiz | Raad de poster | Welk moment zit hierachter? | Swipe voor hint 1 →"
         },
         {
           "file": "02-clue.jpg",
@@ -2058,11 +2112,20 @@
           "width": 1080,
           "height": 1920,
           "overflow": [],
+          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+        },
+        {
+          "file": "03-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b0f967aaef/03-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
           "text": "Hint 2 | Nog steeds niet? | Antwoord in de comments, dan swipen →"
         },
         {
-          "file": "03-poster.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b0f967aaef/03-poster.jpg",
+          "file": "04-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b0f967aaef/04-poster.jpg",
           "type": "poster",
           "width": 1080,
           "height": 1920,
@@ -2070,8 +2133,8 @@
           "text": "AZ 1:1 GA EAGLES · 21.04.2025"
         },
         {
-          "file": "04-cta.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b0f967aaef/04-cta.jpg",
+          "file": "05-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b0f967aaef/05-cta.jpg",
           "type": "cta",
           "width": 1080,
           "height": 1920,
@@ -2209,9 +2272,9 @@
         ],
         "needsApproval": false,
         "reasons": [],
-        "checkedAt": "2026-11-04T14:48:14.855Z"
+        "checkedAt": "2026-11-04T14:54:15.577Z"
       },
-      "updatedAt": "2026-11-04T14:48:14.855Z",
+      "updatedAt": "2026-11-04T14:54:15.577Z",
       "scheduledAt": "2026-11-10T17:00:00.000Z"
     },
     {
@@ -2226,7 +2289,7 @@
       ],
       "signal": null,
       "why": "Op verzoek: nog meer raad-de-poster",
-      "caption": "Eén cijfer, één shirt, één moment. WK, 1998, rugnummer 8. Weet jij welke poster dit is? Comment je antwoord vóór slide 3.",
+      "caption": "Eén cijfer, één shirt, één moment. WK, 1998, rugnummer 8. Weet jij welke poster dit is? Comment je antwoord vóór slide 4.",
       "title": "Raad de poster: welk moment is dit?",
       "hashtags": [
         "#fraternity",
@@ -2239,13 +2302,13 @@
       "captionSource": "template",
       "slides": [
         {
-          "file": "01-clue.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b1cr5c18b9/01-clue.jpg",
-          "type": "clue",
+          "file": "01-cover.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b1cr5c18b9/01-cover.jpg",
+          "type": "cover",
           "width": 1080,
           "height": 1920,
           "overflow": [],
-          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+          "text": "Fraternity voetbalquiz | Raad de poster | Welk moment zit hierachter? | Swipe voor hint 1 →"
         },
         {
           "file": "02-clue.jpg",
@@ -2254,11 +2317,20 @@
           "width": 1080,
           "height": 1920,
           "overflow": [],
+          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+        },
+        {
+          "file": "03-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b1cr5c18b9/03-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
           "text": "Hint 2 | Nog steeds niet? | Antwoord in de comments, dan swipen →"
         },
         {
-          "file": "03-poster.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b1cr5c18b9/03-poster.jpg",
+          "file": "04-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b1cr5c18b9/04-poster.jpg",
           "type": "poster",
           "width": 1080,
           "height": 1920,
@@ -2266,8 +2338,8 @@
           "text": "NEDERLAND 2:1 ARGENTINIË · 04.07.1998"
         },
         {
-          "file": "04-cta.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b1cr5c18b9/04-cta.jpg",
+          "file": "05-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b1cr5c18b9/05-cta.jpg",
           "type": "cta",
           "width": 1080,
           "height": 1920,
@@ -2362,9 +2434,9 @@
         ],
         "needsApproval": false,
         "reasons": [],
-        "checkedAt": "2026-11-04T14:48:14.857Z"
+        "checkedAt": "2026-11-04T14:54:16.752Z"
       },
-      "updatedAt": "2026-11-04T14:48:14.857Z",
+      "updatedAt": "2026-11-04T14:54:16.752Z",
       "scheduledAt": "2026-11-11T17:00:00.000Z"
     },
     {
@@ -2379,7 +2451,7 @@
       ],
       "signal": null,
       "why": "Op verzoek: nog meer raad-de-poster",
-      "caption": "Eén cijfer, één shirt, één moment. KNVB Beker, 2023, rugnummer 4. Weet jij welke poster dit is? Comment je antwoord vóór slide 3.",
+      "caption": "Eén cijfer, één shirt, één moment. KNVB Beker, 2023, rugnummer 4. Weet jij welke poster dit is? Comment je antwoord vóór slide 4.",
       "title": "Raad de poster: welk moment is dit?",
       "hashtags": [
         "#fraternity",
@@ -2392,13 +2464,13 @@
       "captionSource": "template",
       "slides": [
         {
-          "file": "01-clue.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b239fa078a/01-clue.jpg",
-          "type": "clue",
+          "file": "01-cover.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b239fa078a/01-cover.jpg",
+          "type": "cover",
           "width": 1080,
           "height": 1920,
           "overflow": [],
-          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+          "text": "Fraternity voetbalquiz | Raad de poster | Welk moment zit hierachter? | Swipe voor hint 1 →"
         },
         {
           "file": "02-clue.jpg",
@@ -2407,11 +2479,20 @@
           "width": 1080,
           "height": 1920,
           "overflow": [],
+          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+        },
+        {
+          "file": "03-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b239fa078a/03-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
           "text": "Hint 2 | Nog steeds niet? | Antwoord in de comments, dan swipen →"
         },
         {
-          "file": "03-poster.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b239fa078a/03-poster.jpg",
+          "file": "04-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b239fa078a/04-poster.jpg",
           "type": "poster",
           "width": 1080,
           "height": 1920,
@@ -2419,8 +2500,8 @@
           "text": "HERCULES 3:2 AJAX · 21.12.2023"
         },
         {
-          "file": "04-cta.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b239fa078a/04-cta.jpg",
+          "file": "05-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b239fa078a/05-cta.jpg",
           "type": "cta",
           "width": 1080,
           "height": 1920,
@@ -2566,9 +2647,9 @@
         ],
         "needsApproval": false,
         "reasons": [],
-        "checkedAt": "2026-11-04T14:48:14.860Z"
+        "checkedAt": "2026-11-04T14:54:17.943Z"
       },
-      "updatedAt": "2026-11-04T14:48:14.860Z",
+      "updatedAt": "2026-11-04T14:54:17.943Z",
       "scheduledAt": "2026-11-12T17:00:00.000Z"
     },
     {
@@ -2596,13 +2677,13 @@
       "captionSource": "template",
       "slides": [
         {
-          "file": "01-clue.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b2smeefd8d/01-clue.jpg",
-          "type": "clue",
+          "file": "01-cover.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b2smeefd8d/01-cover.jpg",
+          "type": "cover",
           "width": 1080,
           "height": 1920,
           "overflow": [],
-          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+          "text": "Fraternity voetbalquiz | Raad de poster | Welk moment zit hierachter? | Swipe voor hint 1 →"
         },
         {
           "file": "02-clue.jpg",
@@ -2611,11 +2692,20 @@
           "width": 1080,
           "height": 1920,
           "overflow": [],
+          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+        },
+        {
+          "file": "03-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b2smeefd8d/03-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
           "text": "Hint 2 | Nog steeds niet? | Antwoord in de comments, dan swipen →"
         },
         {
-          "file": "03-poster.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b2smeefd8d/03-poster.jpg",
+          "file": "04-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b2smeefd8d/04-poster.jpg",
           "type": "poster",
           "width": 1080,
           "height": 1920,
@@ -2623,8 +2713,8 @@
           "text": "USSR 0:2 NEDERLAND · 25.06.1988"
         },
         {
-          "file": "04-cta.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b2smeefd8d/04-cta.jpg",
+          "file": "05-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b2smeefd8d/05-cta.jpg",
           "type": "cta",
           "width": 1080,
           "height": 1920,
@@ -2713,9 +2803,9 @@
         ],
         "needsApproval": false,
         "reasons": [],
-        "checkedAt": "2026-11-04T14:48:14.863Z"
+        "checkedAt": "2026-11-04T14:54:19.263Z"
       },
-      "updatedAt": "2026-11-04T14:48:14.863Z",
+      "updatedAt": "2026-11-04T14:54:19.263Z",
       "scheduledAt": "2026-11-13T17:00:00.000Z"
     },
     {
@@ -2730,7 +2820,7 @@
       ],
       "signal": null,
       "why": "Op verzoek: nog meer raad-de-poster",
-      "caption": "Eén cijfer, één shirt, één moment. European Cup, 1970, rugnummer 9. Weet jij welke poster dit is? Comment je antwoord vóór slide 3.",
+      "caption": "Eén cijfer, één shirt, één moment. European Cup, 1970, rugnummer 9. Weet jij welke poster dit is? Comment je antwoord vóór slide 4.",
       "title": "Raad de poster: welk moment is dit?",
       "hashtags": [
         "#fraternity",
@@ -2743,13 +2833,13 @@
       "captionSource": "template",
       "slides": [
         {
-          "file": "01-clue.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e5xu847c0e/01-clue.jpg",
-          "type": "clue",
+          "file": "01-cover.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e5xu847c0e/01-cover.jpg",
+          "type": "cover",
           "width": 1080,
           "height": 1920,
           "overflow": [],
-          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+          "text": "Fraternity voetbalquiz | Raad de poster | Welk moment zit hierachter? | Swipe voor hint 1 →"
         },
         {
           "file": "02-clue.jpg",
@@ -2758,11 +2848,20 @@
           "width": 1080,
           "height": 1920,
           "overflow": [],
+          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+        },
+        {
+          "file": "03-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e5xu847c0e/03-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
           "text": "Hint 2 | Nog steeds niet? | Antwoord in de comments, dan swipen →"
         },
         {
-          "file": "03-poster.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e5xu847c0e/03-poster.jpg",
+          "file": "04-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e5xu847c0e/04-poster.jpg",
           "type": "poster",
           "width": 1080,
           "height": 1920,
@@ -2770,8 +2869,8 @@
           "text": "FEYENOORD 2:1 CELTIC · 06.05.1970"
         },
         {
-          "file": "04-cta.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e5xu847c0e/04-cta.jpg",
+          "file": "05-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e5xu847c0e/05-cta.jpg",
           "type": "cta",
           "width": 1080,
           "height": 1920,
@@ -2872,9 +2971,9 @@
         ],
         "needsApproval": false,
         "reasons": [],
-        "checkedAt": "2026-11-04T14:48:14.865Z"
+        "checkedAt": "2026-11-04T14:54:20.462Z"
       },
-      "updatedAt": "2026-11-04T14:48:14.865Z",
+      "updatedAt": "2026-11-04T14:54:20.462Z",
       "scheduledAt": "2026-11-14T11:15:00.000Z"
     },
     {
@@ -2902,13 +3001,13 @@
       "captionSource": "template",
       "slides": [
         {
-          "file": "01-clue.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e6pj80cd39/01-clue.jpg",
-          "type": "clue",
+          "file": "01-cover.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e6pj80cd39/01-cover.jpg",
+          "type": "cover",
           "width": 1080,
           "height": 1920,
           "overflow": [],
-          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+          "text": "Fraternity voetbalquiz | Raad de poster | Welk moment zit hierachter? | Swipe voor hint 1 →"
         },
         {
           "file": "02-clue.jpg",
@@ -2917,11 +3016,20 @@
           "width": 1080,
           "height": 1920,
           "overflow": [],
+          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+        },
+        {
+          "file": "03-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e6pj80cd39/03-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
           "text": "Hint 2 | Nog steeds niet? | Antwoord in de comments, dan swipen →"
         },
         {
-          "file": "03-poster.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e6pj80cd39/03-poster.jpg",
+          "file": "04-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e6pj80cd39/04-poster.jpg",
           "type": "poster",
           "width": 1080,
           "height": 1920,
@@ -2929,8 +3037,8 @@
           "text": "URUGUAY 2:3 NEDERLAND · 06.07.2010"
         },
         {
-          "file": "04-cta.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e6pj80cd39/04-cta.jpg",
+          "file": "05-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e6pj80cd39/05-cta.jpg",
           "type": "cta",
           "width": 1080,
           "height": 1920,
@@ -3020,9 +3128,9 @@
         ],
         "needsApproval": false,
         "reasons": [],
-        "checkedAt": "2026-11-04T14:48:14.868Z"
+        "checkedAt": "2026-11-04T14:54:21.640Z"
       },
-      "updatedAt": "2026-11-04T14:48:14.868Z",
+      "updatedAt": "2026-11-04T14:54:21.640Z",
       "scheduledAt": "2026-11-15T11:15:00.000Z"
     },
     {
@@ -3037,7 +3145,7 @@
       ],
       "signal": null,
       "why": "Op verzoek: nog meer raad-de-poster",
-      "caption": "Eén cijfer, één shirt, één moment. KNVB Beker, 2023, rugnummer 9. Weet jij welke poster dit is? Comment je antwoord vóór slide 3.",
+      "caption": "Eén cijfer, één shirt, één moment. KNVB Beker, 2023, rugnummer 9. Weet jij welke poster dit is? Comment je antwoord vóór slide 4.",
       "title": "Raad de poster: welk moment is dit?",
       "hashtags": [
         "#fraternity",
@@ -3050,13 +3158,13 @@
       "captionSource": "template",
       "slides": [
         {
-          "file": "01-clue.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e7gkb6879e/01-clue.jpg",
-          "type": "clue",
+          "file": "01-cover.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e7gkb6879e/01-cover.jpg",
+          "type": "cover",
           "width": 1080,
           "height": 1920,
           "overflow": [],
-          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+          "text": "Fraternity voetbalquiz | Raad de poster | Welk moment zit hierachter? | Swipe voor hint 1 →"
         },
         {
           "file": "02-clue.jpg",
@@ -3065,11 +3173,20 @@
           "width": 1080,
           "height": 1920,
           "overflow": [],
+          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+        },
+        {
+          "file": "03-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e7gkb6879e/03-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
           "text": "Hint 2 | Nog steeds niet? | Antwoord in de comments, dan swipen →"
         },
         {
-          "file": "03-poster.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e7gkb6879e/03-poster.jpg",
+          "file": "04-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e7gkb6879e/04-poster.jpg",
           "type": "poster",
           "width": 1080,
           "height": 1920,
@@ -3077,8 +3194,8 @@
           "text": "FC UTRECHT 1:4 SPAKENBURG · 28.02.2023"
         },
         {
-          "file": "04-cta.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e7gkb6879e/04-cta.jpg",
+          "file": "05-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e7gkb6879e/05-cta.jpg",
           "type": "cta",
           "width": 1080,
           "height": 1920,
@@ -3223,9 +3340,9 @@
         ],
         "needsApproval": false,
         "reasons": [],
-        "checkedAt": "2026-11-04T14:48:14.871Z"
+        "checkedAt": "2026-11-04T14:54:22.822Z"
       },
-      "updatedAt": "2026-11-04T14:48:14.871Z",
+      "updatedAt": "2026-11-04T14:54:22.822Z",
       "scheduledAt": "2026-11-16T17:00:00.000Z"
     },
     {
@@ -3253,13 +3370,13 @@
       "captionSource": "template",
       "slides": [
         {
-          "file": "01-clue.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e8828c62c8/01-clue.jpg",
-          "type": "clue",
+          "file": "01-cover.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e8828c62c8/01-cover.jpg",
+          "type": "cover",
           "width": 1080,
           "height": 1920,
           "overflow": [],
-          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+          "text": "Fraternity voetbalquiz | Raad de poster | Welk moment zit hierachter? | Swipe voor hint 1 →"
         },
         {
           "file": "02-clue.jpg",
@@ -3268,11 +3385,20 @@
           "width": 1080,
           "height": 1920,
           "overflow": [],
+          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+        },
+        {
+          "file": "03-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e8828c62c8/03-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
           "text": "Hint 2 | Nog steeds niet? | Antwoord in de comments, dan swipen →"
         },
         {
-          "file": "03-poster.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e8828c62c8/03-poster.jpg",
+          "file": "04-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e8828c62c8/04-poster.jpg",
           "type": "poster",
           "width": 1080,
           "height": 1920,
@@ -3280,8 +3406,8 @@
           "text": "PSV 3:2 SHAKHTAR · 27.11.2024"
         },
         {
-          "file": "04-cta.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e8828c62c8/04-cta.jpg",
+          "file": "05-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e8828c62c8/05-cta.jpg",
           "type": "cta",
           "width": 1080,
           "height": 1920,
@@ -3386,9 +3512,9 @@
         ],
         "needsApproval": false,
         "reasons": [],
-        "checkedAt": "2026-11-04T14:48:14.874Z"
+        "checkedAt": "2026-11-04T14:54:24.016Z"
       },
-      "updatedAt": "2026-11-04T14:48:14.874Z",
+      "updatedAt": "2026-11-04T14:54:24.016Z",
       "scheduledAt": "2026-11-17T17:00:00.000Z"
     },
     {
@@ -3403,7 +3529,7 @@
       ],
       "signal": null,
       "why": "Op verzoek: nog meer raad-de-poster",
-      "caption": "Eén cijfer, één shirt, één moment. KNVB Beker, 2026, rugnummer 1. Weet jij welke poster dit is? Comment je antwoord vóór slide 3.",
+      "caption": "Eén cijfer, één shirt, één moment. KNVB Beker, 2026, rugnummer 1. Weet jij welke poster dit is? Comment je antwoord vóór slide 4.",
       "title": "Raad de poster: welk moment is dit?",
       "hashtags": [
         "#fraternity",
@@ -3416,13 +3542,13 @@
       "captionSource": "template",
       "slides": [
         {
-          "file": "01-clue.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e9048a3949/01-clue.jpg",
-          "type": "clue",
+          "file": "01-cover.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e9048a3949/01-cover.jpg",
+          "type": "cover",
           "width": 1080,
           "height": 1920,
           "overflow": [],
-          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+          "text": "Fraternity voetbalquiz | Raad de poster | Welk moment zit hierachter? | Swipe voor hint 1 →"
         },
         {
           "file": "02-clue.jpg",
@@ -3431,11 +3557,20 @@
           "width": 1080,
           "height": 1920,
           "overflow": [],
+          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+        },
+        {
+          "file": "03-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e9048a3949/03-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
           "text": "Hint 2 | Nog steeds niet? | Antwoord in de comments, dan swipen →"
         },
         {
-          "file": "03-poster.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e9048a3949/03-poster.jpg",
+          "file": "04-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e9048a3949/04-poster.jpg",
           "type": "poster",
           "width": 1080,
           "height": 1920,
@@ -3443,8 +3578,8 @@
           "text": "EXCELSIOR ’31 1:1 ADO DEN HAAG · 27.10.2026"
         },
         {
-          "file": "04-cta.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e9048a3949/04-cta.jpg",
+          "file": "05-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e9048a3949/05-cta.jpg",
           "type": "cta",
           "width": 1080,
           "height": 1920,
@@ -3601,9 +3736,9 @@
         ],
         "needsApproval": false,
         "reasons": [],
-        "checkedAt": "2026-11-04T14:48:14.876Z"
+        "checkedAt": "2026-11-04T14:54:25.206Z"
       },
-      "updatedAt": "2026-11-04T14:48:14.876Z",
+      "updatedAt": "2026-11-04T14:54:25.206Z",
       "scheduledAt": "2026-11-18T17:00:00.000Z"
     },
     {
@@ -3631,13 +3766,13 @@
       "captionSource": "template",
       "slides": [
         {
-          "file": "01-clue.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e9p5f84c6f/01-clue.jpg",
-          "type": "clue",
+          "file": "01-cover.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e9p5f84c6f/01-cover.jpg",
+          "type": "cover",
           "width": 1080,
           "height": 1920,
           "overflow": [],
-          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+          "text": "Fraternity voetbalquiz | Raad de poster | Welk moment zit hierachter? | Swipe voor hint 1 →"
         },
         {
           "file": "02-clue.jpg",
@@ -3646,11 +3781,20 @@
           "width": 1080,
           "height": 1920,
           "overflow": [],
+          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+        },
+        {
+          "file": "03-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e9p5f84c6f/03-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
           "text": "Hint 2 | Nog steeds niet? | Antwoord in de comments, dan swipen →"
         },
         {
-          "file": "03-poster.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e9p5f84c6f/03-poster.jpg",
+          "file": "04-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e9p5f84c6f/04-poster.jpg",
           "type": "poster",
           "width": 1080,
           "height": 1920,
@@ -3658,8 +3802,8 @@
           "text": "NEDERLAND 2:2 ARGENTINIË · 09.12.2022"
         },
         {
-          "file": "04-cta.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e9p5f84c6f/04-cta.jpg",
+          "file": "05-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e9p5f84c6f/05-cta.jpg",
           "type": "cta",
           "width": 1080,
           "height": 1920,
@@ -3754,9 +3898,9 @@
         ],
         "needsApproval": false,
         "reasons": [],
-        "checkedAt": "2026-11-04T14:48:14.881Z"
+        "checkedAt": "2026-11-04T14:54:26.431Z"
       },
-      "updatedAt": "2026-11-04T14:48:14.881Z",
+      "updatedAt": "2026-11-04T14:54:26.432Z",
       "scheduledAt": "2026-11-19T17:00:00.000Z"
     },
     {
@@ -3784,13 +3928,13 @@
       "captionSource": "template",
       "slides": [
         {
-          "file": "01-clue.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28eafaa834d9/01-clue.jpg",
-          "type": "clue",
+          "file": "01-cover.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28eafaa834d9/01-cover.jpg",
+          "type": "cover",
           "width": 1080,
           "height": 1920,
           "overflow": [],
-          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+          "text": "Fraternity voetbalquiz | Raad de poster | Welk moment zit hierachter? | Swipe voor hint 1 →"
         },
         {
           "file": "02-clue.jpg",
@@ -3799,11 +3943,20 @@
           "width": 1080,
           "height": 1920,
           "overflow": [],
+          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+        },
+        {
+          "file": "03-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28eafaa834d9/03-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
           "text": "Hint 2 | Nog steeds niet? | Antwoord in de comments, dan swipen →"
         },
         {
-          "file": "03-poster.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28eafaa834d9/03-poster.jpg",
+          "file": "04-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28eafaa834d9/04-poster.jpg",
           "type": "poster",
           "width": 1080,
           "height": 1920,
@@ -3811,8 +3964,8 @@
           "text": "WILLEM II 3:2 TELSTAR · 10.05.2024"
         },
         {
-          "file": "04-cta.jpg",
-          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28eafaa834d9/04-cta.jpg",
+          "file": "05-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28eafaa834d9/05-cta.jpg",
           "type": "cta",
           "width": 1080,
           "height": 1920,
@@ -3920,9 +4073,9 @@
         ],
         "needsApproval": false,
         "reasons": [],
-        "checkedAt": "2026-11-04T14:48:14.883Z"
+        "checkedAt": "2026-11-04T14:54:27.658Z"
       },
-      "updatedAt": "2026-11-04T14:48:14.883Z",
+      "updatedAt": "2026-11-04T14:54:27.658Z",
       "scheduledAt": "2026-11-20T17:00:00.000Z"
     }
   ],

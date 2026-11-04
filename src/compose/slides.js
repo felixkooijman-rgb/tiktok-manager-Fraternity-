@@ -107,6 +107,22 @@ const TEMPLATES = {
       ${s.lines.map((l) => `<div style="font-size:40px;font-weight:500;letter-spacing:1px;margin:14px 0;text-transform:none">— ${e(l)}</div>`).join('')}
     </div>${brand(ctx)}${stripes(ctx.pal)}`,
 
+  // Series cover: blurred poster in its frame on the wall with a big question mark.
+  cover: (s, ctx) => `
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg,${WALL} 0%,#E2DDD4 100%)"></div>
+    <div style="position:absolute;top:130px;left:80px;right:80px;text-align:center;color:${INK}">
+      <div class="kicker" style="color:${INK};opacity:.7">${e(s.kicker || '')}</div>
+      <div class="anton" style="font-size:${s.size || 150}px;margin-top:12px">${e(s.title)}</div>
+      ${s.sub ? `<div class="meta" style="margin-top:14px;font-size:40px">${e(s.sub)}</div>` : ''}
+    </div>
+    <div style="position:absolute;left:${(W - 600) / 2}px;top:640px;width:600px;height:900px;overflow:hidden;box-shadow:0 28px 50px rgba(0,0,0,.35);background:${INK}">
+      <img src="${dataUri(s.image)}" style="position:absolute;inset:-60px;width:calc(100% + 120px);height:calc(100% + 120px);object-fit:cover;filter:blur(70px) saturate(1.2)">
+      <div style="position:absolute;inset:0;border:26px solid ${INK}"></div>
+      <div class="anton" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:520px;color:#fff;text-shadow:0 12px 40px rgba(0,0,0,.45)">?</div>
+    </div>
+    ${s.footer ? `<div class="meta" style="position:absolute;left:80px;right:80px;top:1562px;text-align:center;color:${INK};font-size:34px">${e(s.footer)}</div>` : ''}
+    <div style="color:${INK}">${brand(ctx)}</div>${stripes(ctx.pal)}`,
+
   // Zoomed / blurred part of an image as a guessing clue. zoom = scale, fx/fy = focus point (0–1).
   clue: (s, ctx) => `
     <div style="position:absolute;inset:0;overflow:hidden">
