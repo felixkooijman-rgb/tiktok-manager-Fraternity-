@@ -128,6 +128,11 @@ h1{font-family:var(--display);font-weight:400;font-size:clamp(34px,9vw,48px);lin
 .post.is-done{opacity:.6}
 .day{font-family:var(--display);font-weight:400;font-size:30px;text-transform:uppercase;margin:14px 0 -6px;letter-spacing:.01em}
 .day:first-of-type{margin-top:0}
+.viewer{position:fixed;inset:0;z-index:50;background:rgba(0,0,0,.92);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:calc(env(safe-area-inset-top,0px) + 16px) max(16px,env(safe-area-inset-right,0px)) calc(env(safe-area-inset-bottom,0px) + 16px) max(16px,env(safe-area-inset-left,0px))}
+.viewer[hidden]{display:none!important}
+.viewer img{max-width:100%;max-height:80vh;object-fit:contain;-webkit-touch-callout:default;user-select:auto}
+.viewer p{color:#fff;margin:0;text-align:center;font-size:15px}
+.dl-state{margin:0;font-size:13.5px;color:var(--muted)}
 .empty{background:var(--card);border:1px dashed var(--line);border-radius:14px;padding:20px;text-align:center;color:var(--muted)}
 footer{color:var(--muted);font-size:12.5px}
 @media (max-width:360px){.one{margin-top:6px;width:100%;font:600 13px/1.2 var(--label);text-transform:uppercase;letter-spacing:.05em;padding:10px 6px;border-radius:8px;border:1.5px solid var(--ink);background:var(--card);color:var(--ink);cursor:pointer;min-height:40px}
@@ -148,9 +153,11 @@ footer{color:var(--muted);font-size:12.5px}
     <ol>
       <li>Tik <b>Download foto 1</b>, <b>2</b>, <b>3</b>… onder elke foto (of <b>Bewaar alle foto's</b> voor alles achter elkaar) en kies "Bewaar afbeelding".</li>
       <li>Tik <b>Kopieer caption</b>.</li>
+      <li>Lukt een knop niet? Tik op de foto en houd hem ingedrukt → "Bewaar in Foto’s".</li>
       <li>In TikTok: <b>+</b> → Foto's → kies de foto's op volgorde → plak de caption → kies een geluid → Plaats.</li>
     </ol>
   </div>
+  <p class="dl-state" id="dl-state" aria-live="polite"></p>
   ${cards || '<p class="empty">Er staan nu geen posts klaar. De volgende verschijnen hier na de ochtendrun.</p>'}
   <footer>Alle feiten komen uit de geverifieerde Fraternity-matchbestanden. Beelden: eigen posters.</footer>
 </div>
@@ -187,23 +194,53 @@ footer{color:var(--muted);font-size:12.5px}
   if (cards[0]) loadCard(cards[0], 0); if (cards[1]) loadCard(cards[1], 1);
   async function fileAt(i, j){ var p = POSTS[i]; return new File([await getBlob(i, j)], 'fraternity-' + p.date + '-' + (i + 1) + '-' + String(j + 1).padStart(2, '0') + '.jpg', { type: 'image/jpeg' }); }
   function setStatus(i, msg, ok){ var s = document.getElementById('status-' + i); s.textContent = msg; s.className = 'status' + (ok ? ' ok' : ''); }
-  var dl = null;
-  if (window.claude && window.claude.use) window.claude.use('downloads').then(function(d){ dl = d; }).catch(function(){});
-  function key(i){ return 'fraternity-done-' + POSTS[i].id; }
+  // Saving: the Claude app's downloads capability (asks per photo, then the phone's save sheet).
+  // Asked for at the first tap, waiting for the viewer to be ready; every failure is shown.
+  var dlPromise = null;
+  function getDl(){
+    if (dlPromise) return dlPromise;
+    dlPromise = (async function(){
+      for (var t = 0; t < 30 && !(window.claude && window.claude.use); t++) await new Promise(function(r){ setTimeout(r, 100); });
+      if (!(window.claude && window.claude.use)) return null;
+      try { return await window.claude.use('downloads'); } catch (e) { return null; }
+    })();
+    dlPromise.then(function(d){ if (!d) dlPromise = null; });
+    return dlPromise;
+  }
+  getDl().then(function(d){ var n = document.getElementById('dl-state'); if (n) n.textContent = d ? 'Opslaan via de Claude-app staat aan.' : 'Opslaan via knoppen lukt hier niet: tik op een foto en houd hem ingedrukt om hem te bewaren.'; });
+  function why(err){ var c = err && (err.code || err.name || err.message); return c ? ' (' + c + ')' : ''; }
+  async function shareFiles(files){
+    if (!(navigator.canShare && navigator.canShare({ files: files }))) throw { code: 'share_unavailable' };
+    await navigator.share({ files: files });
+  }
+  async function saveFile(dl, file){
+    if (dl) return dl.save({ filename: file.name, data: file });
+    return shareFiles([file]);
+  }
   async function saveOne(i, j, btn){
-    var p = POSTS[i];
-    var file;
-    try { file = await fileAt(i, j); } catch (e) { setStatus(i, 'Foto nog niet geladen. Probeer het zo opnieuw.'); return; }
-    if (!dl && navigator.canShare && navigator.canShare({ files: [file] })) {
-      try { await navigator.share({ files: [file] }); btn.textContent = '✓ Foto ' + (j + 1); btn.classList.add('ok'); } catch (e) {}
-      return;
+    btn.disabled = true; setStatus(i, 'Foto ' + (j + 1) + ' klaarzetten…');
+    var dlP = getDl();
+    try {
+      var file = await fileAt(i, j), dl = await dlP;
+      await saveFile(dl, file);
+      btn.textContent = '✓ Foto ' + (j + 1) + ' bewaard'; btn.classList.add('ok'); setStatus(i, 'Foto ' + (j + 1) + ' bewaard.', true);
+    } catch (err) {
+      if (err && err.code === 'declined') setStatus(i, 'Niet bewaard: je tikte op annuleren.');
+      else { setStatus(i, 'Downloaden lukt niet' + why(err) + '. Tik op de foto en houd hem ingedrukt → "Bewaar in Foto’s".'); }
     }
-    if (!dl) { setStatus(i, 'Downloaden lukt hier niet. Houd de foto ingedrukt en kies "Bewaar in Foto’s".'); return; }
-    btn.disabled = true;
-    try { await dl.save({ filename: file.name, data: file }); btn.textContent = '✓ Foto ' + (j + 1) + ' bewaard'; btn.classList.add('ok'); }
-    catch (err) { if (!(err && err.code === 'declined')) setStatus(i, err && err.code === 'rate_limited' ? 'Even wachten en opnieuw tikken.' : 'Downloaden lukt hier niet. Houd de foto ingedrukt en kies "Bewaar in Foto’s".'); }
     btn.disabled = false;
   }
+  // Tap a photo: show it full screen, where holding it offers "Bewaar in Foto's".
+  var viewer = document.createElement('div'); viewer.className = 'viewer'; viewer.hidden = true;
+  viewer.innerHTML = '<img alt="Foto groot"><p>Houd de foto ingedrukt en kies <b>Bewaar in Foto’s</b>. Tik ernaast om te sluiten.</p>';
+  document.body.appendChild(viewer);
+  viewer.addEventListener('click', function(e){ if (e.target.tagName !== 'IMG') viewer.hidden = true; });
+  document.querySelectorAll('.post').forEach(function(card, i){
+    card.querySelectorAll('.strip img').forEach(function(img, j){
+      img.style.cursor = 'zoom-in';
+      img.addEventListener('click', function(){ getBlob(i, j).then(function(b){ viewer.querySelector('img').src = URL.createObjectURL(b); viewer.hidden = false; }).catch(function(){}); });
+    });
+  });
   document.querySelectorAll('.one').forEach(function(b){ b.addEventListener('click', function(){ saveOne(+b.dataset.post, +b.dataset.slide, b); }); });
   POSTS.forEach(function(p, i){
     var done = document.getElementById('done-' + i), card = document.querySelectorAll('.post')[i];
@@ -218,21 +255,21 @@ footer{color:var(--muted);font-size:12.5px}
 
     var btn = document.getElementById('save-' + i);
     btn.addEventListener('click', async function(){
-      var files = [];
-      try { for (var j = 0; j < p.n; j++) files.push(await fileAt(i, j)); } catch (e) { setStatus(i, 'Foto\u2019s nog niet geladen. Probeer het zo opnieuw.'); return; }
-      // Outside the Claude app (normal phone browser): one share sheet with all photos.
-      if (!dl && navigator.canShare && navigator.canShare({ files: files })) {
-        try { await navigator.share({ files: files }); setStatus(i, 'Gedeeld. Kies "Bewaar ' + p.n + ' afbeeldingen".', true); } catch (e) { setStatus(i, 'Niet opgeslagen.'); }
-        return;
+      btn.disabled = true; setStatus(i, 'Foto’s klaarzetten…');
+      var dlP = getDl(), files = [];
+      try { for (var j = 0; j < p.n; j++) files.push(await fileAt(i, j)); } catch (e) { setStatus(i, 'Foto’s nog niet geladen' + why(e) + '. Probeer het zo opnieuw.'); btn.disabled = false; return; }
+      var dl = await dlP;
+      if (!dl) {
+        try { await shareFiles(files); setStatus(i, 'Kies "Bewaar ' + p.n + ' afbeeldingen".', true); }
+        catch (e) { setStatus(i, 'Opslaan lukt hier niet' + why(e) + '. Tik op een foto en houd hem ingedrukt → "Bewaar in Foto’s".'); }
+        btn.disabled = false; return;
       }
-      if (!dl) { setStatus(i, 'Opslaan lukt hier niet. Houd een foto ingedrukt en kies "Bewaar in Foto’s".'); return; }
-      btn.disabled = true;
       for (var j2 = 0; j2 < files.length; j2++) {
         setStatus(i, 'Foto ' + (j2 + 1) + ' van ' + files.length + '…');
         try { await dl.save({ filename: files[j2].name, data: files[j2] }); }
         catch (err) {
           if (err && err.code === 'rate_limited') { await new Promise(function(r){ setTimeout(r, 1200); }); j2--; continue; }
-          setStatus(i, err && err.code === 'declined' ? 'Gestopt bij foto ' + (j2 + 1) + '. Tik opnieuw om verder te gaan.' : 'Opslaan lukt hier niet. Houd een foto ingedrukt en kies "Bewaar in Foto’s".');
+          setStatus(i, err && err.code === 'declined' ? 'Gestopt bij foto ' + (j2 + 1) + '. Tik opnieuw om verder te gaan.' : 'Opslaan lukt niet' + why(err) + '. Tik op een foto en houd hem ingedrukt → "Bewaar in Foto’s".');
           btn.disabled = false; return;
         }
       }
