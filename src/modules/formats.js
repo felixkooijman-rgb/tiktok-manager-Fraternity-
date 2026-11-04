@@ -82,6 +82,32 @@ const FORMATS = {
     title: (m) => `Quiz: wie scoorde in de ${hero(m).minute}?`,
   },
 
+  // Guess the poster: zoomed detail (kit colours + number) → blurred poster with verified hints → reveal.
+  'raad-de-poster': {
+    label: 'Raad de poster', eligible: (m) => m.hasPoster && !!m.featured.player && !!m.posters.frameless,
+    async slides(m, ctx) {
+      const img = await posterImg(m, ctx, 'frameless');
+      const h = hero(m);
+      const comp1 = comp(m).replace(/\s*\d{4}$/, '');
+      return [
+        { type: 'clue', image: img, zoom: 3.2, fx: 0.5, fy: 0.62, kicker: 'Raad de poster · hint 1', title: 'Welk moment is dit?', footer: 'Swipe voor hint 2 →', size: 130 },
+        { type: 'clue', image: img, zoom: 1, fx: 0.5, fy: 0.5, blur: 48, kicker: 'Hint 2', title: 'Nog steeds niet?', hints: [`Jaar: ${m.match.date.slice(0, 4)}`, `Toernooi: ${comp1}`, ...(h.number ? [`Rugnummer: ${h.number}`] : [])], footer: 'Antwoord in de comments, dan swipen →', size: 120 },
+        { type: 'poster', image: await posterImg(m, ctx, 'framed'), label: `${h.short} ${h.minute || ''}`.trim(), sub: `${scoreUp(m)} · ${dotDate(m.match.date)}` },
+        { type: 'cta', title: 'Had jij hem?', sub: ctx.config.brand.cta },
+      ];
+    },
+    caption: (m) => {
+      const hint = `${comp(m).replace(/\s*\d{4}$/, '')}, ${m.match.date.slice(0, 4)}`;
+      const lines = [
+        `Raad de poster 🔍 Hint: ${hint}. Welk moment zit hierachter? Zet je gok in de comments vóór je doorswipet.`,
+        `Herken jij dit shirt? 👀 ${hint}. Gok eerst, swipe daarna.`,
+        `Eén cijfer, één shirt, één moment. ${hint}. Weet jij welke poster dit is? Comment je antwoord vóór slide 3.`,
+      ];
+      return lines[[...m.slug].reduce((a, c) => a + c.charCodeAt(0), 0) % lines.length];
+    },
+    title: () => 'Raad de poster: welk moment is dit?',
+  },
+
   'framed-vs-frameless': {
     label: 'Met of zonder lijst', eligible: (m) => !!(m.posters.framed && m.posters.frameless),
     async slides(m, ctx) {

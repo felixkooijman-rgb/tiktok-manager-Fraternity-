@@ -38,7 +38,7 @@ async function generateIdeas(ctx, signals, { rnd = Math.random } = {}) {
     const novelty = Math.min(1, Math.min(...idea.slugs.map((s) => daysSince(lastMatch[s]))) / 30);
     const formatRest = Math.min(1, daysSince(lastFormat[idea.format]) / 3);
     const tooSoon = idea.slugs.some((s) => daysSince(lastMatch[s]) < minGap) && idea.signal?.kind !== 'anniversary';
-    idea.score = +(w * 1.0 + (idea.boost || 0) + novelty * 0.6 + formatRest * 0.4 + (trendFormats.has(idea.format) ? 0.25 : 0) - (tooSoon ? 2 : 0) + rnd() * 0.15).toFixed(3);
+    idea.score = +(w * 1.0 + (idea.boost || 0) + (config.ideation.formatBoost?.[idea.format] || 0) + novelty * 0.6 + formatRest * 0.4 + (trendFormats.has(idea.format) ? 0.25 : 0) - (tooSoon ? 2 : 0) + rnd() * 0.15).toFixed(3);
     idea.label = f.label;
     ideas.push(idea);
   };
@@ -55,7 +55,7 @@ async function generateIdeas(ctx, signals, { rnd = Math.random } = {}) {
     add({ format: 'poster-reveal', slugs: [m.slug], signal: s, boost: 0.6, sensitive: true, why: `Nieuws: "${s.title}" (${s.feed})` });
   }
   // Single-match formats.
-  for (const id of ['poster-reveal', 'quiz', 'framed-vs-frameless', 'design-breakdown']) {
+  for (const id of ['raad-de-poster', 'poster-reveal', 'quiz', 'framed-vs-frameless', 'design-breakdown']) {
     const pool = catalog.filter((m) => FORMATS[id].eligible(m));
     for (const m of pickGroup(pool, 3, lastMatch, rnd)) add({ format: id, slugs: [m.slug], why: `${FORMATS[id].label}: ${scoreLine(m)}` });
   }

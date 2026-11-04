@@ -35,7 +35,11 @@
   "ideation": {
     "ideasPerDay": 6,
     "postsToCreatePerDay": 2,
-    "anniversaryWindowDays": 21
+    "anniversaryWindowDays": 21,
+    "formatBoost": {
+      "raad-de-poster": 0.6
+    },
+    "_formatBoostComment": "Extra voorrang per format (op verzoek: meer \"raad de poster\")."
   },
   "approval": {
     "mode": "sensitive-only",
@@ -200,6 +204,10 @@
       ],
       "collection-pick": [
         "#posters"
+      ],
+      "raad-de-poster": [
+        "#raaddeposter",
+        "#voetbalquiz"
       ]
     }
   },

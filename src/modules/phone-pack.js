@@ -9,7 +9,7 @@ const { escapeHtml: e, localYmd, zonedParts } = require('../core/util');
 
 const LIVE = ['scheduled', 'ready', 'pending-approval', 'export-ready', 'in-tiktok-inbox'];
 
-function pickPosts(store, cfg, now = new Date(), days = 2) {
+function pickPosts(store, cfg, now = new Date(), days = 3) {
   const tz = cfg.schedule.timezone;
   const today = localYmd(now, tz);
   const until = new Date(now.getTime() + days * 864e5);

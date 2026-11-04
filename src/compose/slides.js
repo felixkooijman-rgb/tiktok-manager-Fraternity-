@@ -107,6 +107,19 @@ const TEMPLATES = {
       ${s.lines.map((l) => `<div style="font-size:40px;font-weight:500;letter-spacing:1px;margin:14px 0;text-transform:none">— ${e(l)}</div>`).join('')}
     </div>${brand(ctx)}${stripes(ctx.pal)}`,
 
+  // Zoomed / blurred part of an image as a guessing clue. zoom = scale, fx/fy = focus point (0–1).
+  clue: (s, ctx) => `
+    <div style="position:absolute;inset:0;overflow:hidden">
+      <img src="${dataUri(s.image)}" style="position:absolute;left:50%;top:50%;width:${W * (s.zoom || 1)}px;height:auto;transform:translate(${-(s.fx ?? 0.5) * 100}%,${-(s.fy ?? 0.5) * 100}%);${s.blur ? `filter:blur(${s.blur}px);` : ''}">
+    </div>
+    <div class="shade" style="background:linear-gradient(180deg,rgba(22,22,22,.85),rgba(22,22,22,.1) 28%,rgba(22,22,22,.1) 62%,rgba(22,22,22,.92))"></div>
+    <div class="safe" style="justify-content:space-between">
+      <div><div class="kicker" style="color:${ctx.pal.accent}">${e(s.kicker || '')}</div>
+      <div class="anton" style="font-size:${s.size || 120}px;margin-top:14px">${e(s.title)}</div></div>
+      <div>${(s.hints || []).map((h) => `<div class="meta" style="font-size:44px;margin-top:10px">${e(h)}</div>`).join('')}
+      ${s.footer ? `<div class="meta" style="font-size:32px;opacity:.8;margin-top:22px">${e(s.footer)}</div>` : ''}</div>
+    </div>${brand(ctx)}${stripes(ctx.pal)}`,
+
   // Closing slide.
   cta: (s, ctx) => `
     <div class="safe" style="justify-content:center;align-items:center;text-align:center">

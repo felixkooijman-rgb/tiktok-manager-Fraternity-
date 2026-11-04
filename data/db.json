@@ -206,6 +206,42 @@
       "status": "used",
       "score": 0,
       "label": "Posters naast elkaar"
+    },
+    {
+      "id": "idea_mw287rer6b69bf",
+      "createdAt": "2026-11-04T14:42:56.259Z",
+      "format": "raad-de-poster",
+      "slugs": [
+        "2010-07-02-nederland-brazilie-sneijder"
+      ],
+      "why": "Op verzoek: meer raad-de-poster",
+      "status": "used",
+      "score": 0,
+      "label": "Raad de poster"
+    },
+    {
+      "id": "idea_mw287s9x609091",
+      "createdAt": "2026-11-04T14:42:57.381Z",
+      "format": "raad-de-poster",
+      "slugs": [
+        "2019-03-05-real-madrid-ajax-tadic"
+      ],
+      "why": "Op verzoek: meer raad-de-poster",
+      "status": "used",
+      "score": 0,
+      "label": "Raad de poster"
+    },
+    {
+      "id": "idea_mw287syl1210c1",
+      "createdAt": "2026-11-04T14:42:58.269Z",
+      "format": "raad-de-poster",
+      "slugs": [
+        "2002-05-08-feyenoord-dortmund-van-hooijdonk"
+      ],
+      "why": "Op verzoek: meer raad-de-poster",
+      "status": "used",
+      "score": 0,
+      "label": "Raad de poster"
     }
   ],
   "posts": [
@@ -900,6 +936,460 @@
       },
       "updatedAt": "2026-11-04T14:34:34.993Z",
       "scheduledAt": "2026-11-05T18:30:00.000Z"
+    },
+    {
+      "id": "post_mw287rf5d5b724",
+      "createdAt": "2026-11-04T14:42:56.273Z",
+      "status": "scheduled",
+      "format": "raad-de-poster",
+      "formatLabel": "Raad de poster",
+      "ideaId": "idea_mw287rer6b69bf",
+      "slugs": [
+        "2010-07-02-nederland-brazilie-sneijder"
+      ],
+      "signal": null,
+      "why": "Op verzoek: meer raad-de-poster",
+      "caption": "Raad de poster 🔍 Hint: WK, 2010. Welk moment zit hierachter? Zet je gok in de comments vóór je doorswipet.",
+      "title": "Raad de poster: welk moment is dit?",
+      "hashtags": [
+        "#fraternity",
+        "#voetbalposter",
+        "#raaddeposter",
+        "#voetbalquiz",
+        "#oranje",
+        "#wk"
+      ],
+      "captionSource": "template",
+      "slides": [
+        {
+          "file": "01-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw287rf5d5b724/01-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+        },
+        {
+          "file": "02-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw287rf5d5b724/02-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Hint 2 | Nog steeds niet? | Antwoord in de comments, dan swipen →"
+        },
+        {
+          "file": "03-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw287rf5d5b724/03-poster.jpg",
+          "type": "poster",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "NEDERLAND 2:1 BRAZILIË · 02.07.2010"
+        },
+        {
+          "file": "04-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw287rf5d5b724/04-cta.jpg",
+          "type": "cta",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Had jij hem? | Poster? Link in bio."
+        }
+      ],
+      "assets": [
+        {
+          "path": "/home/user/Fraternity/output/2010-07-02-nederland-brazilie-sneijder-frameless/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 2010-07-02-nederland-brazilie-sneijder (frameless)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        },
+        {
+          "path": "/home/user/Fraternity/output/2010-07-02-nederland-brazilie-sneijder-framed/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 2010-07-02-nederland-brazilie-sneijder (framed)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        }
+      ],
+      "sources": [
+        {
+          "title": "ESPN – Netherlands 2-1 Brazil",
+          "url": "https://www.espn.com/soccer/match/_/gameId/264117/brazil-netherlands",
+          "used_for": "goals, line-ups",
+          "match": "2010-07-02-nederland-brazilie-sneijder"
+        },
+        {
+          "title": "Sky Sports – starting line-ups",
+          "url": "https://www.skysports.com/football/netherlands-vs-brazil/teams/218453",
+          "used_for": "line-ups",
+          "match": "2010-07-02-nederland-brazilie-sneijder"
+        },
+        {
+          "title": "11v11 – Netherlands v Brazil",
+          "url": "https://www.11v11.com/matches/netherlands-v-brazil-02-july-2010-290011/",
+          "used_for": "venue, attendance",
+          "match": "2010-07-02-nederland-brazilie-sneijder"
+        },
+        {
+          "title": "Wikipedia – 2010 World Cup knockout stage",
+          "url": "https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_knockout_stage",
+          "used_for": "goal attribution",
+          "match": "2010-07-02-nederland-brazilie-sneijder"
+        },
+        {
+          "title": "Football Kit Archive – Netherlands 2010 home",
+          "url": "https://www.footballkitarchive.com/netherlands-2010-home-kit-6533/",
+          "used_for": "kit",
+          "match": "2010-07-02-nederland-brazilie-sneijder"
+        }
+      ],
+      "credits": [
+        "Fraternity poster 2010-07-02-nederland-brazilie-sneijder (frameless) – own-work",
+        "Fraternity poster 2010-07-02-nederland-brazilie-sneijder (framed) – own-work"
+      ],
+      "openChecks": [
+        "2010-07-02-nederland-brazilie-sneijder: 53' goal: FIFA credited Sneijder; some outlets list a Felipe Melo own goal – FIFA attribution used",
+        "2010-07-02-nederland-brazilie-sneijder: Sneijder's 68' winner was a header – verify",
+        "2010-07-02-nederland-brazilie-sneijder: Sneijder #10 well established; not seen on this match sheet in my sources",
+        "2010-07-02-nederland-brazilie-sneijder: Netherlands wore the orange home kit (Brazil reportedly in blue) – confirm with a photo; number colour (black) to be confirmed",
+        "2010-07-02-nederland-brazilie-sneijder: Crests, sponsors and manufacturer logos not reproduced (no licensed assets)",
+        "2010-07-02-nederland-brazilie-sneijder: Back-of-shirt lettering approximated – send a photo of the back print to match it exactly"
+      ],
+      "aiGenerated": false,
+      "shopLinks": [],
+      "publishSettings": {
+        "privacyLevel": null,
+        "allowComments": true,
+        "brandOrganic": true,
+        "brandedContent": false
+      },
+      "qa": {
+        "ok": true,
+        "errors": [],
+        "warnings": [
+          "6 open punten in de posterdata (zie bronnen)"
+        ],
+        "needsApproval": false,
+        "reasons": [],
+        "checkedAt": "2026-11-04T14:42:57.328Z"
+      },
+      "updatedAt": "2026-11-04T14:42:57.379Z",
+      "scheduledAt": "2026-11-05T15:00:00.000Z"
+    },
+    {
+      "id": "post_mw287sa149e3f8",
+      "createdAt": "2026-11-04T14:42:57.385Z",
+      "status": "scheduled",
+      "format": "raad-de-poster",
+      "formatLabel": "Raad de poster",
+      "ideaId": "idea_mw287s9x609091",
+      "slugs": [
+        "2019-03-05-real-madrid-ajax-tadic"
+      ],
+      "signal": null,
+      "why": "Op verzoek: meer raad-de-poster",
+      "caption": "Herken jij dit shirt? 👀 Champions League, 2019. Gok eerst, swipe daarna.",
+      "title": "Raad de poster: welk moment is dit?",
+      "hashtags": [
+        "#fraternity",
+        "#voetbalposter",
+        "#raaddeposter",
+        "#voetbalquiz",
+        "#ajax",
+        "#championsleague"
+      ],
+      "captionSource": "template",
+      "slides": [
+        {
+          "file": "01-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw287sa149e3f8/01-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+        },
+        {
+          "file": "02-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw287sa149e3f8/02-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Hint 2 | Nog steeds niet? | Antwoord in de comments, dan swipen →"
+        },
+        {
+          "file": "03-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw287sa149e3f8/03-poster.jpg",
+          "type": "poster",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "REAL MADRID 1:4 AJAX · 05.03.2019"
+        },
+        {
+          "file": "04-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw287sa149e3f8/04-cta.jpg",
+          "type": "cta",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Had jij hem? | Poster? Link in bio."
+        }
+      ],
+      "assets": [
+        {
+          "path": "/home/user/Fraternity/output/2019-03-05-real-madrid-ajax-tadic-frameless/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 2019-03-05-real-madrid-ajax-tadic (frameless)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        },
+        {
+          "path": "/home/user/Fraternity/output/2019-03-05-real-madrid-ajax-tadic-framed/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 2019-03-05-real-madrid-ajax-tadic (framed)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        }
+      ],
+      "sources": [
+        {
+          "title": "ESPN – Real Madrid 1-4 Ajax",
+          "url": "https://www.espn.com/soccer/match/_/gameId/530625/ajax-amsterdam-real-madrid",
+          "used_for": "result, goals, line-ups",
+          "match": "2019-03-05-real-madrid-ajax-tadic"
+        },
+        {
+          "title": "Goal – historic humiliation",
+          "url": "https://www.goal.com/en/news/historic-humiliation-madrid-horror-show-sees-ajax-dump-out-european-champions/8mihx3iuohib1dthqpcvg6iyy",
+          "used_for": "result",
+          "match": "2019-03-05-real-madrid-ajax-tadic"
+        },
+        {
+          "title": "Footballcritic – line-ups",
+          "url": "https://www.footballcritic.com/uefa-champions-league-real-madrid-cf-afc-ajax/lineups/1493650",
+          "used_for": "goals, line-ups",
+          "match": "2019-03-05-real-madrid-ajax-tadic"
+        },
+        {
+          "title": "11v11 – Real Madrid v Ajax",
+          "url": "https://www.11v11.com/matches/real-madrid-v-ajax-05-march-2019-361239/",
+          "used_for": "line-ups",
+          "match": "2019-03-05-real-madrid-ajax-tadic"
+        },
+        {
+          "title": "Football Fashion – Ajax 2018/19 away kit",
+          "url": "https://footballfashion.org/wordpress/2018/04/28/afc-ajax-201819-adidas-away-kit/amp/",
+          "used_for": "kit colours",
+          "match": "2019-03-05-real-madrid-ajax-tadic"
+        }
+      ],
+      "credits": [
+        "Fraternity poster 2019-03-05-real-madrid-ajax-tadic (frameless) – own-work",
+        "Fraternity poster 2019-03-05-real-madrid-ajax-tadic (framed) – own-work"
+      ],
+      "openChecks": [
+        "2019-03-05-real-madrid-ajax-tadic: Ajax kit: black/gold 2018-19 away shirt per several retailer listings tied to this match – confirm with a match photo",
+        "2019-03-05-real-madrid-ajax-tadic: Schöne's goal type (free kick) per match reports – shown without label",
+        "2019-03-05-real-madrid-ajax-tadic: adidas 2018-19 lettering approximated with the default lettering in gold",
+        "2019-03-05-real-madrid-ajax-tadic: Line-up rows are a display arrangement",
+        "2019-03-05-real-madrid-ajax-tadic: Crests, sponsors and manufacturer logos not reproduced (no licensed assets)"
+      ],
+      "aiGenerated": false,
+      "shopLinks": [],
+      "publishSettings": {
+        "privacyLevel": null,
+        "allowComments": true,
+        "brandOrganic": true,
+        "brandedContent": false
+      },
+      "qa": {
+        "ok": true,
+        "errors": [],
+        "warnings": [
+          "5 open punten in de posterdata (zie bronnen)"
+        ],
+        "needsApproval": false,
+        "reasons": [],
+        "checkedAt": "2026-11-04T14:42:58.266Z"
+      },
+      "updatedAt": "2026-11-04T14:42:58.267Z",
+      "scheduledAt": "2026-11-06T11:15:00.000Z"
+    },
+    {
+      "id": "post_mw287syoa8cd2e",
+      "createdAt": "2026-11-04T14:42:58.272Z",
+      "status": "scheduled",
+      "format": "raad-de-poster",
+      "formatLabel": "Raad de poster",
+      "ideaId": "idea_mw287syl1210c1",
+      "slugs": [
+        "2002-05-08-feyenoord-dortmund-van-hooijdonk"
+      ],
+      "signal": null,
+      "why": "Op verzoek: meer raad-de-poster",
+      "caption": "Eén cijfer, één shirt, één moment. UEFA Cup, 2002. Weet jij welke poster dit is? Comment je antwoord vóór slide 3.",
+      "title": "Raad de poster: welk moment is dit?",
+      "hashtags": [
+        "#fraternity",
+        "#voetbalposter",
+        "#raaddeposter",
+        "#voetbalquiz",
+        "#feyenoord",
+        "#uefacup"
+      ],
+      "captionSource": "template",
+      "slides": [
+        {
+          "file": "01-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw287syoa8cd2e/01-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+        },
+        {
+          "file": "02-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw287syoa8cd2e/02-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Hint 2 | Nog steeds niet? | Antwoord in de comments, dan swipen →"
+        },
+        {
+          "file": "03-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw287syoa8cd2e/03-poster.jpg",
+          "type": "poster",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "FEYENOORD 3:2 DORTMUND · 08.05.2002"
+        },
+        {
+          "file": "04-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw287syoa8cd2e/04-cta.jpg",
+          "type": "cta",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Had jij hem? | Poster? Link in bio."
+        }
+      ],
+      "assets": [
+        {
+          "path": "/home/user/Fraternity/output/2002-05-08-feyenoord-dortmund-van-hooijdonk-frameless/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 2002-05-08-feyenoord-dortmund-van-hooijdonk (frameless)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        },
+        {
+          "path": "/home/user/Fraternity/output/2002-05-08-feyenoord-dortmund-van-hooijdonk-framed/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 2002-05-08-feyenoord-dortmund-van-hooijdonk (framed)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        }
+      ],
+      "sources": [
+        {
+          "title": "en.wikipedia – 2002 UEFA Cup final",
+          "url": "https://en.wikipedia.org/wiki/2002_UEFA_Cup_final",
+          "used_for": "result, goals",
+          "match": "2002-05-08-feyenoord-dortmund-van-hooijdonk"
+        },
+        {
+          "title": "UEFA – Final joy for Feyenoord",
+          "url": "https://www.uefa.com/uefaeuropaleague/news/025a-0eab03e95fa6-ade15fdef681-1000--final-joy-for-feyenoord/",
+          "used_for": "match report",
+          "match": "2002-05-08-feyenoord-dortmund-van-hooijdonk"
+        },
+        {
+          "title": "DFB data center – Feyenoord 3:2 Dortmund",
+          "url": "https://datencenter.dfb.de/en/data-center/europa-league/2001-2002/0/feyenoord-rotterdam-borussia-dortmund-609438",
+          "used_for": "line-up, shirt numbers",
+          "match": "2002-05-08-feyenoord-dortmund-van-hooijdonk"
+        },
+        {
+          "title": "ESPN – Feyenoord 3-2 Dortmund",
+          "url": "https://www.espn.com/soccer/matchstats/_/gameId/48434",
+          "used_for": "goal minutes",
+          "match": "2002-05-08-feyenoord-dortmund-van-hooijdonk"
+        }
+      ],
+      "credits": [
+        "Fraternity poster 2002-05-08-feyenoord-dortmund-van-hooijdonk (frameless) – own-work",
+        "Fraternity poster 2002-05-08-feyenoord-dortmund-van-hooijdonk (framed) – own-work"
+      ],
+      "openChecks": [
+        "2002-05-08-feyenoord-dortmund-van-hooijdonk: The 40' goal was a direct free kick per match reports – verify",
+        "2002-05-08-feyenoord-dortmund-van-hooijdonk: Dortmund XI not fully verified – line-ups not printed",
+        "2002-05-08-feyenoord-dortmund-van-hooijdonk: Feyenoord 2001-02 shirt (halves, collar) and which half is red not verified against match photos",
+        "2002-05-08-feyenoord-dortmund-van-hooijdonk: Crests, sponsors and manufacturer logos not reproduced (no licensed assets)",
+        "2002-05-08-feyenoord-dortmund-van-hooijdonk: Back-of-shirt lettering approximated – send a photo of the back print to match it exactly"
+      ],
+      "aiGenerated": false,
+      "shopLinks": [],
+      "publishSettings": {
+        "privacyLevel": null,
+        "allowComments": true,
+        "brandOrganic": true,
+        "brandedContent": false
+      },
+      "qa": {
+        "ok": true,
+        "errors": [],
+        "warnings": [
+          "5 open punten in de posterdata (zie bronnen)"
+        ],
+        "needsApproval": false,
+        "reasons": [],
+        "checkedAt": "2026-11-04T14:42:59.172Z"
+      },
+      "updatedAt": "2026-11-04T14:42:59.174Z",
+      "scheduledAt": "2026-11-06T18:30:00.000Z"
     }
   ],
   "assets": [],
