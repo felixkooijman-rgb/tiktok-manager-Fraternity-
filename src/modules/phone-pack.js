@@ -45,9 +45,9 @@ function template(posts, { made, handle }) {
     </header>
     ${p.flagged ? `<p class="flag">Eerst zelf checken: ${e(p.flagged)}</p>` : ''}
     ${p.ai ? `<p class="flag">Bevat een AI-beeld: zet in TikTok "AI-gegenereerde content" aan.</p>` : ''}
-    <div class="strip" role="list">${p.slides.map((s, i) => `<figure role="listitem"><img src="${s}" alt="Slide ${i + 1} van ${p.slides.length}"><figcaption>${i + 1}</figcaption></figure>`).join('')}</div>
+    <div class="strip" role="list">${p.slides.map((s, i) => `<figure role="listitem"><img src="${s}" alt="Slide ${i + 1} van ${p.slides.length}"><figcaption>${i + 1}</figcaption><button class="one" type="button" id="one-${n}-${i}" data-post="${n}" data-slide="${i}">Download foto ${i + 1}</button></figure>`).join('')}</div>
     <div class="steps">
-      <button class="btn save" type="button" id="save-${n}"><b>1</b> Bewaar ${p.slides.length} foto's</button>
+      <button class="btn save" type="button" id="save-${n}"><b>1</b> Bewaar alle ${p.slides.length} foto's</button>
       <button class="btn copy" type="button" id="copy-${n}"><b>2</b> Kopieer caption</button>
     </div>
     <p class="status" id="status-${n}" aria-live="polite"></p>
@@ -84,7 +84,11 @@ h1{font-family:var(--display);font-weight:400;font-size:clamp(34px,9vw,48px);lin
 .strip{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px;-webkit-overflow-scrolling:touch}
 .strip figure{margin:0;flex:0 0 46%;max-width:240px;scroll-snap-align:start;position:relative}
 .strip img{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:8px;border:1px solid var(--line)}
-.strip figcaption{position:absolute;left:6px;bottom:6px;background:var(--ink);color:var(--wall);font:600 12px/1 var(--label);padding:4px 7px;border-radius:4px;font-variant-numeric:tabular-nums}
+.strip figcaption{position:absolute;left:6px;bottom:54px;background:var(--ink);color:var(--wall);font:600 12px/1 var(--label);padding:4px 7px;border-radius:4px;font-variant-numeric:tabular-nums}
+.one{margin-top:6px;width:100%;font:600 13px/1.2 var(--label);text-transform:uppercase;letter-spacing:.05em;padding:10px 6px;border-radius:8px;border:1.5px solid var(--ink);background:var(--card);color:var(--ink);cursor:pointer;min-height:40px}
+.one.ok{border-color:var(--ok);color:var(--ok)}
+.one:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+.strip figcaption{z-index:1}
 .steps{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .btn{font:600 15px/1.2 var(--label);text-transform:uppercase;letter-spacing:.06em;padding:14px 10px;border-radius:10px;border:2px solid var(--ink);background:var(--card);color:var(--ink);cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;min-height:52px}
 .btn b{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--ink);color:var(--card);font-size:12px}
@@ -100,7 +104,11 @@ h1{font-family:var(--display);font-weight:400;font-size:clamp(34px,9vw,48px);lin
 .post.is-done{opacity:.6}
 .empty{background:var(--card);border:1px dashed var(--line);border-radius:14px;padding:20px;text-align:center;color:var(--muted)}
 footer{color:var(--muted);font-size:12.5px}
-@media (max-width:360px){.steps{grid-template-columns:1fr}}
+@media (max-width:360px){.one{margin-top:6px;width:100%;font:600 13px/1.2 var(--label);text-transform:uppercase;letter-spacing:.05em;padding:10px 6px;border-radius:8px;border:1.5px solid var(--ink);background:var(--card);color:var(--ink);cursor:pointer;min-height:40px}
+.one.ok{border-color:var(--ok);color:var(--ok)}
+.one:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+.strip figcaption{z-index:1}
+.steps{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
 </style>
 <div class="wrap">
@@ -112,7 +120,7 @@ footer{color:var(--muted);font-size:12.5px}
   <div class="how">
     <b>Zo post je er een</b>
     <ol>
-      <li>Tik <b>Bewaar foto's</b> en kies per foto "Bewaar afbeelding".</li>
+      <li>Tik <b>Download foto 1</b>, <b>2</b>, <b>3</b>… onder elke foto (of <b>Bewaar alle foto's</b> voor alles achter elkaar) en kies "Bewaar afbeelding".</li>
       <li>Tik <b>Kopieer caption</b>.</li>
       <li>In TikTok: <b>+</b> → Foto's → kies de foto's op volgorde → plak de caption → kies een geluid → Plaats.</li>
     </ol>
@@ -133,6 +141,20 @@ footer{color:var(--muted);font-size:12.5px}
   var dl = null;
   if (window.claude && window.claude.use) window.claude.use('downloads').then(function(d){ dl = d; }).catch(function(){});
   function key(i){ return 'fraternity-done-' + POSTS[i].id; }
+  async function saveOne(i, j, btn){
+    var p = POSTS[i];
+    var file = new File([blobAt(i, j)], 'fraternity-' + p.date + '-' + (i + 1) + '-' + String(j + 1).padStart(2, '0') + '.jpg', { type: 'image/jpeg' });
+    if (!dl && navigator.canShare && navigator.canShare({ files: [file] })) {
+      try { await navigator.share({ files: [file] }); btn.textContent = '✓ Foto ' + (j + 1); btn.classList.add('ok'); } catch (e) {}
+      return;
+    }
+    if (!dl) { setStatus(i, 'Downloaden lukt hier niet. Houd de foto ingedrukt en kies "Bewaar in Foto’s".'); return; }
+    btn.disabled = true;
+    try { await dl.save({ filename: file.name, data: file }); btn.textContent = '✓ Foto ' + (j + 1) + ' bewaard'; btn.classList.add('ok'); }
+    catch (err) { if (!(err && err.code === 'declined')) setStatus(i, err && err.code === 'rate_limited' ? 'Even wachten en opnieuw tikken.' : 'Downloaden lukt hier niet. Houd de foto ingedrukt en kies "Bewaar in Foto’s".'); }
+    btn.disabled = false;
+  }
+  document.querySelectorAll('.one').forEach(function(b){ b.addEventListener('click', function(){ saveOne(+b.dataset.post, +b.dataset.slide, b); }); });
   POSTS.forEach(function(p, i){
     var done = document.getElementById('done-' + i), card = document.querySelectorAll('.post')[i];
     try { if (localStorage.getItem(key(i)) === '1') { done.checked = true; card.classList.add('is-done'); } } catch (e) {}
@@ -152,19 +174,19 @@ footer{color:var(--muted);font-size:12.5px}
         try { await navigator.share({ files: files }); setStatus(i, 'Gedeeld. Kies "Bewaar ' + p.n + ' afbeeldingen".', true); } catch (e) { setStatus(i, 'Niet opgeslagen.'); }
         return;
       }
-      if (!dl) { setStatus(i, 'Opslaan lukt hier niet. Houd een foto ingedrukt en kies "Bewaar in Foto\\'s".'); return; }
+      if (!dl) { setStatus(i, 'Opslaan lukt hier niet. Houd een foto ingedrukt en kies "Bewaar in Foto’s".'); return; }
       btn.disabled = true;
       for (var j2 = 0; j2 < files.length; j2++) {
         setStatus(i, 'Foto ' + (j2 + 1) + ' van ' + files.length + '…');
         try { await dl.save({ filename: files[j2].name, data: files[j2] }); }
         catch (err) {
           if (err && err.code === 'rate_limited') { await new Promise(function(r){ setTimeout(r, 1200); }); j2--; continue; }
-          setStatus(i, err && err.code === 'declined' ? 'Gestopt bij foto ' + (j2 + 1) + '. Tik opnieuw om verder te gaan.' : 'Opslaan lukt hier niet. Houd een foto ingedrukt en kies "Bewaar in Foto\\'s".');
+          setStatus(i, err && err.code === 'declined' ? 'Gestopt bij foto ' + (j2 + 1) + '. Tik opnieuw om verder te gaan.' : 'Opslaan lukt hier niet. Houd een foto ingedrukt en kies "Bewaar in Foto’s".');
           btn.disabled = false; return;
         }
       }
       btn.disabled = false;
-      setStatus(i, 'Alle ' + files.length + ' foto\\'s bewaard. Nu de caption kopiëren.', true);
+      setStatus(i, 'Alle ' + files.length + ' foto’s bewaard. Nu de caption kopiëren.', true);
     });
   });
 })();
