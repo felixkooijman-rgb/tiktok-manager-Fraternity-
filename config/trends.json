@@ -1,0 +1,7 @@
+{
+  "_readme": "Trend signals the agent may use as inspiration (format/angle/sound), never as content to copy. Add entries from TikTok Creative Center, Pinterest, Instagram etc. 'format' maps to a content format id (poster-reveal, on-this-day, quiz, last-minute, framed-vs-frameless, collection-pick, design-breakdown). Remove or set 'expires' when a trend is over.",
+  "trends": [
+    { "platform": "tiktok", "title": "Photo carousels with a question hook on slide 1 and the answer on a later slide", "format": "quiz", "notes": "General carousel pattern; no specific sound required", "expires": "" },
+    { "platform": "pinterest", "title": "Gallery walls with framed sports prints (room inspiration)", "format": "framed-vs-frameless", "notes": "Angle: how a poster looks with or without a frame", "expires": "" }
+  ]
+}

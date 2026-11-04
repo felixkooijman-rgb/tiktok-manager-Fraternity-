@@ -1,0 +1,23 @@
+{
+  "name": "fraternity-tiktok-agent",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Autonomous, modular TikTok content agent for the Fraternity football poster brand",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/cli.js serve",
+    "daily": "node src/cli.js daily",
+    "dashboard": "node src/cli.js dashboard",
+    "analyze": "node src/cli.js analyze-account",
+    "publish-due": "node src/cli.js publish-due",
+    "metrics": "node src/cli.js metrics",
+    "auth": "node src/cli.js auth",
+    "test": "node src/cli.js selftest"
+  },
+  "dependencies": {
+    "playwright": "^1.47.0"
+  }
+}

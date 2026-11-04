@@ -1,0 +1,244 @@
+{
+  "brand": {
+    "name": "Fraternity",
+    "handle": "fraternitysport",
+    "language": "nl",
+    "shopUrl": "https://fraternitysport.eu",
+    "cta": "Poster? Link in bio.",
+    "website": "https://fraternitysport.com",
+    "productPriceNote": "Posters in de shop (vanaf €19,99 op 2026-11-04, controleer actuele prijs)"
+  },
+  "schedule": {
+    "timezone": "Europe/Amsterdam",
+    "postsPerDay": {
+      "min": 1,
+      "max": 2
+    },
+    "defaultSlots": [
+      "12:15",
+      "19:30"
+    ],
+    "candidateSlots": [
+      "08:30",
+      "12:15",
+      "16:00",
+      "18:00",
+      "19:30",
+      "21:00"
+    ],
+    "explorationRate": 0.2,
+    "planAheadDays": 3,
+    "minDaysBetweenSameMatch": 10,
+    "maxSameFormatInRow": 1,
+    "dailyRunAt": "07:05"
+  },
+  "ideation": {
+    "ideasPerDay": 6,
+    "postsToCreatePerDay": 2,
+    "anniversaryWindowDays": 21
+  },
+  "approval": {
+    "mode": "sensitive-only",
+    "comment": "all = every post needs a click in the dashboard; sensitive-only = only flagged posts (news, sensitive words, AI images, unverified facts); none = never (not recommended)"
+  },
+  "publishing": {
+    "provider": "tiktok",
+    "fallback": "manual-export",
+    "postMode": "DIRECT_POST",
+    "autoAddMusic": true,
+    "brandOrganic": true,
+    "allowComments": true,
+    "privacyLevel": null,
+    "_privacyComment": "Kies 1x bewust (PUBLIC_TO_EVERYONE, MUTUAL_FOLLOW_FRIENDS, FOLLOWER_OF_CREATOR of SELF_ONLY) in het dashboard > Instellingen. Leeg = per post kiezen. Niet-geauditeerde TikTok-apps mogen alleen SELF_ONLY."
+  },
+  "providers": {
+    "llm": "auto",
+    "images": [
+      "fraternity-poster",
+      "unsplash",
+      "pexels",
+      "pixabay",
+      "wikimedia"
+    ],
+    "aiImages": "none",
+    "research": [
+      "fraternity-catalog",
+      "anniversaries",
+      "rss-news",
+      "google-trends",
+      "manual-trends",
+      "shop-products"
+    ],
+    "hosting": "auto",
+    "analytics": "tiktok-display"
+  },
+  "research": {
+    "rssFeeds": [
+      {
+        "name": "NOS Voetbal",
+        "url": "https://feeds.nos.nl/nossportvoetbal"
+      },
+      {
+        "name": "ESPN NL Voetbal",
+        "url": "https://www.espn.nl/rss/news"
+      }
+    ],
+    "googleTrendsGeo": "NL",
+    "footballKeywords": [
+      "voetbal",
+      "eredivisie",
+      "oranje",
+      "ajax",
+      "feyenoord",
+      "psv",
+      "az",
+      "fc utrecht",
+      "twente",
+      "knvb",
+      "beker",
+      "champions league",
+      "europa league",
+      "conference league",
+      "wk",
+      "ek",
+      "keuken kampioen"
+    ],
+    "shopProductsUrl": "https://fraternitysport.eu/products.json?limit=250"
+  },
+  "hashtags": {
+    "brand": [
+      "#fraternity",
+      "#voetbalposter"
+    ],
+    "always": [
+      "#voetbal"
+    ],
+    "max": 6,
+    "byCompetition": {
+      "World Cup": [
+        "#wk",
+        "#oranje"
+      ],
+      "Champions League": [
+        "#championsleague"
+      ],
+      "UEFA Cup": [
+        "#uefacup"
+      ],
+      "KNVB Beker": [
+        "#knvbbeker"
+      ],
+      "Keuken Kampioen Divisie": [
+        "#kkd"
+      ],
+      "Eredivisie": [
+        "#eredivisie"
+      ]
+    },
+    "byClub": {
+      "Nederland": [
+        "#oranje"
+      ],
+      "Ajax": [
+        "#ajax"
+      ],
+      "Feyenoord": [
+        "#feyenoord"
+      ],
+      "PSV": [
+        "#psv"
+      ],
+      "AZ": [
+        "#az"
+      ],
+      "Go Ahead Eagles": [
+        "#goaheadeagles"
+      ],
+      "Willem II": [
+        "#willemii"
+      ],
+      "Excelsior Maassluis": [
+        "#excelsior31"
+      ],
+      "Spakenburg": [
+        "#spakenburg"
+      ],
+      "Hercules": [
+        "#hercules"
+      ],
+      "Excelsior '31": [
+        "#excelsior31"
+      ],
+      "ADO Den Haag": [
+        "#adodenhaag"
+      ],
+      "Netherlands": [
+        "#oranje"
+      ],
+      "Telstar": [
+        "#telstar"
+      ],
+      "FC Utrecht": [
+        "#fcutrecht"
+      ],
+      "Celtic": [
+        "#celtic"
+      ]
+    },
+    "byFormat": {
+      "on-this-day": [
+        "#opdezedag"
+      ],
+      "quiz": [
+        "#voetbalquiz"
+      ],
+      "last-minute": [
+        "#lastminute"
+      ],
+      "design-breakdown": [
+        "#design"
+      ],
+      "framed-vs-frameless": [
+        "#interieur"
+      ],
+      "collection-pick": [
+        "#posters"
+      ]
+    }
+  },
+  "safety": {
+    "sensitiveTerms": [
+      "overleden",
+      "overlijden",
+      "dood",
+      "ramp",
+      "rellen",
+      "racisme",
+      "discriminatie",
+      "geweld",
+      "aanslag",
+      "oorlog",
+      "politiek",
+      "blessure",
+      "ziekte",
+      "kanker",
+      "gokken",
+      "betting",
+      "died",
+      "death",
+      "disaster",
+      "riot",
+      "racism",
+      "violence",
+      "war",
+      "injury",
+      "politics"
+    ],
+    "bannedClaims": [
+      "beste poster ooit",
+      "gegarandeerd",
+      "100% officieel",
+      "officieel gelicenseerd"
+    ]
+  }
+}
