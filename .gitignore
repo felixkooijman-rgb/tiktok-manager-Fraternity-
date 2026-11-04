@@ -1,4 +1,7 @@
 node_modules/
-data/
 .env
 *.log
+# runtime data: only the small JSON store is versioned (history of posts/ideas so the agent
+# does not repeat itself across cloud sessions); slides, exports and tokens stay local
+data/*
+!data/db.json

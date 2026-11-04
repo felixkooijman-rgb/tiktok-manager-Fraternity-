@@ -1,0 +1,182 @@
+'use strict';
+// "Klaar om te posten": one self-contained mobile page with the upcoming posts. Per post: the
+// slides in order, a button that saves them one by one to the phone (Claude app → share sheet →
+// "Bewaar afbeelding"), and a button that copies caption + hashtags. Published as a claude.ai
+// Artifact with the `downloads` capability; also works as a plain page (Web Share on phones).
+const fs = require('fs');
+const path = require('path');
+const { escapeHtml: e, localYmd, zonedParts } = require('../core/util');
+
+const LIVE = ['scheduled', 'ready', 'pending-approval', 'export-ready', 'in-tiktok-inbox'];
+
+function pickPosts(store, cfg, now = new Date(), days = 2) {
+  const tz = cfg.schedule.timezone;
+  const today = localYmd(now, tz);
+  const until = new Date(now.getTime() + days * 864e5);
+  return store.all('posts', (p) => LIVE.includes(p.status) && p.qa?.ok && p.scheduledAt && p.slides?.every((s) => fs.existsSync(s.path)) && new Date(p.scheduledAt) <= until && localYmd(new Date(p.scheduledAt), tz) >= today)
+    .sort((a, b) => a.scheduledAt.localeCompare(b.scheduledAt));
+}
+
+function whenLabel(iso, tz, now) {
+  const z = zonedParts(new Date(iso), tz);
+  const day = localYmd(new Date(iso), tz) === localYmd(now, tz) ? 'Vandaag' : localYmd(new Date(iso), tz) === localYmd(new Date(now.getTime() + 864e5), tz) ? 'Morgen' : new Date(iso).toLocaleDateString('nl-NL', { weekday: 'long', timeZone: tz });
+  return `${day} ${String(z.hh).padStart(2, '0')}:${String(z.mm).padStart(2, '0')}`;
+}
+
+function buildPhonePack(ctx, { now = new Date() } = {}) {
+  const { store, config } = ctx;
+  const tz = config.schedule.timezone;
+  const posts = pickPosts(store, config, now).map((p) => ({
+    id: p.id, format: p.formatLabel, when: whenLabel(p.scheduledAt, tz, now), date: localYmd(new Date(p.scheduledAt), tz),
+    title: p.title, text: `${p.caption}\n\n${p.hashtags.join(' ')}`, flagged: p.status === 'pending-approval' ? (p.qa.reasons || []).join('; ') : '',
+    ai: !!p.aiGenerated,
+    slides: p.slides.map((s) => `data:image/jpeg;base64,${fs.readFileSync(s.path).toString('base64')}`),
+  }));
+  const made = now.toLocaleString('nl-NL', { timeZone: tz, weekday: 'long', day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit' });
+  return template(posts, { made, handle: config.brand.handle });
+}
+
+function template(posts, { made, handle }) {
+  const cards = posts.map((p, n) => `
+  <article class="post" data-i="${n}">
+    <header class="post-head">
+      <span class="when">${e(p.when)}</span>
+      <span class="fmt">${e(p.format)} · ${p.slides.length} foto's</span>
+    </header>
+    ${p.flagged ? `<p class="flag">Eerst zelf checken: ${e(p.flagged)}</p>` : ''}
+    ${p.ai ? `<p class="flag">Bevat een AI-beeld: zet in TikTok "AI-gegenereerde content" aan.</p>` : ''}
+    <div class="strip" role="list">${p.slides.map((s, i) => `<figure role="listitem"><img src="${s}" alt="Slide ${i + 1} van ${p.slides.length}"><figcaption>${i + 1}</figcaption></figure>`).join('')}</div>
+    <div class="steps">
+      <button class="btn save" type="button" id="save-${n}"><b>1</b> Bewaar ${p.slides.length} foto's</button>
+      <button class="btn copy" type="button" id="copy-${n}"><b>2</b> Kopieer caption</button>
+    </div>
+    <p class="status" id="status-${n}" aria-live="polite"></p>
+    <label class="cap-label" for="cap-${n}">Caption</label>
+    <textarea id="cap-${n}" class="cap" readonly rows="5">${e(p.text)}</textarea>
+    <label class="done"><input type="checkbox" id="done-${n}"> Gepost op TikTok</label>
+  </article>`).join('');
+
+  return `<title>Fraternity TikTok-posts</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: one column of post cards, slides as a swipeable strip like the TikTok carousel itself. */
+:root{
+  --ink:#161616; --wall:#EFECE6; --card:#FFFFFF; --line:#DAD5CC; --muted:#6A645B; --red:#D3121B; --ok:#1F7A3D; --flag:#8A5200; --flagbg:#FFF1D9;
+  --display:"Anton","Impact","Arial Narrow",sans-serif; --label:"Oswald","Arial Narrow",system-ui,sans-serif; --body:system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#F2EFE9;--wall:#121212;--card:#1C1C1C;--line:#2E2E2E;--muted:#A39D93;--red:#FF4A4F;--ok:#5CC27F;--flag:#FFC56B;--flagbg:#2E2410;color-scheme:dark}}
+:root[data-theme="dark"]{--ink:#F2EFE9;--wall:#121212;--card:#1C1C1C;--line:#2E2E2E;--muted:#A39D93;--red:#FF4A4F;--ok:#5CC27F;--flag:#FFC56B;--flagbg:#2E2410;color-scheme:dark}
+body{background:var(--wall);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.45}
+.wrap{max-width:640px;margin:0 auto;padding-block:20px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:18px}
+.brand{display:flex;align-items:center;gap:8px;font-family:var(--label);font-weight:700;letter-spacing:.14em;font-size:14px;text-transform:uppercase}
+.brand svg{height:13px;width:auto;fill:currentColor}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(34px,9vw,48px);line-height:1;margin:4px 0 0;text-transform:uppercase;letter-spacing:.01em;text-wrap:balance}
+.sub{color:var(--muted);margin:6px 0 0}
+.how{margin:0;padding:12px 14px;border-left:3px solid var(--red);background:var(--card);font-size:14px}
+.how ol{margin:6px 0 0;padding-left:20px;display:grid;gap:2px}
+.post{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.post-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}
+.when{font-family:var(--display);font-size:26px;text-transform:uppercase;line-height:1}
+.fmt{font-family:var(--label);text-transform:uppercase;letter-spacing:.08em;font-size:12px;color:var(--muted)}
+.flag{margin:0;padding:8px 10px;border-radius:8px;background:var(--flagbg);color:var(--flag);font-size:13.5px}
+.strip{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px;-webkit-overflow-scrolling:touch}
+.strip figure{margin:0;flex:0 0 46%;max-width:240px;scroll-snap-align:start;position:relative}
+.strip img{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:8px;border:1px solid var(--line)}
+.strip figcaption{position:absolute;left:6px;bottom:6px;background:var(--ink);color:var(--wall);font:600 12px/1 var(--label);padding:4px 7px;border-radius:4px;font-variant-numeric:tabular-nums}
+.steps{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.btn{font:600 15px/1.2 var(--label);text-transform:uppercase;letter-spacing:.06em;padding:14px 10px;border-radius:10px;border:2px solid var(--ink);background:var(--card);color:var(--ink);cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;min-height:52px}
+.btn b{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--ink);color:var(--card);font-size:12px}
+.btn.save{background:var(--red);border-color:var(--red);color:#fff}.btn.save b{background:#fff;color:var(--red)}
+.btn:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+.btn:disabled{opacity:.55;cursor:default}
+.status{margin:-4px 0 0;min-height:1.2em;font-size:13.5px;color:var(--muted)}
+.status.ok{color:var(--ok)}
+.cap-label{font:600 12px var(--label);text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:-8px}
+.cap{width:100%;box-sizing:border-box;font:14px/1.45 var(--body);color:var(--ink);background:var(--wall);border:1px solid var(--line);border-radius:8px;padding:10px;resize:vertical}
+.done{display:flex;gap:8px;align-items:center;font-size:14px}
+.done input{width:20px;height:20px;accent-color:var(--ok)}
+.post.is-done{opacity:.6}
+.empty{background:var(--card);border:1px dashed var(--line);border-radius:14px;padding:20px;text-align:center;color:var(--muted)}
+footer{color:var(--muted);font-size:12.5px}
+@media (max-width:360px){.steps{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+</style>
+<div class="wrap">
+  <div>
+    <div class="brand"><svg viewBox="0 0 100 86" aria-hidden="true"><path fill-rule="evenodd" d="M0 86 L50 0 L100 86 Z M36.5 74 L50 50.5 L63.5 74 Z"/></svg>Fraternity · @${e(handle)}</div>
+    <h1>Klaar om te posten</h1>
+    <p class="sub">Bijgewerkt ${e(made)}</p>
+  </div>
+  <div class="how">
+    <b>Zo post je er een</b>
+    <ol>
+      <li>Tik <b>Bewaar foto's</b> en kies per foto "Bewaar afbeelding".</li>
+      <li>Tik <b>Kopieer caption</b>.</li>
+      <li>In TikTok: <b>+</b> → Foto's → kies de foto's op volgorde → plak de caption → kies een geluid → Plaats.</li>
+    </ol>
+  </div>
+  ${cards || '<p class="empty">Er staan nu geen posts klaar. De volgende verschijnen hier na de ochtendrun.</p>'}
+  <footer>Alle feiten komen uit de geverifieerde Fraternity-matchbestanden. Beelden: eigen posters.</footer>
+</div>
+<script>
+(function(){
+  var POSTS = ${JSON.stringify(posts.map((p) => ({ id: p.id, date: p.date, n: p.slides.length, text: p.text })))};
+  function blobAt(i, j){
+    var src = document.querySelectorAll('.post')[i].querySelectorAll('.strip img')[j].src;
+    var bin = atob(src.split(',')[1]); var a = new Uint8Array(bin.length);
+    for (var k = 0; k < bin.length; k++) a[k] = bin.charCodeAt(k);
+    return new Blob([a], { type: 'image/jpeg' });
+  }
+  function setStatus(i, msg, ok){ var s = document.getElementById('status-' + i); s.textContent = msg; s.className = 'status' + (ok ? ' ok' : ''); }
+  var dl = null;
+  if (window.claude && window.claude.use) window.claude.use('downloads').then(function(d){ dl = d; }).catch(function(){});
+  function key(i){ return 'fraternity-done-' + POSTS[i].id; }
+  POSTS.forEach(function(p, i){
+    var done = document.getElementById('done-' + i), card = document.querySelectorAll('.post')[i];
+    try { if (localStorage.getItem(key(i)) === '1') { done.checked = true; card.classList.add('is-done'); } } catch (e) {}
+    done.addEventListener('change', function(){ card.classList.toggle('is-done', done.checked); try { localStorage.setItem(key(i), done.checked ? '1' : '0'); } catch (e) {} });
+
+    document.getElementById('copy-' + i).addEventListener('click', function(){
+      var ta = document.getElementById('cap-' + i);
+      function fallback(){ ta.focus(); ta.select(); setStatus(i, 'Tekst is geselecteerd: tik Kopiëren.'); }
+      try { navigator.clipboard.writeText(p.text).then(function(){ setStatus(i, 'Caption gekopieerd. Plak hem in TikTok.', true); }, fallback); } catch (e) { fallback(); }
+    });
+
+    var btn = document.getElementById('save-' + i);
+    btn.addEventListener('click', async function(){
+      var files = []; for (var j = 0; j < p.n; j++) files.push(new File([blobAt(i, j)], 'fraternity-' + p.date + '-' + (i + 1) + '-' + String(j + 1).padStart(2, '0') + '.jpg', { type: 'image/jpeg' }));
+      // Outside the Claude app (normal phone browser): one share sheet with all photos.
+      if (!dl && navigator.canShare && navigator.canShare({ files: files })) {
+        try { await navigator.share({ files: files }); setStatus(i, 'Gedeeld. Kies "Bewaar ' + p.n + ' afbeeldingen".', true); } catch (e) { setStatus(i, 'Niet opgeslagen.'); }
+        return;
+      }
+      if (!dl) { setStatus(i, 'Opslaan lukt hier niet. Houd een foto ingedrukt en kies "Bewaar in Foto\\'s".'); return; }
+      btn.disabled = true;
+      for (var j2 = 0; j2 < files.length; j2++) {
+        setStatus(i, 'Foto ' + (j2 + 1) + ' van ' + files.length + '…');
+        try { await dl.save({ filename: files[j2].name, data: files[j2] }); }
+        catch (err) {
+          if (err && err.code === 'rate_limited') { await new Promise(function(r){ setTimeout(r, 1200); }); j2--; continue; }
+          setStatus(i, err && err.code === 'declined' ? 'Gestopt bij foto ' + (j2 + 1) + '. Tik opnieuw om verder te gaan.' : 'Opslaan lukt hier niet. Houd een foto ingedrukt en kies "Bewaar in Foto\\'s".');
+          btn.disabled = false; return;
+        }
+      }
+      btn.disabled = false;
+      setStatus(i, 'Alle ' + files.length + ' foto\\'s bewaard. Nu de caption kopiëren.', true);
+    });
+  });
+})();
+</script>
+`;
+}
+
+function writePhonePack(ctx, file) {
+  const html = buildPhonePack(ctx);
+  const out = file || path.join(ctx.config.paths.data, 'phone', 'klaar-om-te-posten.html');
+  fs.mkdirSync(path.dirname(out), { recursive: true });
+  fs.writeFileSync(out, html);
+  return out;
+}
+module.exports = { buildPhonePack, writePhonePack, pickPosts };

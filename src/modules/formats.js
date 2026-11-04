@@ -11,7 +11,9 @@ const COMP_NL = [[/^World Cup (\d{4})/i, 'WK $1'], [/^European Championship (\d{
 function tr(s, map) { for (const [re, to] of map) if (re.test(s)) return s.replace(re, to); return s; }
 const comp = (m) => tr(m.match.competition || '', COMP_NL);
 const phase = (m) => (m.match.phase ? tr(m.match.phase, PHASE_NL) : '');
-const score = (m) => `${m.match.home.name} ${m.match.score.home}-${m.match.score.away} ${m.match.away.name}`;
+const TEAM_NL = { Netherlands: 'Nederland', Argentina: 'Argentinië', Brazil: 'Brazilië', Spain: 'Spanje', 'Soviet Union': 'Sovjet-Unie', Germany: 'Duitsland', 'West Germany': 'West-Duitsland', France: 'Frankrijk', Italy: 'Italië', England: 'Engeland', Belgium: 'België', Portugal: 'Portugal', Uruguay: 'Uruguay' };
+const nlTeam = (n) => TEAM_NL[n] || n;
+const score = (m) => `${nlTeam(m.match.home.name)} ${m.match.score.home}-${m.match.score.away} ${nlTeam(m.match.away.name)}`;
 const scoreUp = (m) => `${(m.match.home.display || m.match.home.name).toUpperCase()} ${m.match.score.home}:${m.match.score.away} ${(m.match.away.display || m.match.away.name).toUpperCase()}`;
 
 function hero(m) {
@@ -22,7 +24,7 @@ function hero(m) {
   return { name: c?.display || m.match.home.name, short: c?.display || '', number: null, minute, isClub: true, shootout };
 }
 function goalRows(m) {
-  const g = m.goals.map((x) => ({ value: minuteLabel(x), label: `${x.player}${x.type === 'own_goal' ? ' (e.d.)' : x.type === 'penalty' ? ' (pen.)' : ''} · ${m.match[x.team].name}`, hl: m.featured.player && x.player === m.featured.player.full_name && x.minute === m.featured.moment?.minute }));
+  const g = m.goals.map((x) => ({ value: minuteLabel(x), label: `${x.player}${x.type === 'own_goal' ? ' (e.d.)' : x.type === 'penalty' ? ' (pen.)' : ''} · ${nlTeam(m.match[x.team].name)}`, hl: m.featured.player && x.player === m.featured.player.full_name && x.minute === m.featured.moment?.minute }));
   if (m.match.penalties) g.push({ value: `${m.match.penalties.home}-${m.match.penalties.away}`, label: 'na strafschoppen', hl: true });
   return g.slice(0, 7);
 }

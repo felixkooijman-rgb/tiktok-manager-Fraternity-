@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict';
 // fraternity-tiktok-agent CLI
-//   daily              full autonomous loop (STAP 1–9)
+//   daily [--count n] [--today]  full autonomous loop (STAP 1–9)
 //   research | ideas   run single steps (dry: prints, stores signals/ideas)
 //   build <ideaId>     build a post for a stored idea
 //   publish-due        publish/export posts whose time has come + check TikTok status
@@ -9,6 +9,7 @@
 //   analyze-account    analyse the existing TikTok account → style guide
 //   auth               print the TikTok login URL (callback handled by the dashboard)
 //   dashboard | serve  web dashboard + built-in scheduler (daily run + publish every 5 min)
+//   phone-pack [file]  mobile page with the next posts: save photos + copy caption
 //   selftest           render one post of every format without publishing
 const { createContext } = require('./core/context');
 
@@ -19,6 +20,7 @@ async function main() {
   switch (cmd) {
     case 'daily': {
       const count = args.includes('--count') ? +args[args.indexOf('--count') + 1] : undefined;
+      if (args.includes('--today')) ctx.config.schedule.planAheadDays = 0; // only plan posts for today
       const { built } = await require('./workflow/daily').runDaily(ctx, { count });
       console.log(`\n${built.length} post(s) gemaakt. Dashboard: npm run dashboard`);
       break;
@@ -50,8 +52,9 @@ async function main() {
       break;
     }
     case 'dashboard': case 'serve': require('./dashboard/server').start(ctx); return;
+    case 'phone-pack': console.log(require('./modules/phone-pack').writePhonePack(ctx, args[0])); break;
     case 'selftest': await require('./selftest').run(ctx); break;
-    default: console.log(require('fs').readFileSync(__filename, 'utf8').split('\n').slice(2, 12).map((l) => l.replace(/^\/\/ ?/, '')).join('\n'));
+    default: console.log(require('fs').readFileSync(__filename, 'utf8').split('\n').slice(2, 13).map((l) => l.replace(/^\/\/ ?/, '')).join('\n'));
   }
 }
 main().catch((e) => { console.error(e.stack || e.message); process.exit(1); });

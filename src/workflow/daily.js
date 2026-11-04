@@ -14,6 +14,12 @@ async function runDaily(ctx, opts = {}) {
   const { store, log, config } = ctx;
   const run = store.insert('runs', { kind: 'daily', startedAt: new Date().toISOString(), steps: [] });
   const step = (n, t, info) => { log.step(n, t); run.steps.push({ n, t, at: new Date().toISOString(), ...(info || {}) }); };
+  // Posts whose slide files are gone (e.g. made in an earlier, already recycled cloud session)
+  // can no longer be posted: mark them expired so they do not block today's calendar.
+  const fs = require('fs');
+  for (const p of store.all('posts', (x) => ['scheduled', 'ready', 'pending-approval', 'export-ready'].includes(x.status))) {
+    if (!(p.slides || []).every((sl) => fs.existsSync(sl.path))) store.update('posts', p.id, { status: 'expired' });
+  }
   const browser = await chromium.launch();
   try {
     // 8 + 9 first: learn from yesterday before deciding today.

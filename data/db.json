@@ -1,0 +1,733 @@
+{
+  "ideas": [
+    {
+      "id": "idea_mw27pvi70fb4cd",
+      "createdAt": "2026-11-04T14:29:01.759Z",
+      "format": "framed-vs-frameless",
+      "slugs": [
+        "2024-05-10-willem-ii-telstar-meerveld"
+      ],
+      "why": "Met of zonder lijst: Willem II 3-2 Telstar",
+      "score": 2.378,
+      "label": "Met of zonder lijst",
+      "status": "used",
+      "runId": "run_mw27pvcxee9552",
+      "postId": "post_mw27pvii5af087",
+      "updatedAt": "2026-11-04T14:29:02.834Z"
+    },
+    {
+      "id": "idea_mw27pvi7c9275c",
+      "createdAt": "2026-11-04T14:29:01.759Z",
+      "format": "quiz",
+      "slugs": [
+        "2022-12-09-nederland-argentinie-weghorst"
+      ],
+      "why": "Quiz: Nederland 2-2 Argentinië",
+      "score": 2.367,
+      "label": "Quiz",
+      "status": "used",
+      "runId": "run_mw27pvcxee9552",
+      "postId": "post_mw27pwc8617c60",
+      "updatedAt": "2026-11-04T14:29:03.580Z"
+    },
+    {
+      "id": "idea_mw27pvi88090f9",
+      "createdAt": "2026-11-04T14:29:01.760Z",
+      "format": "quiz",
+      "slugs": [
+        "2023-12-21-hercules-ajax-grotenbreg"
+      ],
+      "why": "Quiz: USV Hercules 3-2 Ajax",
+      "score": 2.341,
+      "label": "Quiz",
+      "status": "candidate",
+      "runId": "run_mw27pvcxee9552"
+    },
+    {
+      "id": "idea_mw27pvi9109dee",
+      "createdAt": "2026-11-04T14:29:01.761Z",
+      "format": "quiz",
+      "slugs": [
+        "1995-05-24-ajax-milan-kluivert"
+      ],
+      "why": "Quiz: Ajax 1-0 AC Milan",
+      "score": 2.267,
+      "label": "Quiz",
+      "status": "candidate",
+      "runId": "run_mw27pvcxee9552"
+    },
+    {
+      "id": "idea_mw27pvi954188e",
+      "createdAt": "2026-11-04T14:29:01.761Z",
+      "format": "framed-vs-frameless",
+      "slugs": [
+        "2023-12-21-hercules-ajax-grotenbreg"
+      ],
+      "why": "Met of zonder lijst: USV Hercules 3-2 Ajax",
+      "score": 2.266,
+      "label": "Met of zonder lijst",
+      "status": "candidate",
+      "runId": "run_mw27pvcxee9552"
+    },
+    {
+      "id": "idea_mw27pvia86ded1",
+      "createdAt": "2026-11-04T14:29:01.762Z",
+      "format": "framed-vs-frameless",
+      "slugs": [
+        "2026-10-27-excelsior31-ado-reimink"
+      ],
+      "why": "Met of zonder lijst: Excelsior '31 1-1 ADO Den Haag",
+      "score": 2.252,
+      "label": "Met of zonder lijst",
+      "status": "candidate",
+      "runId": "run_mw27pvcxee9552"
+    },
+    {
+      "id": "idea_mw27pvia12e273",
+      "createdAt": "2026-11-04T14:29:01.762Z",
+      "format": "design-breakdown",
+      "slugs": [
+        "1998-07-04-nederland-argentinie-bergkamp"
+      ],
+      "why": "Van shirt naar poster: Nederland 2-1 Argentinië",
+      "score": 2.148,
+      "label": "Van shirt naar poster",
+      "status": "used",
+      "runId": "run_mw27pvcxee9552",
+      "postId": "post_mw27pwwxfd7700",
+      "updatedAt": "2026-11-04T14:29:04.435Z"
+    },
+    {
+      "id": "idea_mw27pvib791610",
+      "createdAt": "2026-11-04T14:29:01.763Z",
+      "format": "design-breakdown",
+      "slugs": [
+        "2025-04-21-az-go-ahead-eagles-deijl"
+      ],
+      "why": "Van shirt naar poster: AZ 1-1 Go Ahead Eagles",
+      "score": 2.142,
+      "label": "Van shirt naar poster",
+      "status": "candidate",
+      "runId": "run_mw27pvcxee9552"
+    },
+    {
+      "id": "idea_mw27pvib36feab",
+      "createdAt": "2026-11-04T14:29:01.763Z",
+      "format": "poster-reveal",
+      "slugs": [
+        "2010-07-06-nederland-uruguay-van-bronckhorst"
+      ],
+      "why": "Poster reveal: Uruguay 2-3 Nederland",
+      "score": 2.088,
+      "label": "Poster reveal",
+      "status": "candidate",
+      "runId": "run_mw27pvcxee9552"
+    },
+    {
+      "id": "idea_mw27pvic10d565",
+      "createdAt": "2026-11-04T14:29:01.764Z",
+      "format": "poster-reveal",
+      "slugs": [
+        "2010-07-02-nederland-brazilie-sneijder"
+      ],
+      "why": "Poster reveal: Nederland 2-1 Brazilië",
+      "score": 2.074,
+      "label": "Poster reveal",
+      "status": "candidate",
+      "runId": "run_mw27pvcxee9552"
+    },
+    {
+      "id": "idea_mw27pvidf43c41",
+      "createdAt": "2026-11-04T14:29:01.765Z",
+      "format": "design-breakdown",
+      "slugs": [
+        "2019-03-05-real-madrid-ajax-tadic"
+      ],
+      "why": "Van shirt naar poster: Real Madrid 1-4 Ajax",
+      "score": 2.039,
+      "label": "Van shirt naar poster",
+      "status": "candidate",
+      "runId": "run_mw27pvcxee9552"
+    },
+    {
+      "id": "idea_mw27pvid521c25",
+      "createdAt": "2026-11-04T14:29:01.765Z",
+      "format": "collection-pick",
+      "slugs": [
+        "2025-04-21-az-go-ahead-eagles-deijl",
+        "2010-07-06-nederland-uruguay-van-bronckhorst",
+        "1972-05-31-ajax-inter-cruijff",
+        "2024-11-27-psv-shakhtar-tillman"
+      ],
+      "why": "Kies je favoriet: DEIJL, VAN BRONCKHORST, CRUIJFF, TILLMAN",
+      "score": 2.037,
+      "label": "Kies je favoriet",
+      "status": "candidate",
+      "runId": "run_mw27pvcxee9552"
+    },
+    {
+      "id": "idea_mw27pvid7af9c0",
+      "createdAt": "2026-11-04T14:29:01.765Z",
+      "format": "poster-reveal",
+      "slugs": [
+        "2002-05-08-feyenoord-dortmund-van-hooijdonk"
+      ],
+      "why": "Poster reveal: Feyenoord 3-2 Borussia Dortmund",
+      "score": 2.035,
+      "label": "Poster reveal",
+      "status": "candidate",
+      "runId": "run_mw27pvcxee9552"
+    },
+    {
+      "id": "idea_mw27pvie5f4976",
+      "createdAt": "2026-11-04T14:29:01.766Z",
+      "format": "last-minute",
+      "slugs": [
+        "2022-12-09-nederland-argentinie-weghorst",
+        "2023-12-21-hercules-ajax-grotenbreg",
+        "2024-05-10-willem-ii-telstar-meerveld",
+        "2025-04-21-az-go-ahead-eagles-deijl"
+      ],
+      "why": "Last-minute ranking: WEGHORST, GROTENBREG, MEERVELD, DEIJL",
+      "score": 2.034,
+      "label": "Last-minute ranking",
+      "status": "candidate",
+      "runId": "run_mw27pvcxee9552"
+    }
+  ],
+  "posts": [
+    {
+      "id": "post_mw27pvii5af087",
+      "createdAt": "2026-11-04T14:29:01.770Z",
+      "status": "scheduled",
+      "format": "framed-vs-frameless",
+      "formatLabel": "Met of zonder lijst",
+      "ideaId": "idea_mw27pvi70fb4cd",
+      "slugs": [
+        "2024-05-10-willem-ii-telstar-meerveld"
+      ],
+      "signal": null,
+      "why": "Met of zonder lijst: Willem II 3-2 Telstar",
+      "caption": "Zelfde moment, twee versies: Ringo Meerveld, Willem II 3-2 Telstar. A met lijst of B zonder? 🖼️",
+      "title": "A of B? Willem II 3-2 Telstar",
+      "hashtags": [
+        "#fraternity",
+        "#voetbalposter",
+        "#interieur",
+        "#willemii",
+        "#telstar",
+        "#kkd"
+      ],
+      "captionSource": "template",
+      "slides": [
+        {
+          "file": "01-hook.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw27pvii5af087/01-hook.jpg",
+          "type": "hook",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "WILLEM II 3:2 TELSTAR | Met of zonder lijst? | A of B – zeg het in de comments"
+        },
+        {
+          "file": "02-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw27pvii5af087/02-poster.jpg",
+          "type": "poster",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "WILLEM II 3:2 TELSTAR"
+        },
+        {
+          "file": "03-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw27pvii5af087/03-poster.jpg",
+          "type": "poster",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "WILLEM II 3:2 TELSTAR"
+        },
+        {
+          "file": "04-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw27pvii5af087/04-cta.jpg",
+          "type": "cta",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "A of B? | Poster? Link in bio."
+        }
+      ],
+      "assets": [
+        {
+          "path": "/home/user/Fraternity/output/2024-05-10-willem-ii-telstar-meerveld-framed/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 2024-05-10-willem-ii-telstar-meerveld (framed)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        },
+        {
+          "path": "/home/user/Fraternity/output/2024-05-10-willem-ii-telstar-meerveld-frameless/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 2024-05-10-willem-ii-telstar-meerveld (frameless)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        }
+      ],
+      "sources": [
+        {
+          "title": "ESPN – Willem II 3-2 Telstar",
+          "url": "https://www.espn.com/soccer/match/_/gameId/675972/telstar-willem-ii",
+          "used_for": "result, goals, assists",
+          "match": "2024-05-10-willem-ii-telstar-meerveld"
+        },
+        {
+          "title": "ESPN NL – opstellingen",
+          "url": "https://www.espn.nl/voetbal/lineups/_/wedstrijdId/675972",
+          "used_for": "line-ups",
+          "match": "2024-05-10-willem-ii-telstar-meerveld"
+        },
+        {
+          "title": "Voetbaluitslagen.be – Willem II tegen Telstar",
+          "url": "https://voetbaluitslagen.be/wedstrijd/eerste-divisie/2023/525118/",
+          "used_for": "line-ups",
+          "match": "2024-05-10-willem-ii-telstar-meerveld"
+        },
+        {
+          "title": "fcupdate – Willem II kampioen",
+          "url": "https://www.fcupdate.nl/voetbalnieuws/2024/05/willem-ii-kampioen-van-de-keuken-kampioen-divisie-tilburg-uit-zijn-dak",
+          "used_for": "title context",
+          "match": "2024-05-10-willem-ii-telstar-meerveld"
+        },
+        {
+          "title": "Voetbalprimeur – Willem II kroont zich tot kampioen",
+          "url": "https://www.voetbalprimeur.nl/nieuws/1199012/willem-ii-kroont-zich-tot-kampioen-na-knappe-comeback-tegen-telstar.html",
+          "used_for": "comeback narrative",
+          "match": "2024-05-10-willem-ii-telstar-meerveld"
+        },
+        {
+          "title": "Willem II webshop – thuisshirt 2023-2024",
+          "url": "https://webshop.willem-ii.nl/nl/thuisshirt-2023-2024-junior.html?id=286411151",
+          "used_for": "kit description",
+          "match": "2024-05-10-willem-ii-telstar-meerveld"
+        },
+        {
+          "title": "Wikipedia – Ringo Meerveld",
+          "url": "https://en.wikipedia.org/wiki/Ringo_Meerveld",
+          "used_for": "shirt number",
+          "match": "2024-05-10-willem-ii-telstar-meerveld"
+        }
+      ],
+      "credits": [
+        "Fraternity poster 2024-05-10-willem-ii-telstar-meerveld (framed) – own-work",
+        "Fraternity poster 2024-05-10-willem-ii-telstar-meerveld (frameless) – own-work"
+      ],
+      "openChecks": [
+        "2024-05-10-willem-ii-telstar-meerveld: Matchday: final round of a 20-team Eerste Divisie = matchday 38 (the reference poster says 34) – verify",
+        "2024-05-10-willem-ii-telstar-meerveld: Meerveld #16 from Wikipedia infobox, not an official squad list",
+        "2024-05-10-willem-ii-telstar-meerveld: Stripe order/widths taken from the reference poster and club description – confirm against a match photo",
+        "2024-05-10-willem-ii-telstar-meerveld: Back lettering: varsity style approximated with Graduate (OFL), emboldened",
+        "2024-05-10-willem-ii-telstar-meerveld: Formation rows are a display arrangement",
+        "2024-05-10-willem-ii-telstar-meerveld: Crests, sponsors and manufacturer logos not reproduced (no licensed assets)"
+      ],
+      "aiGenerated": false,
+      "shopLinks": [],
+      "publishSettings": {
+        "privacyLevel": null,
+        "allowComments": true,
+        "brandOrganic": true,
+        "brandedContent": false
+      },
+      "qa": {
+        "ok": true,
+        "errors": [],
+        "warnings": [
+          "6 open punten in de posterdata (zie bronnen)"
+        ],
+        "needsApproval": false,
+        "reasons": [],
+        "checkedAt": "2026-11-04T14:29:02.832Z"
+      },
+      "updatedAt": "2026-11-04T14:29:04.438Z",
+      "scheduledAt": "2026-11-04T18:30:00.000Z"
+    },
+    {
+      "id": "post_mw27pwc8617c60",
+      "createdAt": "2026-11-04T14:29:02.840Z",
+      "status": "scheduled",
+      "format": "quiz",
+      "formatLabel": "Quiz",
+      "ideaId": "idea_mw27pvi7c9275c",
+      "slugs": [
+        "2022-12-09-nederland-argentinie-weghorst"
+      ],
+      "signal": null,
+      "why": "Quiz: Nederland 2-2 Argentinië",
+      "caption": "Wie scoorde in de 90+11' van Nederland 2-2 Argentinië? Zet je antwoord in de comments vóór je swipet 👀",
+      "title": "Quiz: wie scoorde in de 90+11'?",
+      "hashtags": [
+        "#fraternity",
+        "#voetbalposter",
+        "#voetbalquiz",
+        "#oranje",
+        "#wk",
+        "#voetbal"
+      ],
+      "captionSource": "template",
+      "slides": [
+        {
+          "file": "01-hook.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw27pwc8617c60/01-hook.jpg",
+          "type": "hook",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Voetbalquiz | Wie scoorde in de 90+11'? | NEDERLAND 2:2 ARGENTINIË · 09.12.2022 | Swipe voor het antwoord →"
+        },
+        {
+          "file": "02-facts.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw27pwc8617c60/02-facts.jpg",
+          "type": "facts",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Hint | WK 2022 · kwartfinale | 90+11' Lusail Stadium | #19 rugnummer"
+        },
+        {
+          "file": "03-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw27pwc8617c60/03-poster.jpg",
+          "type": "poster",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "90+11' · NEDERLAND 2:2 ARGENTINIË"
+        },
+        {
+          "file": "04-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw27pwc8617c60/04-cta.jpg",
+          "type": "cta",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Wist jij het? | Poster? Link in bio."
+        }
+      ],
+      "assets": [
+        {
+          "path": "/home/user/Fraternity/output/2022-12-09-nederland-argentinie-weghorst-frameless/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 2022-12-09-nederland-argentinie-weghorst (frameless)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        }
+      ],
+      "sources": [
+        {
+          "title": "FIFA – Netherlands v Argentina",
+          "url": "https://www.fifa.com/en/match-centre/match/17/255711/285074/400128139",
+          "used_for": "result, goals",
+          "match": "2022-12-09-nederland-argentinie-weghorst"
+        },
+        {
+          "title": "ESPN – Netherlands 2-2 Argentina",
+          "url": "https://www.espn.com/soccer/match/_/gameId/633844/argentina-netherlands",
+          "used_for": "goals, shirt numbers",
+          "match": "2022-12-09-nederland-argentinie-weghorst"
+        },
+        {
+          "title": "Sky Sports – starting line-ups",
+          "url": "https://www.skysports.com/football/netherlands-vs-argentina/teams/463021",
+          "used_for": "line-ups",
+          "match": "2022-12-09-nederland-argentinie-weghorst"
+        },
+        {
+          "title": "The Star – starting line-ups",
+          "url": "https://www.the-star.co.ke/sports/football/2022-12-09-netherlands-v-argentina-world-cup-starting-line-ups/",
+          "used_for": "line-ups",
+          "match": "2022-12-09-nederland-argentinie-weghorst"
+        },
+        {
+          "title": "Footy Headlines – Netherlands 2022 kits",
+          "url": "https://www.footyheadlines.com/2021/11/netherlands-2022-world-cup-home-kit.html",
+          "used_for": "kit",
+          "match": "2022-12-09-nederland-argentinie-weghorst"
+        }
+      ],
+      "credits": [
+        "Fraternity poster 2022-12-09-nederland-argentinie-weghorst (frameless) – own-work"
+      ],
+      "openChecks": [
+        "2022-12-09-nederland-argentinie-weghorst: Weghorst's 83' was a header – verify",
+        "2022-12-09-nederland-argentinie-weghorst: Netherlands wore the 2022 orange home kit vs Argentina – confirm with a photo; 2022 number colour (navy) to be confirmed",
+        "2022-12-09-nederland-argentinie-weghorst: Line-up rows are a display arrangement (NED 3-4-3, ARG 5-3-2)",
+        "2022-12-09-nederland-argentinie-weghorst: Crests, sponsors and manufacturer logos not reproduced (no licensed assets)",
+        "2022-12-09-nederland-argentinie-weghorst: Back-of-shirt lettering approximated – send a photo of the back print to match it exactly"
+      ],
+      "aiGenerated": false,
+      "shopLinks": [],
+      "publishSettings": {
+        "privacyLevel": null,
+        "allowComments": true,
+        "brandOrganic": true,
+        "brandedContent": false
+      },
+      "qa": {
+        "ok": true,
+        "errors": [],
+        "warnings": [
+          "5 open punten in de posterdata (zie bronnen)"
+        ],
+        "needsApproval": false,
+        "reasons": [],
+        "checkedAt": "2026-11-04T14:29:03.578Z"
+      },
+      "updatedAt": "2026-11-04T14:29:04.441Z",
+      "scheduledAt": "2026-11-04T15:00:00.000Z"
+    },
+    {
+      "id": "post_mw27pwwxfd7700",
+      "createdAt": "2026-11-04T14:29:03.585Z",
+      "status": "scheduled",
+      "format": "design-breakdown",
+      "formatLabel": "Van shirt naar poster",
+      "ideaId": "idea_mw27pvia12e273",
+      "slugs": [
+        "1998-07-04-nederland-argentinie-bergkamp"
+      ],
+      "signal": null,
+      "why": "Van shirt naar poster: Nederland 2-1 Argentinië",
+      "caption": "Van shirt naar poster: de kleuren van het shirt uit Nederland 2-1 Argentinië (4 juli 1998) zijn de basis van dit ontwerp. Welk shirt moeten we hierna doen?",
+      "title": "Van shirt naar poster · Nederland 2-1 Argentinië",
+      "hashtags": [
+        "#fraternity",
+        "#voetbalposter",
+        "#design",
+        "#oranje",
+        "#wk",
+        "#voetbal"
+      ],
+      "captionSource": "template",
+      "slides": [
+        {
+          "file": "01-hook.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw27pwwxfd7700/01-hook.jpg",
+          "type": "hook",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Zo ontwerpen we | Van shirt naar poster | NEDERLAND 2:1 ARGENTINIË"
+        },
+        {
+          "file": "02-swatches.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw27pwwxfd7700/02-swatches.jpg",
+          "type": "swatches",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "NEDERLAND 2:1 ARGENTINIË | De kleuren | Achtergrond = de voorkant van het shirt uit 1998 | Naam en nummer in de stijl van de shirtbedrukking (benadering met een open font) | Geen clublogo’s of sponsors – alleen kleuren en strepen"
+        },
+        {
+          "file": "03-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw27pwwxfd7700/03-poster.jpg",
+          "type": "poster",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "NEDERLAND 2:1 ARGENTINIË"
+        },
+        {
+          "file": "04-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw27pwwxfd7700/04-cta.jpg",
+          "type": "cta",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Poster? Link in bio."
+        }
+      ],
+      "assets": [
+        {
+          "path": "/home/user/Fraternity/output/1998-07-04-nederland-argentinie-bergkamp-frameless/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 1998-07-04-nederland-argentinie-bergkamp (frameless)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        }
+      ],
+      "sources": [
+        {
+          "title": "11v11 – Netherlands v Argentina 1998",
+          "url": "https://www.11v11.com/matches/netherlands-v-argentina-04-july-1998-265642/",
+          "used_for": "line-ups, substitutions",
+          "match": "1998-07-04-nederland-argentinie-bergkamp"
+        },
+        {
+          "title": "Planet World Cup – Argentina v Netherlands",
+          "url": "http://www.planetworldcup.com/CUPS/1998/qf_arg_v_hol.html",
+          "used_for": "goal minutes",
+          "match": "1998-07-04-nederland-argentinie-bergkamp"
+        },
+        {
+          "title": "thesoccerworldcups – Netherlands 2 Argentina 1",
+          "url": "https://www.thesoccerworldcups.com/games/1998_holland_argentina.php",
+          "used_for": "line-ups, shirt numbers",
+          "match": "1998-07-04-nederland-argentinie-bergkamp"
+        },
+        {
+          "title": "football-lineups – Netherlands - Argentina 1998",
+          "url": "https://m.football-lineups.com/match/40251",
+          "used_for": "goals, assists",
+          "match": "1998-07-04-nederland-argentinie-bergkamp"
+        },
+        {
+          "title": "ESPN – Netherlands 2-1 Argentina",
+          "url": "https://www.espn.co.uk/football/match/_/gameId/198151/argentina-netherlands",
+          "used_for": "minutes cross-check",
+          "match": "1998-07-04-nederland-argentinie-bergkamp"
+        }
+      ],
+      "credits": [
+        "Fraternity poster 1998-07-04-nederland-argentinie-bergkamp (frameless) – own-work"
+      ],
+      "openChecks": [
+        "1998-07-04-nederland-argentinie-bergkamp: Minutes 12'/17'/89' (Planet World Cup) vs 13'/18'/90' (ESPN) – majority used",
+        "1998-07-04-nederland-argentinie-bergkamp: Bergkamp's assist credited to F. de Boer in one source, R. de Boer in another – assist not printed",
+        "1998-07-04-nederland-argentinie-bergkamp: Orange 1998 shirt simplified; Nike 1998 number lettering not verified",
+        "1998-07-04-nederland-argentinie-bergkamp: Line-up rows are a display arrangement",
+        "1998-07-04-nederland-argentinie-bergkamp: Crests, sponsors and manufacturer logos not reproduced (no licensed assets)"
+      ],
+      "aiGenerated": false,
+      "shopLinks": [],
+      "publishSettings": {
+        "privacyLevel": null,
+        "allowComments": true,
+        "brandOrganic": true,
+        "brandedContent": false
+      },
+      "qa": {
+        "ok": true,
+        "errors": [],
+        "warnings": [
+          "5 open punten in de posterdata (zie bronnen)"
+        ],
+        "needsApproval": false,
+        "reasons": [],
+        "checkedAt": "2026-11-04T14:29:04.434Z"
+      },
+      "updatedAt": "2026-11-04T14:29:04.443Z",
+      "scheduledAt": "2026-11-05T07:30:00.000Z"
+    }
+  ],
+  "assets": [],
+  "research": [
+    {
+      "id": "sig_bXQ6UGhvdG8gY2Fyb3VzZWxz",
+      "collectedAt": "2026-11-04T14:29:01.755Z",
+      "source": "manual:tiktok",
+      "kind": "format-trend",
+      "key": "mt:Photo carousels with a question hook on slide 1 and the answer on a later slide",
+      "title": "Photo carousels with a question hook on slide 1 and the answer on a later slide",
+      "url": null,
+      "format": "quiz",
+      "notes": "General carousel pattern; no specific sound required"
+    },
+    {
+      "id": "sig_bXQ6R2FsbGVyeSB3YWxscyB3",
+      "collectedAt": "2026-11-04T14:29:01.755Z",
+      "source": "manual:pinterest",
+      "kind": "format-trend",
+      "key": "mt:Gallery walls with framed sports prints (room inspiration)",
+      "title": "Gallery walls with framed sports prints (room inspiration)",
+      "url": null,
+      "format": "framed-vs-frameless",
+      "notes": "Angle: how a poster looks with or without a frame"
+    }
+  ],
+  "metrics": [],
+  "followers": [],
+  "runs": [
+    {
+      "id": "run_mw27pvcxee9552",
+      "createdAt": "2026-11-04T14:29:01.569Z",
+      "kind": "daily",
+      "startedAt": "2026-11-04T14:29:01.569Z",
+      "steps": [
+        {
+          "n": 8,
+          "t": "Prestaties van gepubliceerde posts ophalen",
+          "at": "2026-11-04T14:29:01.679Z",
+          "metrics": 0
+        },
+        {
+          "n": 9,
+          "t": "Optimaliseren (format- en tijdslotgewichten)",
+          "at": "2026-11-04T14:29:01.682Z",
+          "weights": {
+            "formatWeights": {},
+            "slotWeights": {},
+            "basedOn": 0
+          }
+        },
+        {
+          "n": 1,
+          "t": "Trends en onderwerpen analyseren",
+          "at": "2026-11-04T14:29:01.683Z"
+        },
+        {
+          "n": 2,
+          "t": "Contentideeën bedenken",
+          "at": "2026-11-04T14:29:01.755Z"
+        },
+        {
+          "n": 3,
+          "t": "Beste 3 ideeën selecteren uit 14",
+          "at": "2026-11-04T14:29:01.758Z"
+        },
+        {
+          "n": "4-6",
+          "t": "Afbeeldingen verzamelen, posts samenstellen en controleren",
+          "at": "2026-11-04T14:29:01.766Z"
+        },
+        {
+          "n": 7,
+          "t": "Inplannen en publiceren",
+          "at": "2026-11-04T14:29:04.436Z",
+          "published": 0
+        }
+      ],
+      "finishedAt": "2026-11-04T14:29:04.446Z",
+      "built": [
+        "post_mw27pvii5af087",
+        "post_mw27pwc8617c60",
+        "post_mw27pwwxfd7700"
+      ],
+      "ok": true,
+      "updatedAt": "2026-11-04T14:29:04.446Z"
+    }
+  ],
+  "tasks": [],
+  "meta": {}
+}

@@ -8,7 +8,7 @@ function hashtagsFor(entries, format, config) {
   const h = config.hashtags;
   const tags = [...h.brand, ...(h.byFormat[format] || [])];
   for (const m of entries) {
-    for (const [k, v] of Object.entries(h.byClub)) if ([m.match.home.name, m.match.away.name].some((n) => n === k || n.startsWith(k + ' '))) tags.push(...v);
+    for (const [k, v] of Object.entries(h.byClub)) if ([m.match.home.name, m.match.away.name].some((n) => n === k || new RegExp(`(^|\\s)${k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(\\s|$)`).test(n) || (k === 'Nederland' && n === 'Netherlands'))) tags.push(...v);
     for (const [k, v] of Object.entries(h.byCompetition)) if (m.match.competition.startsWith(k)) tags.push(...v);
   }
   tags.push(...h.always);
