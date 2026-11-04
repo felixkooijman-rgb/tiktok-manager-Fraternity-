@@ -52,7 +52,7 @@ async function main() {
       break;
     }
     case 'dashboard': case 'serve': require('./dashboard/server').start(ctx); return;
-    case 'phone-pack': console.log(JSON.stringify(require('./modules/phone-pack').writePhonePack(ctx, args.find((a) => !a.startsWith('--')), { linked: !args.includes('--embed') }), null, 2)); break;
+    case 'phone-pack': console.log(JSON.stringify(require('./modules/phone-pack').writePhonePack(ctx, args.find((a) => !a.startsWith('--')), { linked: args.includes('--linked') }), null, 2)); break;
     case 'selftest': await require('./selftest').run(ctx); break;
     default: console.log(require('fs').readFileSync(__filename, 'utf8').split('\n').slice(2, 13).map((l) => l.replace(/^\/\/ ?/, '')).join('\n'));
   }

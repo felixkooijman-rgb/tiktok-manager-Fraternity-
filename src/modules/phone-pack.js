@@ -33,7 +33,10 @@ function dayLabel(ymd, tz, now) {
 
 // linked = true: slides are published as separate files next to the page (light page, fast on a
 // phone); `files` maps each published path to the local slide. false = everything embedded.
-function buildPhonePack(ctx, { now = new Date(), linked = true } = {}) {
+// The Claude app's frame shows only data:/blob: images and cannot fetch the artifact's other
+// files, so photos are embedded. To stay well under the 16 MB page limit only the posts of the
+// next `photoDays` days carry photos; later ones are listed (the daily run rolls the window on).
+function buildPhonePack(ctx, { now = new Date(), linked = false, photoDays = 3 } = {}) {
   const { store, config } = ctx;
   const tz = config.schedule.timezone;
   const files = {};
@@ -45,7 +48,9 @@ function buildPhonePack(ctx, { now = new Date(), linked = true } = {}) {
     title: p.title, text: `${p.caption}\n\n${p.hashtags.join(' ')}`, flagged: p.status === 'pending-approval' ? (p.qa.reasons || []).join('; ') : '',
     ai: !!p.aiGenerated,
     day: dayLabel(localYmd(new Date(p.scheduledAt), tz), tz, now),
-    slides: p.slides.map((s) => {
+    later: localYmd(new Date(p.scheduledAt), tz) >= localYmd(new Date(now.getTime() + photoDays * 864e5), tz),
+    count: p.slides.length,
+    slides: localYmd(new Date(p.scheduledAt), tz) >= localYmd(new Date(now.getTime() + photoDays * 864e5), tz) ? [] : p.slides.map((s) => {
       if (!linked) return `data:image/jpeg;base64,${fs.readFileSync(s.path).toString('base64')}`;
       const pub = `slides/${p.id}/${s.file}`; files[pub] = s.path; return pub;
     }),
@@ -55,7 +60,13 @@ function buildPhonePack(ctx, { now = new Date(), linked = true } = {}) {
 }
 
 function template(posts, { made, handle }) {
-  const cards = posts.map((p, n) => `${n === 0 || posts[n - 1].day !== p.day ? `<h2 class="day">${e(p.day)}</h2>` : ''}
+  const head = (p, n) => (n === 0 || posts[n - 1].day !== p.day ? `<h2 class="day">${e(p.day)}</h2>` : '');
+  const cards = posts.map((p, n) => p.later ? `${head(p, n)}
+  <article class="post later" data-i="${n}">
+    <header class="post-head"><span class="when">${e(p.when.split(' ').slice(-1)[0])}</span><span class="fmt">${e(p.format)} · ${p.count} foto's</span></header>
+    <ul class="matches">${p.matches.map((x) => `<li><b>${e(x.match)}</b><span>${e(x.moment)}</span></li>`).join('')}</ul>
+    <p class="soon">De foto's komen op deze pagina te staan op ${e(p.day.toLowerCase())}.</p>
+  </article>` : `${head(p, n)}
   <article class="post" data-i="${n}">
     <header class="post-head">
       <span class="when">${e(p.when.split(' ').slice(-1)[0])}</span>
@@ -133,6 +144,8 @@ h1{font-family:var(--display);font-weight:400;font-size:clamp(34px,9vw,48px);lin
 .viewer img{max-width:100%;max-height:80vh;object-fit:contain;-webkit-touch-callout:default;user-select:auto}
 .viewer p{color:#fff;margin:0;text-align:center;font-size:15px}
 .dl-state{margin:0;font-size:13.5px;color:var(--muted)}
+.post.later{gap:8px;background:transparent;border-style:dashed}
+.soon{margin:0;font-size:13.5px;color:var(--muted)}
 .empty{background:var(--card);border:1px dashed var(--line);border-radius:14px;padding:20px;text-align:center;color:var(--muted)}
 footer{color:var(--muted);font-size:12.5px}
 @media (max-width:360px){.one{margin-top:6px;width:100%;font:600 13px/1.2 var(--label);text-transform:uppercase;letter-spacing:.05em;padding:10px 6px;border-radius:8px;border:1.5px solid var(--ink);background:var(--card);color:var(--ink);cursor:pointer;min-height:40px}
@@ -163,7 +176,7 @@ footer{color:var(--muted);font-size:12.5px}
 </div>
 <script>
 (function(){
-  var POSTS = ${JSON.stringify(posts.map((p) => ({ id: p.id, date: p.date, n: p.slides.length, text: p.text })))};
+  var POSTS = ${JSON.stringify(posts.map((p) => ({ id: p.id, date: p.date, n: p.slides.length, text: p.text, later: p.later })))};
   var cache = {};
   function imgAt(i, j){ return document.querySelectorAll('.post')[i].querySelectorAll('.strip img')[j]; }
   function getBlob(i, j){
@@ -243,6 +256,7 @@ footer{color:var(--muted);font-size:12.5px}
   });
   document.querySelectorAll('.one').forEach(function(b){ b.addEventListener('click', function(){ saveOne(+b.dataset.post, +b.dataset.slide, b); }); });
   POSTS.forEach(function(p, i){
+    if (p.later) return;
     var done = document.getElementById('done-' + i), card = document.querySelectorAll('.post')[i];
     try { if (localStorage.getItem(key(i)) === '1') { done.checked = true; card.classList.add('is-done'); } } catch (e) {}
     done.addEventListener('change', function(){ card.classList.toggle('is-done', done.checked); try { localStorage.setItem(key(i), done.checked ? '1' : '0'); } catch (e) {} });

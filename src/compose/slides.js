@@ -201,7 +201,7 @@ async function renderSlides(specs, { outDir, theme, config, browser }) {
         return [...document.querySelectorAll('.safe div:not(:has(img))')].filter((el) => { const r = el.getBoundingClientRect(); return r.width && (r.right > w - 30 || r.left < 30 || el.scrollWidth > el.clientWidth + 2); }).map((el) => el.textContent.slice(0, 40));
       }, W);
       const file = `${String(i + 1).padStart(2, '0')}-${s.type}.jpg`;
-      await page.screenshot({ path: path.join(outDir, file), type: 'jpeg', quality: 92 });
+      await page.screenshot({ path: path.join(outDir, file), type: 'jpeg', quality: 85 });
       out.push({ file, path: path.join(outDir, file), type: s.type, width: W, height: H, overflow, text: [s.kicker, s.title, s.sub, s.footer, ...(s.rows || []).map((r) => `${r.value} ${r.label}`), ...(s.lines || [])].filter(Boolean).join(' | ') });
     }
   } finally { await page.close(); }
