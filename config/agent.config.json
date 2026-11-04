@@ -37,9 +37,15 @@
     "postsToCreatePerDay": 2,
     "anniversaryWindowDays": 21,
     "formatBoost": {
-      "raad-de-poster": 0.6
+      "raad-de-poster": 0.6,
+      "raad-doelpuntenmaker": 0.6,
+      "raad-de-minuut": 0.6,
+      "raad-de-eindstand": 0.6,
+      "raad-het-rugnummer": 0.6,
+      "raad-het-jaar": 0.6
     },
-    "_formatBoostComment": "Extra voorrang per format (op verzoek: meer \"raad de poster\")."
+    "_formatBoostComment": "Voorrang voor de quizformats (op verzoek); maxQuizPerDay houdt het bij één quiz per dag, de rest is ander format.",
+    "maxQuizPerDay": 1
   },
   "approval": {
     "mode": "sensitive-only",
@@ -207,6 +213,22 @@
       ],
       "raad-de-poster": [
         "#raaddeposter",
+        "#voetbalquiz"
+      ],
+      "raad-doelpuntenmaker": [
+        "#raaddedoelpuntenmaker",
+        "#voetbalquiz"
+      ],
+      "raad-de-minuut": [
+        "#voetbalquiz"
+      ],
+      "raad-de-eindstand": [
+        "#voetbalquiz"
+      ],
+      "raad-het-rugnummer": [
+        "#voetbalquiz"
+      ],
+      "raad-het-jaar": [
         "#voetbalquiz"
       ]
     }

@@ -60,7 +60,7 @@ async function generateIdeas(ctx, signals, { rnd = Math.random } = {}) {
     for (const m of pickGroup(pool, 3, lastMatch, rnd)) add({ format: id, slugs: [m.slug], why: `${FORMATS[id].label}: ${scoreLine(m)}` });
   }
   // Multi-match formats.
-  for (const id of ['collection-pick', 'last-minute']) {
+  for (const id of ['collection-pick', 'last-minute', ...Object.keys(FORMATS).filter((k) => FORMATS[k].quiz)]) {
     const pool = catalog.filter((m) => FORMATS[id].eligible(m));
     if (pool.length < 3) continue;
     const grp = pickGroup(pool, FORMATS[id].group, lastMatch, rnd);
@@ -101,6 +101,8 @@ function selectIdeas(ideas, n, cfg) {
     if (i.format === 'poster-request') continue;
     if (i.slugs.some((s) => usedSlugs.has(s))) continue;
     if (chosen.filter((c) => c.format === i.format).length >= cfg.schedule.maxSameFormatInRow) continue;
+    const isQuiz = (f) => FORMATS[f]?.quiz || f === 'raad-de-poster' || f === 'quiz';
+    if (isQuiz(i.format) && chosen.filter((c) => isQuiz(c.format)).length >= (cfg.ideation.maxQuizPerDay ?? 1)) continue;
     chosen.push(i); i.slugs.forEach((s) => usedSlugs.add(s));
   }
   return chosen;

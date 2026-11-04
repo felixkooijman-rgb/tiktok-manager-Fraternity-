@@ -196,4 +196,64 @@ const FORMATS = {
   },
 };
 
-module.exports = { FORMATS, hero, score, nlDate, matchLine, stillToCheck };
+// ---- Quiz carousels: cover → (question: match + known facts → answer: the poster) × rounds → score.
+// Every known fact and every answer comes from the verified match file; the poster shows the answer.
+const noYear = (m) => comp(m).replace(/\s*\d{4}$/, '');
+const vsUp = (m) => `${(m.match.home.display || m.match.home.name).toUpperCase()} – ${(m.match.away.display || m.match.away.name).toUpperCase()}`;
+const QUIZ_TYPES = {
+  'raad-doelpuntenmaker': {
+    label: 'Raad de doelpuntenmaker', title: 'Raad de doelpuntenmaker', ask: 'Wie scoorde?',
+    eligible: (m) => m.featured.moment?.minute != null,
+    q: (m) => ({ known: [{ text: scoreUp(m), size: 96 }, { text: hero(m).minute, size: 230 }], meta: `${matchLine(m)} · ${dotDate(m.match.date)}` }),
+    answer: (m) => `Antwoord: ${hero(m).name}`,
+    caption: (ms) => `Raad de doelpuntenmaker ⚽ ${ms.length} wedstrijden, ${ms.length} minuten: ${ms.map((m) => `${nlTeam(m.match.home.name)}–${nlTeam(m.match.away.name)}`).join(', ')}. Wie scoorde er? Tel je goede antwoorden en zet je score in de comments 👇`,
+  },
+  'raad-de-minuut': {
+    label: 'Raad de minuut', title: 'Raad de minuut', ask: 'In welke minuut?',
+    eligible: (m) => m.featured.moment?.minute != null,
+    q: (m) => ({ known: [{ text: hero(m).short, size: 150 }, { text: scoreUp(m), size: 84 }], meta: `${matchLine(m)} · ${dotDate(m.match.date)}` }),
+    answer: (m) => `Antwoord: ${hero(m).minute}`,
+    caption: (ms) => `Raad de minuut ⏱️ ${ms.map((m) => hero(m).name).join(', ')}: wanneer vielen hun goals? Gok eerst, swipe dan, en zet je score in de comments.`,
+  },
+  'raad-de-eindstand': {
+    label: 'Raad de eindstand', title: 'Raad de eindstand', ask: 'Wat werd het?',
+    eligible: (m) => m.featured.moment?.minute != null,
+    q: (m) => ({ known: [{ text: vsUp(m), size: 96 }, { text: `${hero(m).short} ${hero(m).minute}`, size: 120 }], meta: `${matchLine(m)} · ${dotDate(m.match.date)}` }),
+    answer: (m) => `Antwoord: ${m.match.score.home}-${m.match.score.away}${m.match.penalties ? ` (${m.match.penalties.home}-${m.match.penalties.away} pen.)` : ''}`,
+    caption: (ms) => `Raad de eindstand 🔢 ${ms.map((m) => `${nlTeam(m.match.home.name)}–${nlTeam(m.match.away.name)}`).join(', ')}. Weet jij hoe het afliep? Score in de comments 👇`,
+  },
+  'raad-het-rugnummer': {
+    label: 'Raad het rugnummer', title: 'Raad het rugnummer', ask: 'Welk rugnummer?',
+    eligible: (m) => !!m.featured.player?.number,
+    q: (m) => ({ known: [{ text: hero(m).short, size: 150 }, { text: scoreUp(m), size: 84 }], meta: `${matchLine(m)} · ${dotDate(m.match.date)}` }),
+    answer: (m) => `Antwoord: #${hero(m).number}`,
+    caption: (ms) => `Raad het rugnummer 👕 ${ms.map((m) => hero(m).name).join(', ')}. Welk nummer droegen ze in deze wedstrijd? Comment je score.`,
+  },
+  'raad-het-jaar': {
+    label: 'Raad het jaar', title: 'Raad het jaar', ask: 'Welk jaar?',
+    eligible: (m) => m.featured.moment?.minute != null,
+    q: (m) => ({ known: [{ text: scoreUp(m), size: 96 }, { text: `${hero(m).short} ${hero(m).minute}`, size: 120 }], meta: noYear(m) }),
+    answer: (m) => `Antwoord: ${m.match.date.slice(0, 4)}`,
+    caption: (ms) => `Raad het jaar 📅 ${ms.map((m) => hero(m).name).join(', ')}. In welk jaar was dit? Gok, swipe, en zet je score in de comments.`,
+  },
+};
+for (const [id, t] of Object.entries(QUIZ_TYPES)) {
+  FORMATS[id] = {
+    label: t.label, group: 3, quiz: true,
+    eligible: (m) => m.hasPoster && !!m.featured.player && t.eligible(m),
+    async slides(ms, ctx) {
+      const out = [{ type: 'cover', image: await posterImg(ms[0], ctx, 'framed'), kicker: 'Fraternity voetbalquiz', title: t.title, sub: `${ms.length} vragen · hoeveel heb jij goed?`, footer: 'Swipe voor vraag 1 →', size: 150 }];
+      for (let i = 0; i < ms.length; i++) {
+        const m = ms[i], q = t.q(m);
+        out.push({ type: 'question', kicker: `Vraag ${i + 1} van ${ms.length}`, ...q, ask: t.ask, footer: 'Swipe voor het antwoord →' });
+        out.push({ type: 'poster', image: await posterImg(m, ctx, 'framed'), label: t.answer(m), sub: `${scoreUp(m)} · ${dotDate(m.match.date)}` });
+      }
+      out.push({ type: 'cta', title: 'Hoeveel had je goed?', sub: `Zet je score in de comments · ${ctx.config.brand.cta}` });
+      return out;
+    },
+    caption: (ms) => t.caption(ms),
+    title: (ms) => `${t.title}: ${ms.length} vragen`,
+  };
+}
+
+module.exports = { QUIZ_TYPES, FORMATS, hero, score, nlDate, matchLine, stillToCheck };

@@ -107,6 +107,23 @@ const TEMPLATES = {
       ${s.lines.map((l) => `<div style="font-size:40px;font-weight:500;letter-spacing:1px;margin:14px 0;text-transform:none">— ${e(l)}</div>`).join('')}
     </div>${brand(ctx)}${stripes(ctx.pal)}`,
 
+  // Quiz question: what is known (match, minute, player…) big, the unknown as a "?" line.
+  question: (s, ctx) => `
+    <div style="position:absolute;inset:0;background:radial-gradient(120% 70% at 50% 30%,${ctx.pal.primary}55,${INK} 72%)"></div>
+    <div class="safe" style="justify-content:space-between">
+      <div>
+        <div class="kicker" style="color:${ctx.pal.accent}">${e(s.kicker || '')}</div>
+        <div class="rule" style="width:120px;color:${ctx.pal.accent}"></div>
+        ${(s.known || []).map((k) => `<div class="anton" style="font-size:${k.size || 110}px;margin-top:18px">${e(k.text)}</div>`).join('')}
+        ${s.meta ? `<div class="meta" style="margin-top:26px;font-size:40px">${e(s.meta)}</div>` : ''}
+      </div>
+      <div>
+        <div class="anton" style="font-size:${s.askSize || 130}px;color:${ctx.pal.accent === '#FFFFFF' ? '#fff' : ctx.pal.accent}">${e(s.ask)}</div>
+        <div style="margin-top:26px;height:150px;border:5px dashed rgba(255,255,255,.55);display:flex;align-items:center;justify-content:center" class="anton"><span style="font-size:110px;opacity:.85">?</span></div>
+        ${s.footer ? `<div class="meta" style="font-size:32px;opacity:.8;margin-top:24px">${e(s.footer)}</div>` : ''}
+      </div>
+    </div>${brand(ctx)}${stripes(ctx.pal)}`,
+
   // Series cover: blurred poster in its frame on the wall with a big question mark.
   cover: (s, ctx) => `
     <div style="position:absolute;inset:0;background:linear-gradient(180deg,${WALL} 0%,#E2DDD4 100%)"></div>
