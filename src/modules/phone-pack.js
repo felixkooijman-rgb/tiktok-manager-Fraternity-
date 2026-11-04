@@ -64,7 +64,7 @@ function template(posts, { made, handle }) {
     <ul class="matches">${p.matches.map((x) => `<li><b>${e(x.match)}</b><span>${e(x.moment)}</span></li>`).join('')}</ul>
     ${p.flagged ? `<p class="flag">Eerst zelf checken: ${e(p.flagged)}</p>` : ''}
     ${p.ai ? `<p class="flag">Bevat een AI-beeld: zet in TikTok "AI-gegenereerde content" aan.</p>` : ''}
-    <div class="strip" role="list">${p.slides.map((s, i) => `<figure role="listitem"><img src="${s}" loading="${n < 2 ? 'eager' : 'lazy'}" alt="Slide ${i + 1} van ${p.slides.length}"><figcaption>${i + 1}</figcaption><button class="one" type="button" id="one-${n}-${i}" data-post="${n}" data-slide="${i}">Download foto ${i + 1}</button></figure>`).join('')}</div>
+    <div class="strip" role="list">${p.slides.map((s, i) => `<figure role="listitem"><img ${s.startsWith('data:') ? `src="${s}"` : `data-src="${s}"`} alt="Slide ${i + 1} van ${p.slides.length}"><figcaption>${i + 1}</figcaption><button class="one" type="button" id="one-${n}-${i}" data-post="${n}" data-slide="${i}">Download foto ${i + 1}</button></figure>`).join('')}</div>
     <div class="steps">
       <button class="btn save" type="button" id="save-${n}"><b>1</b> Bewaar alle ${p.slides.length} foto's</button>
       <button class="btn copy" type="button" id="copy-${n}"><b>2</b> Kopieer caption</button>
@@ -106,7 +106,8 @@ h1{font-family:var(--display);font-weight:400;font-size:clamp(34px,9vw,48px);lin
 .flag{margin:0;padding:8px 10px;border-radius:8px;background:var(--flagbg);color:var(--flag);font-size:13.5px}
 .strip{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px;-webkit-overflow-scrolling:touch}
 .strip figure{margin:0;flex:0 0 46%;max-width:240px;scroll-snap-align:start;position:relative}
-.strip img{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:8px;border:1px solid var(--line)}
+.strip img{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:8px;border:1px solid var(--line);background:var(--line)}
+.strip .err{position:absolute;left:8px;right:8px;top:40%;text-align:center;font-size:13px;color:var(--flag);background:var(--flagbg);padding:6px;border-radius:6px}
 .strip figcaption{position:absolute;left:6px;bottom:54px;background:var(--ink);color:var(--wall);font:600 12px/1 var(--label);padding:4px 7px;border-radius:4px;font-variant-numeric:tabular-nums}
 .one{margin-top:6px;width:100%;font:600 13px/1.2 var(--label);text-transform:uppercase;letter-spacing:.05em;padding:10px 6px;border-radius:8px;border:1.5px solid var(--ink);background:var(--card);color:var(--ink);cursor:pointer;min-height:40px}
 .one.ok{border-color:var(--ok);color:var(--ok)}
@@ -160,7 +161,7 @@ footer{color:var(--muted);font-size:12.5px}
   function imgAt(i, j){ return document.querySelectorAll('.post')[i].querySelectorAll('.strip img')[j]; }
   function getBlob(i, j){
     var k = i + '-' + j; if (cache[k]) return cache[k];
-    var src = imgAt(i, j).src;
+    var img = imgAt(i, j), src = img.getAttribute('data-src') || img.src;
     if (src.indexOf('data:') === 0) {
       var bin = atob(src.split(',')[1]); var a = new Uint8Array(bin.length);
       for (var x = 0; x < bin.length; x++) a[x] = bin.charCodeAt(x);
@@ -168,13 +169,22 @@ footer{color:var(--muted);font-size:12.5px}
     } else cache[k] = fetch(src).then(function(r){ if (!r.ok) throw new Error(r.status); return r.blob(); });
     return cache[k];
   }
-  // Fetch each photo once it has been shown, so a later tap can save it immediately.
-  document.querySelectorAll('.post').forEach(function(card, i){
+  // Photos are the artifact's own files: fetch them and show them as blob: URLs (the viewer's
+  // frame allows blob: images everywhere), one post at a time as it scrolls into view.
+  function loadCard(card, i){
+    if (card.dataset.loaded) return; card.dataset.loaded = '1';
     card.querySelectorAll('.strip img').forEach(function(img, j){
-      function warm(){ getBlob(i, j).catch(function(){ delete cache[i + '-' + j]; }); }
-      if (img.complete && img.naturalWidth) warm(); else img.addEventListener('load', warm);
+      if (!img.getAttribute('data-src')) return;
+      getBlob(i, j).then(function(b){ img.src = URL.createObjectURL(b); })
+        .catch(function(){ delete cache[i + '-' + j]; card.dataset.loaded = ''; var m = document.createElement('div'); m.className = 'err'; m.textContent = 'Foto kon niet laden. Trek de pagina omlaag om te vernieuwen.'; img.parentNode.appendChild(m); });
     });
-  });
+  }
+  var cards = document.querySelectorAll('.post');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){ entries.forEach(function(en){ if (en.isIntersecting) { loadCard(en.target, +en.target.dataset.i); io.unobserve(en.target); } }); }, { rootMargin: '800px 0px' });
+    cards.forEach(function(c){ io.observe(c); });
+  } else cards.forEach(function(c, i){ loadCard(c, i); });
+  if (cards[0]) loadCard(cards[0], 0); if (cards[1]) loadCard(cards[1], 1);
   async function fileAt(i, j){ var p = POSTS[i]; return new File([await getBlob(i, j)], 'fraternity-' + p.date + '-' + (i + 1) + '-' + String(j + 1).padStart(2, '0') + '.jpg', { type: 'image/jpeg' }); }
   function setStatus(i, msg, ok){ var s = document.getElementById('status-' + i); s.textContent = msg; s.className = 'status' + (ok ? ' ok' : ''); }
   var dl = null;
