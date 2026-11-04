@@ -326,6 +326,90 @@
       "status": "used",
       "score": 0,
       "label": "Raad de poster"
+    },
+    {
+      "id": "idea_mw28e5xi5896ae",
+      "createdAt": "2026-11-04T14:47:55.014Z",
+      "format": "raad-de-poster",
+      "slugs": [
+        "1970-05-06-feyenoord-celtic-kindvall"
+      ],
+      "why": "Op verzoek: nog meer raad-de-poster",
+      "status": "used",
+      "score": 0,
+      "label": "Raad de poster"
+    },
+    {
+      "id": "idea_mw28e6pd8a5e87",
+      "createdAt": "2026-11-04T14:47:56.017Z",
+      "format": "raad-de-poster",
+      "slugs": [
+        "2010-07-06-nederland-uruguay-van-bronckhorst"
+      ],
+      "why": "Op verzoek: nog meer raad-de-poster",
+      "status": "used",
+      "score": 0,
+      "label": "Raad de poster"
+    },
+    {
+      "id": "idea_mw28e7gedf96c8",
+      "createdAt": "2026-11-04T14:47:56.990Z",
+      "format": "raad-de-poster",
+      "slugs": [
+        "2023-02-28-utrecht-spakenburg-van-der-linden"
+      ],
+      "why": "Op verzoek: nog meer raad-de-poster",
+      "status": "used",
+      "score": 0,
+      "label": "Raad de poster"
+    },
+    {
+      "id": "idea_mw28e87y78b64f",
+      "createdAt": "2026-11-04T14:47:57.982Z",
+      "format": "raad-de-poster",
+      "slugs": [
+        "2024-11-27-psv-shakhtar-tillman"
+      ],
+      "why": "Op verzoek: nog meer raad-de-poster",
+      "status": "used",
+      "score": 0,
+      "label": "Raad de poster"
+    },
+    {
+      "id": "idea_mw28e8zze0b788",
+      "createdAt": "2026-11-04T14:47:58.991Z",
+      "format": "raad-de-poster",
+      "slugs": [
+        "2026-10-27-excelsior31-ado-reimink"
+      ],
+      "why": "Op verzoek: nog meer raad-de-poster",
+      "status": "used",
+      "score": 0,
+      "label": "Raad de poster"
+    },
+    {
+      "id": "idea_mw28e9p10c1f7d",
+      "createdAt": "2026-11-04T14:47:59.893Z",
+      "format": "raad-de-poster",
+      "slugs": [
+        "2022-12-09-nederland-argentinie-weghorst"
+      ],
+      "why": "Op verzoek: nog meer raad-de-poster",
+      "status": "used",
+      "score": 0,
+      "label": "Raad de poster"
+    },
+    {
+      "id": "idea_mw28eaf66350cd",
+      "createdAt": "2026-11-04T14:48:00.834Z",
+      "format": "raad-de-poster",
+      "slugs": [
+        "2024-05-10-willem-ii-telstar-meerveld"
+      ],
+      "why": "Op verzoek: nog meer raad-de-poster",
+      "status": "used",
+      "score": 0,
+      "label": "Raad de poster"
     }
   ],
   "posts": [
@@ -1033,7 +1117,7 @@
       ],
       "signal": null,
       "why": "Op verzoek: meer raad-de-poster",
-      "caption": "Raad de poster 🔍 Hint: WK, 2010. Welk moment zit hierachter? Zet je gok in de comments vóór je doorswipet.",
+      "caption": "Raad de poster 🔍 Hint: WK, 2010, rugnummer 10. Welk moment zit hierachter? Zet je gok in de comments vóór je doorswipet.",
       "title": "Raad de poster: welk moment is dit?",
       "hashtags": [
         "#fraternity",
@@ -1170,9 +1254,9 @@
         ],
         "needsApproval": false,
         "reasons": [],
-        "checkedAt": "2026-11-04T14:46:08.824Z"
+        "checkedAt": "2026-11-04T14:48:14.837Z"
       },
-      "updatedAt": "2026-11-04T14:46:08.825Z",
+      "updatedAt": "2026-11-04T14:48:14.837Z",
       "scheduledAt": "2026-11-05T15:00:00.000Z"
     },
     {
@@ -1187,7 +1271,7 @@
       ],
       "signal": null,
       "why": "Op verzoek: meer raad-de-poster",
-      "caption": "Herken jij dit shirt? 👀 Champions League, 2019. Gok eerst, swipe daarna.",
+      "caption": "Herken jij dit shirt? 👀 Champions League, 2019, rugnummer 10. Gok eerst, swipe daarna.",
       "title": "Raad de poster: welk moment is dit?",
       "hashtags": [
         "#fraternity",
@@ -1323,9 +1407,9 @@
         ],
         "needsApproval": false,
         "reasons": [],
-        "checkedAt": "2026-11-04T14:46:09.788Z"
+        "checkedAt": "2026-11-04T14:48:14.842Z"
       },
-      "updatedAt": "2026-11-04T14:46:09.788Z",
+      "updatedAt": "2026-11-04T14:48:14.842Z",
       "scheduledAt": "2026-11-06T11:15:00.000Z"
     },
     {
@@ -1340,7 +1424,7 @@
       ],
       "signal": null,
       "why": "Op verzoek: meer raad-de-poster",
-      "caption": "Eén cijfer, één shirt, één moment. UEFA Cup, 2002. Weet jij welke poster dit is? Comment je antwoord vóór slide 3.",
+      "caption": "Eén cijfer, één shirt, één moment. UEFA Cup, 2002, rugnummer 9. Weet jij welke poster dit is? Comment je antwoord vóór slide 3.",
       "title": "Raad de poster: welk moment is dit?",
       "hashtags": [
         "#fraternity",
@@ -1470,9 +1554,9 @@
         ],
         "needsApproval": false,
         "reasons": [],
-        "checkedAt": "2026-11-04T14:46:10.737Z"
+        "checkedAt": "2026-11-04T14:48:14.845Z"
       },
-      "updatedAt": "2026-11-04T14:46:10.737Z",
+      "updatedAt": "2026-11-04T14:48:14.845Z",
       "scheduledAt": "2026-11-06T18:30:00.000Z"
     },
     {
@@ -1487,7 +1571,7 @@
       ],
       "signal": null,
       "why": "Op verzoek: nog meer raad-de-poster",
-      "caption": "Herken jij dit shirt? 👀 Champions League, 1995. Gok eerst, swipe daarna.",
+      "caption": "Herken jij dit shirt? 👀 Champions League, 1995, rugnummer 15. Gok eerst, swipe daarna.",
       "title": "Raad de poster: welk moment is dit?",
       "hashtags": [
         "#fraternity",
@@ -1623,9 +1707,9 @@
         ],
         "needsApproval": false,
         "reasons": [],
-        "checkedAt": "2026-11-04T14:46:11.845Z"
+        "checkedAt": "2026-11-04T14:48:14.847Z"
       },
-      "updatedAt": "2026-11-04T14:46:11.845Z",
+      "updatedAt": "2026-11-04T14:48:14.847Z",
       "scheduledAt": "2026-11-07T11:15:00.000Z"
     },
     {
@@ -1640,7 +1724,7 @@
       ],
       "signal": null,
       "why": "Op verzoek: nog meer raad-de-poster",
-      "caption": "Herken jij dit shirt? 👀 WK, 2014. Gok eerst, swipe daarna.",
+      "caption": "Herken jij dit shirt? 👀 WK, 2014, rugnummer 9. Gok eerst, swipe daarna.",
       "title": "Raad de poster: welk moment is dit?",
       "hashtags": [
         "#fraternity",
@@ -1782,9 +1866,9 @@
         ],
         "needsApproval": false,
         "reasons": [],
-        "checkedAt": "2026-11-04T14:46:12.948Z"
+        "checkedAt": "2026-11-04T14:48:14.849Z"
       },
-      "updatedAt": "2026-11-04T14:46:12.948Z",
+      "updatedAt": "2026-11-04T14:48:14.849Z",
       "scheduledAt": "2026-11-08T11:15:00.000Z"
     },
     {
@@ -1799,7 +1883,7 @@
       ],
       "signal": null,
       "why": "Op verzoek: nog meer raad-de-poster",
-      "caption": "Eén cijfer, één shirt, één moment. European Cup, 1972. Weet jij welke poster dit is? Comment je antwoord vóór slide 3.",
+      "caption": "Eén cijfer, één shirt, één moment. European Cup, 1972, rugnummer 14. Weet jij welke poster dit is? Comment je antwoord vóór slide 3.",
       "title": "Raad de poster: welk moment is dit?",
       "hashtags": [
         "#fraternity",
@@ -1929,9 +2013,9 @@
         ],
         "needsApproval": false,
         "reasons": [],
-        "checkedAt": "2026-11-04T14:46:13.862Z"
+        "checkedAt": "2026-11-04T14:48:14.852Z"
       },
-      "updatedAt": "2026-11-04T14:46:13.862Z",
+      "updatedAt": "2026-11-04T14:48:14.852Z",
       "scheduledAt": "2026-11-09T17:00:00.000Z"
     },
     {
@@ -1946,7 +2030,7 @@
       ],
       "signal": null,
       "why": "Op verzoek: nog meer raad-de-poster",
-      "caption": "Eén cijfer, één shirt, één moment. KNVB Beker, 2025. Weet jij welke poster dit is? Comment je antwoord vóór slide 3.",
+      "caption": "Eén cijfer, één shirt, één moment. KNVB Beker, 2025, rugnummer 2. Weet jij welke poster dit is? Comment je antwoord vóór slide 3.",
       "title": "Raad de poster: welk moment is dit?",
       "hashtags": [
         "#fraternity",
@@ -2125,9 +2209,9 @@
         ],
         "needsApproval": false,
         "reasons": [],
-        "checkedAt": "2026-11-04T14:46:14.904Z"
+        "checkedAt": "2026-11-04T14:48:14.855Z"
       },
-      "updatedAt": "2026-11-04T14:46:14.904Z",
+      "updatedAt": "2026-11-04T14:48:14.855Z",
       "scheduledAt": "2026-11-10T17:00:00.000Z"
     },
     {
@@ -2142,7 +2226,7 @@
       ],
       "signal": null,
       "why": "Op verzoek: nog meer raad-de-poster",
-      "caption": "Eén cijfer, één shirt, één moment. WK, 1998. Weet jij welke poster dit is? Comment je antwoord vóór slide 3.",
+      "caption": "Eén cijfer, één shirt, één moment. WK, 1998, rugnummer 8. Weet jij welke poster dit is? Comment je antwoord vóór slide 3.",
       "title": "Raad de poster: welk moment is dit?",
       "hashtags": [
         "#fraternity",
@@ -2278,9 +2362,9 @@
         ],
         "needsApproval": false,
         "reasons": [],
-        "checkedAt": "2026-11-04T14:46:15.848Z"
+        "checkedAt": "2026-11-04T14:48:14.857Z"
       },
-      "updatedAt": "2026-11-04T14:46:15.848Z",
+      "updatedAt": "2026-11-04T14:48:14.857Z",
       "scheduledAt": "2026-11-11T17:00:00.000Z"
     },
     {
@@ -2295,7 +2379,7 @@
       ],
       "signal": null,
       "why": "Op verzoek: nog meer raad-de-poster",
-      "caption": "Eén cijfer, één shirt, één moment. KNVB Beker, 2023. Weet jij welke poster dit is? Comment je antwoord vóór slide 3.",
+      "caption": "Eén cijfer, één shirt, één moment. KNVB Beker, 2023, rugnummer 4. Weet jij welke poster dit is? Comment je antwoord vóór slide 3.",
       "title": "Raad de poster: welk moment is dit?",
       "hashtags": [
         "#fraternity",
@@ -2482,9 +2566,9 @@
         ],
         "needsApproval": false,
         "reasons": [],
-        "checkedAt": "2026-11-04T14:46:16.886Z"
+        "checkedAt": "2026-11-04T14:48:14.860Z"
       },
-      "updatedAt": "2026-11-04T14:46:16.886Z",
+      "updatedAt": "2026-11-04T14:48:14.860Z",
       "scheduledAt": "2026-11-12T17:00:00.000Z"
     },
     {
@@ -2499,7 +2583,7 @@
       ],
       "signal": null,
       "why": "Op verzoek: nog meer raad-de-poster",
-      "caption": "Raad de poster 🔍 Hint: EK, 1988. Welk moment zit hierachter? Zet je gok in de comments vóór je doorswipet.",
+      "caption": "Raad de poster 🔍 Hint: EK, 1988, rugnummer 12. Welk moment zit hierachter? Zet je gok in de comments vóór je doorswipet.",
       "title": "Raad de poster: welk moment is dit?",
       "hashtags": [
         "#fraternity",
@@ -2629,10 +2713,1217 @@
         ],
         "needsApproval": false,
         "reasons": [],
-        "checkedAt": "2026-11-04T14:46:17.994Z"
+        "checkedAt": "2026-11-04T14:48:14.863Z"
       },
-      "updatedAt": "2026-11-04T14:46:17.994Z",
+      "updatedAt": "2026-11-04T14:48:14.863Z",
       "scheduledAt": "2026-11-13T17:00:00.000Z"
+    },
+    {
+      "id": "post_mw28e5xu847c0e",
+      "createdAt": "2026-11-04T14:47:55.026Z",
+      "status": "scheduled",
+      "format": "raad-de-poster",
+      "formatLabel": "Raad de poster",
+      "ideaId": "idea_mw28e5xi5896ae",
+      "slugs": [
+        "1970-05-06-feyenoord-celtic-kindvall"
+      ],
+      "signal": null,
+      "why": "Op verzoek: nog meer raad-de-poster",
+      "caption": "Eén cijfer, één shirt, één moment. European Cup, 1970, rugnummer 9. Weet jij welke poster dit is? Comment je antwoord vóór slide 3.",
+      "title": "Raad de poster: welk moment is dit?",
+      "hashtags": [
+        "#fraternity",
+        "#voetbalposter",
+        "#raaddeposter",
+        "#voetbalquiz",
+        "#feyenoord",
+        "#celtic"
+      ],
+      "captionSource": "template",
+      "slides": [
+        {
+          "file": "01-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e5xu847c0e/01-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+        },
+        {
+          "file": "02-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e5xu847c0e/02-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Hint 2 | Nog steeds niet? | Antwoord in de comments, dan swipen →"
+        },
+        {
+          "file": "03-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e5xu847c0e/03-poster.jpg",
+          "type": "poster",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "FEYENOORD 2:1 CELTIC · 06.05.1970"
+        },
+        {
+          "file": "04-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e5xu847c0e/04-cta.jpg",
+          "type": "cta",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Had jij hem? | Poster? Link in bio."
+        }
+      ],
+      "assets": [
+        {
+          "path": "/home/user/Fraternity/output/1970-05-06-feyenoord-celtic-kindvall-frameless/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 1970-05-06-feyenoord-celtic-kindvall (frameless)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        },
+        {
+          "path": "/home/user/Fraternity/output/1970-05-06-feyenoord-celtic-kindvall-framed/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 1970-05-06-feyenoord-celtic-kindvall (framed)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        }
+      ],
+      "sources": [
+        {
+          "title": "en.wikipedia – 1970 European Cup final",
+          "url": "https://en.wikipedia.org/wiki/1970_European_Cup_final",
+          "used_for": "result, line-ups",
+          "match": "1970-05-06-feyenoord-celtic-kindvall"
+        },
+        {
+          "title": "simple.wikipedia – 1970 European Cup final",
+          "url": "https://simple.wikipedia.org/wiki/1970_European_Cup_final",
+          "used_for": "goal minutes, shirt numbers",
+          "match": "1970-05-06-feyenoord-celtic-kindvall"
+        },
+        {
+          "title": "The Celtic Wiki – Celtic 1-2 Feyenoord",
+          "url": "https://www.thecelticwiki.com/1970-05-06-celtic-1-2-feyenoord-european-cup/",
+          "used_for": "line-ups",
+          "match": "1970-05-06-feyenoord-celtic-kindvall"
+        },
+        {
+          "title": "The Blizzard – Feyenoord 2 Celtic 1",
+          "url": "https://theblizzard.co.uk/feyenoord-2-celtic-1/featured/",
+          "used_for": "narrative",
+          "match": "1970-05-06-feyenoord-celtic-kindvall"
+        },
+        {
+          "title": "Wikidata – 1970 European Cup Final",
+          "url": "https://www.wikidata.org/wiki/Q1068946",
+          "used_for": "shirt numbers",
+          "match": "1970-05-06-feyenoord-celtic-kindvall"
+        },
+        {
+          "title": "Sporcle – 1970 European Cup final facts",
+          "url": "https://www.sporcle.com/games/bratan88/1970-european-cup-final-facts",
+          "used_for": "shirt numbers",
+          "match": "1970-05-06-feyenoord-celtic-kindvall"
+        }
+      ],
+      "credits": [
+        "Fraternity poster 1970-05-06-feyenoord-celtic-kindvall (frameless) – own-work",
+        "Fraternity poster 1970-05-06-feyenoord-celtic-kindvall (framed) – own-work"
+      ],
+      "openChecks": [
+        "1970-05-06-feyenoord-celtic-kindvall: Gemmell 30' vs 31' (Celtic Wiki) – 30' used",
+        "1970-05-06-feyenoord-celtic-kindvall: Feyenoord kit worn in the final not verified (Le Coq Sportif per an auction listing) – club colours red/white used",
+        "1970-05-06-feyenoord-celtic-kindvall: Line-up rows are a display arrangement",
+        "1970-05-06-feyenoord-celtic-kindvall: Shirt lettering of 1970 not verified – default block lettering",
+        "1970-05-06-feyenoord-celtic-kindvall: Crests, sponsors and manufacturer logos not reproduced (no licensed assets)"
+      ],
+      "aiGenerated": false,
+      "shopLinks": [],
+      "publishSettings": {
+        "privacyLevel": null,
+        "allowComments": true,
+        "brandOrganic": true,
+        "brandedContent": false
+      },
+      "qa": {
+        "ok": true,
+        "errors": [],
+        "warnings": [
+          "5 open punten in de posterdata (zie bronnen)"
+        ],
+        "needsApproval": false,
+        "reasons": [],
+        "checkedAt": "2026-11-04T14:48:14.865Z"
+      },
+      "updatedAt": "2026-11-04T14:48:14.865Z",
+      "scheduledAt": "2026-11-14T11:15:00.000Z"
+    },
+    {
+      "id": "post_mw28e6pj80cd39",
+      "createdAt": "2026-11-04T14:47:56.023Z",
+      "status": "scheduled",
+      "format": "raad-de-poster",
+      "formatLabel": "Raad de poster",
+      "ideaId": "idea_mw28e6pd8a5e87",
+      "slugs": [
+        "2010-07-06-nederland-uruguay-van-bronckhorst"
+      ],
+      "signal": null,
+      "why": "Op verzoek: nog meer raad-de-poster",
+      "caption": "Raad de poster 🔍 Hint: WK, 2010, rugnummer 5. Welk moment zit hierachter? Zet je gok in de comments vóór je doorswipet.",
+      "title": "Raad de poster: welk moment is dit?",
+      "hashtags": [
+        "#fraternity",
+        "#voetbalposter",
+        "#raaddeposter",
+        "#voetbalquiz",
+        "#oranje",
+        "#wk"
+      ],
+      "captionSource": "template",
+      "slides": [
+        {
+          "file": "01-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e6pj80cd39/01-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+        },
+        {
+          "file": "02-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e6pj80cd39/02-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Hint 2 | Nog steeds niet? | Antwoord in de comments, dan swipen →"
+        },
+        {
+          "file": "03-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e6pj80cd39/03-poster.jpg",
+          "type": "poster",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "URUGUAY 2:3 NEDERLAND · 06.07.2010"
+        },
+        {
+          "file": "04-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e6pj80cd39/04-cta.jpg",
+          "type": "cta",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Had jij hem? | Poster? Link in bio."
+        }
+      ],
+      "assets": [
+        {
+          "path": "/home/user/Fraternity/output/2010-07-06-nederland-uruguay-van-bronckhorst-frameless/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 2010-07-06-nederland-uruguay-van-bronckhorst (frameless)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        },
+        {
+          "path": "/home/user/Fraternity/output/2010-07-06-nederland-uruguay-van-bronckhorst-framed/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 2010-07-06-nederland-uruguay-van-bronckhorst (framed)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        }
+      ],
+      "sources": [
+        {
+          "title": "ESPN – Netherlands 3-2 Uruguay",
+          "url": "https://www.espn.co.uk/football/match/_/gameId/264120/netherlands-uruguay",
+          "used_for": "goals, venue, attendance",
+          "match": "2010-07-06-nederland-uruguay-van-bronckhorst"
+        },
+        {
+          "title": "ESPN – line-ups",
+          "url": "https://www.espn.com/soccer/lineups/_/gameId/264120",
+          "used_for": "shirt numbers",
+          "match": "2010-07-06-nederland-uruguay-van-bronckhorst"
+        },
+        {
+          "title": "Sky Sports – starting line-ups",
+          "url": "https://www.skysports.com/football/uruguay-vs-netherlands/teams/220750",
+          "used_for": "captain, #5",
+          "match": "2010-07-06-nederland-uruguay-van-bronckhorst"
+        },
+        {
+          "title": "CNN – minute by minute",
+          "url": "https://www.cnn.com/2010/SPORT/football/07/06/world.cup.uruguay.netherlands.minute/index.html",
+          "used_for": "goals",
+          "match": "2010-07-06-nederland-uruguay-van-bronckhorst"
+        }
+      ],
+      "credits": [
+        "Fraternity poster 2010-07-06-nederland-uruguay-van-bronckhorst (frameless) – own-work",
+        "Fraternity poster 2010-07-06-nederland-uruguay-van-bronckhorst (framed) – own-work"
+      ],
+      "openChecks": [
+        "2010-07-06-nederland-uruguay-van-bronckhorst: Official home/away order (Uruguay listed first by ESPN/Sky) – verify",
+        "2010-07-06-nederland-uruguay-van-bronckhorst: Line-ups not printed (Uruguay XI listing in my sources mixes starters and subs)",
+        "2010-07-06-nederland-uruguay-van-bronckhorst: Netherlands in the orange home kit – confirm with a photo; number colour to be confirmed",
+        "2010-07-06-nederland-uruguay-van-bronckhorst: Robben's 73' noted as a header – shown without label",
+        "2010-07-06-nederland-uruguay-van-bronckhorst: Crests, sponsors and manufacturer logos not reproduced (no licensed assets)",
+        "2010-07-06-nederland-uruguay-van-bronckhorst: Back-of-shirt lettering approximated – send a photo of the back print to match it exactly"
+      ],
+      "aiGenerated": false,
+      "shopLinks": [],
+      "publishSettings": {
+        "privacyLevel": null,
+        "allowComments": true,
+        "brandOrganic": true,
+        "brandedContent": false
+      },
+      "qa": {
+        "ok": true,
+        "errors": [],
+        "warnings": [
+          "6 open punten in de posterdata (zie bronnen)"
+        ],
+        "needsApproval": false,
+        "reasons": [],
+        "checkedAt": "2026-11-04T14:48:14.868Z"
+      },
+      "updatedAt": "2026-11-04T14:48:14.868Z",
+      "scheduledAt": "2026-11-15T11:15:00.000Z"
+    },
+    {
+      "id": "post_mw28e7gkb6879e",
+      "createdAt": "2026-11-04T14:47:56.996Z",
+      "status": "scheduled",
+      "format": "raad-de-poster",
+      "formatLabel": "Raad de poster",
+      "ideaId": "idea_mw28e7gedf96c8",
+      "slugs": [
+        "2023-02-28-utrecht-spakenburg-van-der-linden"
+      ],
+      "signal": null,
+      "why": "Op verzoek: nog meer raad-de-poster",
+      "caption": "Eén cijfer, één shirt, één moment. KNVB Beker, 2023, rugnummer 9. Weet jij welke poster dit is? Comment je antwoord vóór slide 3.",
+      "title": "Raad de poster: welk moment is dit?",
+      "hashtags": [
+        "#fraternity",
+        "#voetbalposter",
+        "#raaddeposter",
+        "#voetbalquiz",
+        "#spakenburg",
+        "#fcutrecht"
+      ],
+      "captionSource": "template",
+      "slides": [
+        {
+          "file": "01-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e7gkb6879e/01-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+        },
+        {
+          "file": "02-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e7gkb6879e/02-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Hint 2 | Nog steeds niet? | Antwoord in de comments, dan swipen →"
+        },
+        {
+          "file": "03-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e7gkb6879e/03-poster.jpg",
+          "type": "poster",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "FC UTRECHT 1:4 SPAKENBURG · 28.02.2023"
+        },
+        {
+          "file": "04-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e7gkb6879e/04-cta.jpg",
+          "type": "cta",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Had jij hem? | Poster? Link in bio."
+        }
+      ],
+      "assets": [
+        {
+          "path": "/home/user/Fraternity/output/2023-02-28-utrecht-spakenburg-van-der-linden-frameless/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 2023-02-28-utrecht-spakenburg-van-der-linden (frameless)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        },
+        {
+          "path": "/home/user/Fraternity/output/2023-02-28-utrecht-spakenburg-van-der-linden-framed/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 2023-02-28-utrecht-spakenburg-van-der-linden (framed)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        }
+      ],
+      "sources": [
+        {
+          "title": "VI – Stuntploeg Spakenburg droogt FC Utrecht af",
+          "url": "https://www.vi.nl/nieuws/stuntploeg-spakenburg-droogt-fc-utrecht-af-en-schrijft-bekergeschiedenis",
+          "used_for": "result, goals",
+          "match": "2023-02-28-utrecht-spakenburg-van-der-linden"
+        },
+        {
+          "title": "NOS liveblog",
+          "url": "https://nos.nl/liveblog/2465634-spakenburg-tweede-divisie-op-weg-naar-enorme-bekerstunt-tegen-fc-utrecht-1-4",
+          "used_for": "goals, header",
+          "match": "2023-02-28-utrecht-spakenburg-van-der-linden"
+        },
+        {
+          "title": "SV Spakenburg – wedstrijdverslag",
+          "url": "https://spakenburg.com/wedstrijdverslagen/spakenburg-bekert-verder-na-gigastunt-tegen-fc-utrecht/",
+          "used_for": "goals, Utrecht XI, attendance",
+          "match": "2023-02-28-utrecht-spakenburg-van-der-linden"
+        },
+        {
+          "title": "FC Utrecht – uitgeschakeld door SV Spakenburg",
+          "url": "https://www.fcutrecht.nl/nieuws/2023/februari/fc-utrecht-uitgeschakeld-door-sv-spakenburg/",
+          "used_for": "result",
+          "match": "2023-02-28-utrecht-spakenburg-van-der-linden"
+        },
+        {
+          "title": "RTV Utrecht – liveblog",
+          "url": "https://www.rtvutrecht.nl/sport/3546654/liveblog-sensatie-in-de-maak-spakenburg-vernedert-fc-utrecht",
+          "used_for": "goal minutes (74')",
+          "match": "2023-02-28-utrecht-spakenburg-van-der-linden"
+        },
+        {
+          "title": "voetbal.com – opstelling",
+          "url": "https://www.voetbal.com/match-report/co52/nederland-knvb-beker/ma9573757/fc-utrecht_sv-spakenburg/lineup/",
+          "used_for": "header, assist, line-ups",
+          "match": "2023-02-28-utrecht-spakenburg-van-der-linden"
+        },
+        {
+          "title": "Utrechtfans – FC Utrecht met deze elf tegen Spakenburg",
+          "url": "https://www.utrechtfans.nl/fc-utrecht-met-deze-elf-tegen-spakenburg-silberbauer-afwezig/",
+          "used_for": "line-ups",
+          "match": "2023-02-28-utrecht-spakenburg-van-der-linden"
+        },
+        {
+          "title": "Sofascore – match",
+          "url": "https://www.sofascore.com/football/match/sv-spakenburg-fc-utrecht/YibsKjb",
+          "used_for": "goal minutes",
+          "match": "2023-02-28-utrecht-spakenburg-van-der-linden"
+        },
+        {
+          "title": "Sportsmole – match",
+          "url": "https://www.sportsmole.co.uk/football/knvb-beker/fc-utrecht-vs-spakenburg_game_173581.html",
+          "used_for": "goal minutes",
+          "match": "2023-02-28-utrecht-spakenburg-van-der-linden"
+        },
+        {
+          "title": "ESPN – match",
+          "url": "https://www.espn.com/soccer/match/_/gameId/665801",
+          "used_for": "result, attendance",
+          "match": "2023-02-28-utrecht-spakenburg-van-der-linden"
+        },
+        {
+          "title": "fcupdate – Spakenburg - PSV opstellingen",
+          "url": "https://www.fcupdate.nl/voetbalcompetities/nederland/toto-knvb-beker/programma-uitslagen/2022-2023/spakenburg-psv-04-04/opstellingen",
+          "used_for": "shirt number 9 (2022-23)",
+          "match": "2023-02-28-utrecht-spakenburg-van-der-linden"
+        },
+        {
+          "title": "nl.wikipedia – Floris van der Linden",
+          "url": "https://nl.wikipedia.org/wiki/Floris_van_der_Linden_(voetballer)",
+          "used_for": "captaincy",
+          "match": "2023-02-28-utrecht-spakenburg-van-der-linden"
+        },
+        {
+          "title": "Football Kit Archive – SV Spakenburg kits",
+          "url": "https://footballkitarchive.com/sv-spakenburg-kits",
+          "used_for": "kit colours",
+          "match": "2023-02-28-utrecht-spakenburg-van-der-linden"
+        }
+      ],
+      "credits": [
+        "Fraternity poster 2023-02-28-utrecht-spakenburg-van-der-linden (frameless) – own-work",
+        "Fraternity poster 2023-02-28-utrecht-spakenburg-van-der-linden (framed) – own-work"
+      ],
+      "openChecks": [
+        "2023-02-28-utrecht-spakenburg-van-der-linden: The request said 'Spakenburg tegen Ajax'; the 1-4 header by captain Van der Linden was against FC Utrecht – this poster is FC Utrecht – Spakenburg",
+        "2023-02-28-utrecht-spakenburg-van-der-linden: Van der Linden's #9 is confirmed for the semi-final vs PSV (04.04.2023, fcupdate/voetbal.com) and his profiles; not seen on a line-up of this exact match",
+        "2023-02-28-utrecht-spakenburg-van-der-linden: Goal minute: 75' (spakenburg.com, Sofascore, voetbal.com) vs 74' (RTV Utrecht) – 75' used",
+        "2023-02-28-utrecht-spakenburg-van-der-linden: Attendance differs (20,346 spakenburg.com vs 21,733 ESPN) – not printed",
+        "2023-02-28-utrecht-spakenburg-van-der-linden: Line-up rows (both teams) are a display arrangement from player roles, not verified positions",
+        "2023-02-28-utrecht-spakenburg-van-der-linden: Crests and sponsors not reproduced (no licensed assets)",
+        "2023-02-28-utrecht-spakenburg-van-der-linden: Back-number lettering of the black away shirt not seen (photo shows the front) – default lettering used; neon accent taken from the captain's armband"
+      ],
+      "aiGenerated": false,
+      "shopLinks": [],
+      "publishSettings": {
+        "privacyLevel": null,
+        "allowComments": true,
+        "brandOrganic": true,
+        "brandedContent": false
+      },
+      "qa": {
+        "ok": true,
+        "errors": [],
+        "warnings": [
+          "7 open punten in de posterdata (zie bronnen)"
+        ],
+        "needsApproval": false,
+        "reasons": [],
+        "checkedAt": "2026-11-04T14:48:14.871Z"
+      },
+      "updatedAt": "2026-11-04T14:48:14.871Z",
+      "scheduledAt": "2026-11-16T17:00:00.000Z"
+    },
+    {
+      "id": "post_mw28e8828c62c8",
+      "createdAt": "2026-11-04T14:47:57.986Z",
+      "status": "scheduled",
+      "format": "raad-de-poster",
+      "formatLabel": "Raad de poster",
+      "ideaId": "idea_mw28e87y78b64f",
+      "slugs": [
+        "2024-11-27-psv-shakhtar-tillman"
+      ],
+      "signal": null,
+      "why": "Op verzoek: nog meer raad-de-poster",
+      "caption": "Raad de poster 🔍 Hint: Champions League, 2024, rugnummer 7. Welk moment zit hierachter? Zet je gok in de comments vóór je doorswipet.",
+      "title": "Raad de poster: welk moment is dit?",
+      "hashtags": [
+        "#fraternity",
+        "#voetbalposter",
+        "#raaddeposter",
+        "#voetbalquiz",
+        "#psv",
+        "#championsleague"
+      ],
+      "captionSource": "template",
+      "slides": [
+        {
+          "file": "01-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e8828c62c8/01-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+        },
+        {
+          "file": "02-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e8828c62c8/02-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Hint 2 | Nog steeds niet? | Antwoord in de comments, dan swipen →"
+        },
+        {
+          "file": "03-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e8828c62c8/03-poster.jpg",
+          "type": "poster",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "PSV 3:2 SHAKHTAR · 27.11.2024"
+        },
+        {
+          "file": "04-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e8828c62c8/04-cta.jpg",
+          "type": "cta",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Had jij hem? | Poster? Link in bio."
+        }
+      ],
+      "assets": [
+        {
+          "path": "/home/user/Fraternity/output/2024-11-27-psv-shakhtar-tillman/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 2024-11-27-psv-shakhtar-tillman (frameless)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        }
+      ],
+      "sources": [
+        {
+          "title": "ESPN – PSV 3-2 Shakhtar line-ups",
+          "url": "https://www.espn.com/soccer/lineups/_/gameId/720408",
+          "used_for": "line-ups, goals",
+          "match": "2024-11-27-psv-shakhtar-tillman"
+        },
+        {
+          "title": "ESPN – match centre",
+          "url": "https://global.espn.com/football/match/_/gameId/720408/shakhtar-donetsk-psv-eindhoven",
+          "used_for": "score, goal minutes",
+          "match": "2024-11-27-psv-shakhtar-tillman"
+        },
+        {
+          "title": "Worldfootball.net – line-ups",
+          "url": "https://www.worldfootball.net/match-report/co19/champions-league/ma10681697/psv-eindhoven_shakhtar-donetsk/lineup/",
+          "used_for": "line-ups, goals",
+          "match": "2024-11-27-psv-shakhtar-tillman"
+        },
+        {
+          "title": "Soccerway – match page",
+          "url": "https://int.soccerway.com/matches/2024/11/27/europe/uefa-champions-league/psv-nv/joint-stock-company-fc-shakhtar-donetsk/4526853/",
+          "used_for": "Shakhtar XI",
+          "match": "2024-11-27-psv-shakhtar-tillman"
+        },
+        {
+          "title": "Sportsmole – match page",
+          "url": "https://www.sportsmole.co.uk/football/league/psv-eindhoven-vs-shakhtar-donetsk_game_216347.html",
+          "used_for": "goal minutes",
+          "match": "2024-11-27-psv-shakhtar-tillman"
+        },
+        {
+          "title": "Football Web Pages – match page",
+          "url": "https://www.footballwebpages.co.uk/match/2024-2025/champions-league/psv-eindhoven/shakhtar-donetsk/512099",
+          "used_for": "goal minutes (87'/88' discrepancy)",
+          "match": "2024-11-27-psv-shakhtar-tillman"
+        },
+        {
+          "title": "SuperSport / Reuters – match report",
+          "url": "https://supersport.com/football/general/news/c6d9eab4-54b9-41f1-a4f9-c646d8492251/psv-stage-dramatic-comeback-with-three-late-goals-to-beat-shakhtar",
+          "used_for": "narrative, Pepi as substitute",
+          "match": "2024-11-27-psv-shakhtar-tillman"
+        },
+        {
+          "title": "NL Times – match report",
+          "url": "https://nltimes.nl/2024/11/27/psv-score-three-goals-ten-minutes-complete-astounding-comeback-shakhtar",
+          "used_for": "narrative",
+          "match": "2024-11-27-psv-shakhtar-tillman"
+        },
+        {
+          "title": "Eindhoven News – PSV shirt numbers 2024/25",
+          "url": "https://eindhovennews.com/news/2024/07/psv-announces-shirt-numbers-for-2024-25-season",
+          "used_for": "Tillman #7",
+          "match": "2024-11-27-psv-shakhtar-tillman"
+        }
+      ],
+      "credits": [
+        "Fraternity poster 2024-11-27-psv-shakhtar-tillman (frameless) – own-work"
+      ],
+      "openChecks": [
+        "2024-11-27-psv-shakhtar-tillman: Tillman's first goal: 87' (ESPN, Sportsmole, Worldfootball) vs 88' (Football Web Pages) – 87' used",
+        "2024-11-27-psv-shakhtar-tillman: Full bench lists (unused substitutes) taken from the brand reference poster; not cross-checked against the official UEFA match sheet",
+        "2024-11-27-psv-shakhtar-tillman: Shakhtar manager Marino Pušić – matches the period, confirm against UEFA match sheet",
+        "2024-11-27-psv-shakhtar-tillman: Line-up row arrangement is a display arrangement, not a verified tactical formation",
+        "2024-11-27-psv-shakhtar-tillman: PSV wore the red/white striped home kit (standard for home matches) – confirm against match photography before print"
+      ],
+      "aiGenerated": false,
+      "shopLinks": [],
+      "publishSettings": {
+        "privacyLevel": null,
+        "allowComments": true,
+        "brandOrganic": true,
+        "brandedContent": false
+      },
+      "qa": {
+        "ok": true,
+        "errors": [],
+        "warnings": [
+          "5 open punten in de posterdata (zie bronnen)"
+        ],
+        "needsApproval": false,
+        "reasons": [],
+        "checkedAt": "2026-11-04T14:48:14.874Z"
+      },
+      "updatedAt": "2026-11-04T14:48:14.874Z",
+      "scheduledAt": "2026-11-17T17:00:00.000Z"
+    },
+    {
+      "id": "post_mw28e9048a3949",
+      "createdAt": "2026-11-04T14:47:58.996Z",
+      "status": "scheduled",
+      "format": "raad-de-poster",
+      "formatLabel": "Raad de poster",
+      "ideaId": "idea_mw28e8zze0b788",
+      "slugs": [
+        "2026-10-27-excelsior31-ado-reimink"
+      ],
+      "signal": null,
+      "why": "Op verzoek: nog meer raad-de-poster",
+      "caption": "Eén cijfer, één shirt, één moment. KNVB Beker, 2026, rugnummer 1. Weet jij welke poster dit is? Comment je antwoord vóór slide 3.",
+      "title": "Raad de poster: welk moment is dit?",
+      "hashtags": [
+        "#fraternity",
+        "#voetbalposter",
+        "#raaddeposter",
+        "#voetbalquiz",
+        "#excelsior31",
+        "#adodenhaag"
+      ],
+      "captionSource": "template",
+      "slides": [
+        {
+          "file": "01-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e9048a3949/01-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+        },
+        {
+          "file": "02-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e9048a3949/02-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Hint 2 | Nog steeds niet? | Antwoord in de comments, dan swipen →"
+        },
+        {
+          "file": "03-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e9048a3949/03-poster.jpg",
+          "type": "poster",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "EXCELSIOR ’31 1:1 ADO DEN HAAG · 27.10.2026"
+        },
+        {
+          "file": "04-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e9048a3949/04-cta.jpg",
+          "type": "cta",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Had jij hem? | Poster? Link in bio."
+        }
+      ],
+      "assets": [
+        {
+          "path": "/home/user/Fraternity/output/2026-10-27-excelsior31-ado-reimink-frameless/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 2026-10-27-excelsior31-ado-reimink (frameless)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        },
+        {
+          "path": "/home/user/Fraternity/output/2026-10-27-excelsior31-ado-reimink-framed/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 2026-10-27-excelsior31-ado-reimink (framed)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        }
+      ],
+      "sources": [
+        {
+          "title": "NL Times – Amateur club Excelsior '31 knocks ADO Den Haag out of Dutch Cup",
+          "url": "https://nltimes.nl/2026/10/28/amateur-club-excelsior-31-knocks-ado-den-haag-dutch-cup",
+          "used_for": "result, shootout events, venue",
+          "match": "2026-10-27-excelsior31-ado-reimink"
+        },
+        {
+          "title": "Oost – Weergaloze bekersensatie in Rijssen",
+          "url": "https://www.oost.nl/sport/3712213/weergaloze-bekersensatie-in-rijssen-excelsior31-schakelt-na-strafschoppen-ado-den-haag-uit",
+          "used_for": "result, shootout",
+          "match": "2026-10-27-excelsior31-ado-reimink"
+        },
+        {
+          "title": "Omroep West – Blamage ADO Den Haag in KNVB-beker",
+          "url": "https://www.omroepwest.nl/sport/5167585/blamage-ado-den-haag-in-knvb-beker-megastunt-drie-niveaus-lager-spelend-excelsior-31",
+          "used_for": "line-ups, goals",
+          "match": "2026-10-27-excelsior31-ado-reimink"
+        },
+        {
+          "title": "ADO Den Haag – wedstrijdverslag",
+          "url": "https://adodenhaag.nl/nl/teams/1e-elftal/resultaten/excelsior-31-ado-den-haag-1368",
+          "used_for": "result, Excelsior XI",
+          "match": "2026-10-27-excelsior31-ado-reimink"
+        },
+        {
+          "title": "Haaglanden Voetbal – ADO blameert zich in Rijssen",
+          "url": "https://haaglandenvoetbal.nl/nieuws/190616/knvb-beker-ado-den-haag-blameert-zich-in-rijssen-tegen-amateurclub/",
+          "used_for": "Excelsior XI and subs, goal minutes",
+          "match": "2026-10-27-excelsior31-ado-reimink"
+        },
+        {
+          "title": "VI – match page",
+          "url": "https://www.vi.nl/wedstrijden/2026-10-27/excelsior-31-vs-ado-den-haag",
+          "used_for": "formation 4-1-4-1",
+          "match": "2026-10-27-excelsior31-ado-reimink"
+        },
+        {
+          "title": "ESPN – match page",
+          "url": "https://www.espn.com/soccer/match/_/gameId/401925175/ado-den-haag-excelsior-31",
+          "used_for": "line-up cross-check (conflicting)",
+          "match": "2026-10-27-excelsior31-ado-reimink"
+        },
+        {
+          "title": "NOS liveblog",
+          "url": "https://nos.nl/liveblog/2636918-amateurs-excelsior-31-op-voorsprong-tegen-ado-den-haag-strak-nog-acht-bekerduels",
+          "used_for": "goals, substitution",
+          "match": "2026-10-27-excelsior31-ado-reimink"
+        },
+        {
+          "title": "Voetbalprimeur – Reimink kan niet te lang feestvieren",
+          "url": "https://www.voetbalprimeur.nl/nieuws/2152100/excelsior-31-held-reimink-kan-niet-te-lang-feestvieren-na-bekerstunt-tegen-ado.html",
+          "used_for": "Reimink's saves",
+          "match": "2026-10-27-excelsior31-ado-reimink"
+        },
+        {
+          "title": "Omroep West – Sylla: 'Oprecht mijn excuses'",
+          "url": "https://www.omroepwest.nl/sport/5167863/ado-verdediger-sylla-na-uitschakeling-in-knvb-beker-door-excelsior-31-oprecht-mijn-excuses",
+          "used_for": "decisive miss",
+          "match": "2026-10-27-excelsior31-ado-reimink"
+        },
+        {
+          "title": "fcupdate – Excelsior '31 zorgt voor enorme bekerstunt",
+          "url": "https://www.fcupdate.nl/voetbalnieuws/2026/10/excelsior-31-zorgt-enorme-bekerstunt-knikkert",
+          "used_for": "date, venue, goals",
+          "match": "2026-10-27-excelsior31-ado-reimink"
+        },
+        {
+          "title": "Excelsior'31 – Kevin Reimink (selectie)",
+          "url": "https://www.excelsior31.nl/vereniging/teams/veld-zaterdag/senioren-1/selectie/keeper-kevin-reimink",
+          "used_for": "shirt number 1",
+          "match": "2026-10-27-excelsior31-ado-reimink"
+        },
+        {
+          "title": "voetbal.com – Excelsior '31 selectie",
+          "url": "https://www.voetbal.com/teams/te575/excelsior-31/",
+          "used_for": "shirt number 1 (2026/27)",
+          "match": "2026-10-27-excelsior31-ado-reimink"
+        },
+        {
+          "title": "Excelsior'31 – algemene informatie",
+          "url": "https://www.excelsior31.nl/vereniging/algemene-informatie-over-excelsior311",
+          "used_for": "home kit colours",
+          "match": "2026-10-27-excelsior31-ado-reimink"
+        },
+        {
+          "title": "Voetbalzone – derdedivisionist Excelsior '31 kegelt Eredivisie-club uit KNVB Beker",
+          "url": "https://www.voetbalzone.nl/lijsten/schande-compleet-ado-den-haag-door-derdedivisionist-uitgeschakeld-in-knvb-beker/bltec523050da1398bd",
+          "used_for": "league levels",
+          "match": "2026-10-27-excelsior31-ado-reimink"
+        }
+      ],
+      "credits": [
+        "Fraternity poster 2026-10-27-excelsior31-ado-reimink (frameless) – own-work",
+        "Fraternity poster 2026-10-27-excelsior31-ado-reimink (framed) – own-work"
+      ],
+      "openChecks": [
+        "2026-10-27-excelsior31-ado-reimink: Schrijver's goal minute 45+2' comes from one line-up source; other reports only say 'just before half-time'",
+        "2026-10-27-excelsior31-ado-reimink: Shootout score: majority of sources 6-5, one source 5-4 – 6-5 used",
+        "2026-10-27-excelsior31-ado-reimink: ESPN lists Maneschijn and Lbenay in the Excelsior '31 XI instead of Schmidt and Wesselink – the other sources were followed",
+        "2026-10-27-excelsior31-ado-reimink: Line-up rows are a display arrangement from the published order, not verified positions",
+        "2026-10-27-excelsior31-ado-reimink: Subs are not printed (ADO bench incomplete); the Excelsior '31 head coach was not found",
+        "2026-10-27-excelsior31-ado-reimink: Exact shirt design (plain red vs. details, collar) not verified – poster uses a simplified plain red field with tonal side bands",
+        "2026-10-27-excelsior31-ado-reimink: Excelsior '31 crest/sponsor are not reproduced (no licensed assets)"
+      ],
+      "aiGenerated": false,
+      "shopLinks": [],
+      "publishSettings": {
+        "privacyLevel": null,
+        "allowComments": true,
+        "brandOrganic": true,
+        "brandedContent": false
+      },
+      "qa": {
+        "ok": true,
+        "errors": [],
+        "warnings": [
+          "7 open punten in de posterdata (zie bronnen)"
+        ],
+        "needsApproval": false,
+        "reasons": [],
+        "checkedAt": "2026-11-04T14:48:14.876Z"
+      },
+      "updatedAt": "2026-11-04T14:48:14.876Z",
+      "scheduledAt": "2026-11-18T17:00:00.000Z"
+    },
+    {
+      "id": "post_mw28e9p5f84c6f",
+      "createdAt": "2026-11-04T14:47:59.897Z",
+      "status": "scheduled",
+      "format": "raad-de-poster",
+      "formatLabel": "Raad de poster",
+      "ideaId": "idea_mw28e9p10c1f7d",
+      "slugs": [
+        "2022-12-09-nederland-argentinie-weghorst"
+      ],
+      "signal": null,
+      "why": "Op verzoek: nog meer raad-de-poster",
+      "caption": "Raad de poster 🔍 Hint: WK, 2022, rugnummer 19. Welk moment zit hierachter? Zet je gok in de comments vóór je doorswipet.",
+      "title": "Raad de poster: welk moment is dit?",
+      "hashtags": [
+        "#fraternity",
+        "#voetbalposter",
+        "#raaddeposter",
+        "#voetbalquiz",
+        "#oranje",
+        "#wk"
+      ],
+      "captionSource": "template",
+      "slides": [
+        {
+          "file": "01-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e9p5f84c6f/01-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+        },
+        {
+          "file": "02-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e9p5f84c6f/02-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Hint 2 | Nog steeds niet? | Antwoord in de comments, dan swipen →"
+        },
+        {
+          "file": "03-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e9p5f84c6f/03-poster.jpg",
+          "type": "poster",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "NEDERLAND 2:2 ARGENTINIË · 09.12.2022"
+        },
+        {
+          "file": "04-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28e9p5f84c6f/04-cta.jpg",
+          "type": "cta",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Had jij hem? | Poster? Link in bio."
+        }
+      ],
+      "assets": [
+        {
+          "path": "/home/user/Fraternity/output/2022-12-09-nederland-argentinie-weghorst-frameless/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 2022-12-09-nederland-argentinie-weghorst (frameless)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        },
+        {
+          "path": "/home/user/Fraternity/output/2022-12-09-nederland-argentinie-weghorst-framed/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 2022-12-09-nederland-argentinie-weghorst (framed)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        }
+      ],
+      "sources": [
+        {
+          "title": "FIFA – Netherlands v Argentina",
+          "url": "https://www.fifa.com/en/match-centre/match/17/255711/285074/400128139",
+          "used_for": "result, goals",
+          "match": "2022-12-09-nederland-argentinie-weghorst"
+        },
+        {
+          "title": "ESPN – Netherlands 2-2 Argentina",
+          "url": "https://www.espn.com/soccer/match/_/gameId/633844/argentina-netherlands",
+          "used_for": "goals, shirt numbers",
+          "match": "2022-12-09-nederland-argentinie-weghorst"
+        },
+        {
+          "title": "Sky Sports – starting line-ups",
+          "url": "https://www.skysports.com/football/netherlands-vs-argentina/teams/463021",
+          "used_for": "line-ups",
+          "match": "2022-12-09-nederland-argentinie-weghorst"
+        },
+        {
+          "title": "The Star – starting line-ups",
+          "url": "https://www.the-star.co.ke/sports/football/2022-12-09-netherlands-v-argentina-world-cup-starting-line-ups/",
+          "used_for": "line-ups",
+          "match": "2022-12-09-nederland-argentinie-weghorst"
+        },
+        {
+          "title": "Footy Headlines – Netherlands 2022 kits",
+          "url": "https://www.footyheadlines.com/2021/11/netherlands-2022-world-cup-home-kit.html",
+          "used_for": "kit",
+          "match": "2022-12-09-nederland-argentinie-weghorst"
+        }
+      ],
+      "credits": [
+        "Fraternity poster 2022-12-09-nederland-argentinie-weghorst (frameless) – own-work",
+        "Fraternity poster 2022-12-09-nederland-argentinie-weghorst (framed) – own-work"
+      ],
+      "openChecks": [
+        "2022-12-09-nederland-argentinie-weghorst: Weghorst's 83' was a header – verify",
+        "2022-12-09-nederland-argentinie-weghorst: Netherlands wore the 2022 orange home kit vs Argentina – confirm with a photo; 2022 number colour (navy) to be confirmed",
+        "2022-12-09-nederland-argentinie-weghorst: Line-up rows are a display arrangement (NED 3-4-3, ARG 5-3-2)",
+        "2022-12-09-nederland-argentinie-weghorst: Crests, sponsors and manufacturer logos not reproduced (no licensed assets)",
+        "2022-12-09-nederland-argentinie-weghorst: Back-of-shirt lettering approximated – send a photo of the back print to match it exactly"
+      ],
+      "aiGenerated": false,
+      "shopLinks": [],
+      "publishSettings": {
+        "privacyLevel": null,
+        "allowComments": true,
+        "brandOrganic": true,
+        "brandedContent": false
+      },
+      "qa": {
+        "ok": true,
+        "errors": [],
+        "warnings": [
+          "5 open punten in de posterdata (zie bronnen)"
+        ],
+        "needsApproval": false,
+        "reasons": [],
+        "checkedAt": "2026-11-04T14:48:14.881Z"
+      },
+      "updatedAt": "2026-11-04T14:48:14.881Z",
+      "scheduledAt": "2026-11-19T17:00:00.000Z"
+    },
+    {
+      "id": "post_mw28eafaa834d9",
+      "createdAt": "2026-11-04T14:48:00.838Z",
+      "status": "scheduled",
+      "format": "raad-de-poster",
+      "formatLabel": "Raad de poster",
+      "ideaId": "idea_mw28eaf66350cd",
+      "slugs": [
+        "2024-05-10-willem-ii-telstar-meerveld"
+      ],
+      "signal": null,
+      "why": "Op verzoek: nog meer raad-de-poster",
+      "caption": "Raad de poster 🔍 Hint: Keuken Kampioen Divisie, 2024, rugnummer 16. Welk moment zit hierachter? Zet je gok in de comments vóór je doorswipet.",
+      "title": "Raad de poster: welk moment is dit?",
+      "hashtags": [
+        "#fraternity",
+        "#voetbalposter",
+        "#raaddeposter",
+        "#voetbalquiz",
+        "#willemii",
+        "#telstar"
+      ],
+      "captionSource": "template",
+      "slides": [
+        {
+          "file": "01-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28eafaa834d9/01-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+        },
+        {
+          "file": "02-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28eafaa834d9/02-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Hint 2 | Nog steeds niet? | Antwoord in de comments, dan swipen →"
+        },
+        {
+          "file": "03-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28eafaa834d9/03-poster.jpg",
+          "type": "poster",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "WILLEM II 3:2 TELSTAR · 10.05.2024"
+        },
+        {
+          "file": "04-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28eafaa834d9/04-cta.jpg",
+          "type": "cta",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Had jij hem? | Poster? Link in bio."
+        }
+      ],
+      "assets": [
+        {
+          "path": "/home/user/Fraternity/output/2024-05-10-willem-ii-telstar-meerveld-frameless/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 2024-05-10-willem-ii-telstar-meerveld (frameless)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        },
+        {
+          "path": "/home/user/Fraternity/output/2024-05-10-willem-ii-telstar-meerveld-framed/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 2024-05-10-willem-ii-telstar-meerveld (framed)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        }
+      ],
+      "sources": [
+        {
+          "title": "ESPN – Willem II 3-2 Telstar",
+          "url": "https://www.espn.com/soccer/match/_/gameId/675972/telstar-willem-ii",
+          "used_for": "result, goals, assists",
+          "match": "2024-05-10-willem-ii-telstar-meerveld"
+        },
+        {
+          "title": "ESPN NL – opstellingen",
+          "url": "https://www.espn.nl/voetbal/lineups/_/wedstrijdId/675972",
+          "used_for": "line-ups",
+          "match": "2024-05-10-willem-ii-telstar-meerveld"
+        },
+        {
+          "title": "Voetbaluitslagen.be – Willem II tegen Telstar",
+          "url": "https://voetbaluitslagen.be/wedstrijd/eerste-divisie/2023/525118/",
+          "used_for": "line-ups",
+          "match": "2024-05-10-willem-ii-telstar-meerveld"
+        },
+        {
+          "title": "fcupdate – Willem II kampioen",
+          "url": "https://www.fcupdate.nl/voetbalnieuws/2024/05/willem-ii-kampioen-van-de-keuken-kampioen-divisie-tilburg-uit-zijn-dak",
+          "used_for": "title context",
+          "match": "2024-05-10-willem-ii-telstar-meerveld"
+        },
+        {
+          "title": "Voetbalprimeur – Willem II kroont zich tot kampioen",
+          "url": "https://www.voetbalprimeur.nl/nieuws/1199012/willem-ii-kroont-zich-tot-kampioen-na-knappe-comeback-tegen-telstar.html",
+          "used_for": "comeback narrative",
+          "match": "2024-05-10-willem-ii-telstar-meerveld"
+        },
+        {
+          "title": "Willem II webshop – thuisshirt 2023-2024",
+          "url": "https://webshop.willem-ii.nl/nl/thuisshirt-2023-2024-junior.html?id=286411151",
+          "used_for": "kit description",
+          "match": "2024-05-10-willem-ii-telstar-meerveld"
+        },
+        {
+          "title": "Wikipedia – Ringo Meerveld",
+          "url": "https://en.wikipedia.org/wiki/Ringo_Meerveld",
+          "used_for": "shirt number",
+          "match": "2024-05-10-willem-ii-telstar-meerveld"
+        }
+      ],
+      "credits": [
+        "Fraternity poster 2024-05-10-willem-ii-telstar-meerveld (frameless) – own-work",
+        "Fraternity poster 2024-05-10-willem-ii-telstar-meerveld (framed) – own-work"
+      ],
+      "openChecks": [
+        "2024-05-10-willem-ii-telstar-meerveld: Matchday: final round of a 20-team Eerste Divisie = matchday 38 (the reference poster says 34) – verify",
+        "2024-05-10-willem-ii-telstar-meerveld: Meerveld #16 from Wikipedia infobox, not an official squad list",
+        "2024-05-10-willem-ii-telstar-meerveld: Stripe order/widths taken from the reference poster and club description – confirm against a match photo",
+        "2024-05-10-willem-ii-telstar-meerveld: Back lettering: varsity style approximated with Graduate (OFL), emboldened",
+        "2024-05-10-willem-ii-telstar-meerveld: Formation rows are a display arrangement",
+        "2024-05-10-willem-ii-telstar-meerveld: Crests, sponsors and manufacturer logos not reproduced (no licensed assets)"
+      ],
+      "aiGenerated": false,
+      "shopLinks": [],
+      "publishSettings": {
+        "privacyLevel": null,
+        "allowComments": true,
+        "brandOrganic": true,
+        "brandedContent": false
+      },
+      "qa": {
+        "ok": true,
+        "errors": [],
+        "warnings": [
+          "6 open punten in de posterdata (zie bronnen)"
+        ],
+        "needsApproval": false,
+        "reasons": [],
+        "checkedAt": "2026-11-04T14:48:14.883Z"
+      },
+      "updatedAt": "2026-11-04T14:48:14.883Z",
+      "scheduledAt": "2026-11-20T17:00:00.000Z"
     }
   ],
   "assets": [],

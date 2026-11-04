@@ -84,7 +84,7 @@ const FORMATS = {
 
   // Guess the poster: zoomed detail (kit colours + number) → blurred poster with verified hints → reveal.
   'raad-de-poster': {
-    label: 'Raad de poster', eligible: (m) => m.hasPoster && !!m.featured.player && !!m.posters.frameless,
+    label: 'Raad de poster', eligible: (m) => m.hasPoster && !!m.featured.player,
     async slides(m, ctx) {
       const img = await posterImg(m, ctx, 'frameless');
       const h = hero(m);
@@ -97,7 +97,7 @@ const FORMATS = {
       ];
     },
     caption: (m) => {
-      const hint = `${comp(m).replace(/\s*\d{4}$/, '')}, ${m.match.date.slice(0, 4)}`;
+      const hint = `${comp(m).replace(/\s*\d{4}$/, '')}, ${m.match.date.slice(0, 4)}${hero(m).number ? `, rugnummer ${hero(m).number}` : ''}`;
       const lines = [
         `Raad de poster 🔍 Hint: ${hint}. Welk moment zit hierachter? Zet je gok in de comments vóór je doorswipet.`,
         `Herken jij dit shirt? 👀 ${hint}. Gok eerst, swipe daarna.`,
