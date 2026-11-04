@@ -90,7 +90,7 @@ const FORMATS = {
       const h = hero(m);
       const comp1 = comp(m).replace(/\s*\d{4}$/, '');
       return [
-        { type: 'clue', image: img, zoom: 3.2, fx: 0.5, fy: 0.62, kicker: 'Raad de poster · hint 1', title: 'Welk moment is dit?', footer: 'Swipe voor hint 2 →', size: 130 },
+        { type: 'clue', image: img, zoom: 3.2, fx: 0.5, fy: 0.69, kicker: 'Raad de poster · hint 1', title: 'Welk moment is dit?', footer: 'Swipe voor hint 2 →', size: 130 },
         { type: 'clue', image: img, zoom: 1, fx: 0.5, fy: 0.5, blur: 48, kicker: 'Hint 2', title: 'Nog steeds niet?', hints: [`Jaar: ${m.match.date.slice(0, 4)}`, `Toernooi: ${comp1}`, ...(h.number ? [`Rugnummer: ${h.number}`] : [])], footer: 'Antwoord in de comments, dan swipen →', size: 120 },
         { type: 'poster', image: await posterImg(m, ctx, 'framed'), label: `${h.short} ${h.minute || ''}`.trim(), sub: `${scoreUp(m)} · ${dotDate(m.match.date)}` },
         { type: 'cta', title: 'Had jij hem?', sub: ctx.config.brand.cta },

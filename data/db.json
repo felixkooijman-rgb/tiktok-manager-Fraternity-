@@ -242,6 +242,90 @@
       "status": "used",
       "score": 0,
       "label": "Raad de poster"
+    },
+    {
+      "id": "idea_mw28axr2d70e24",
+      "createdAt": "2026-11-04T14:45:24.446Z",
+      "format": "raad-de-poster",
+      "slugs": [
+        "1995-05-24-ajax-milan-kluivert"
+      ],
+      "why": "Op verzoek: nog meer raad-de-poster",
+      "status": "used",
+      "score": 0,
+      "label": "Raad de poster"
+    },
+    {
+      "id": "idea_mw28ayp5290ded",
+      "createdAt": "2026-11-04T14:45:25.673Z",
+      "format": "raad-de-poster",
+      "slugs": [
+        "2014-06-13-spanje-nederland-van-persie"
+      ],
+      "why": "Op verzoek: nog meer raad-de-poster",
+      "status": "used",
+      "score": 0,
+      "label": "Raad de poster"
+    },
+    {
+      "id": "idea_mw28azjx254651",
+      "createdAt": "2026-11-04T14:45:26.781Z",
+      "format": "raad-de-poster",
+      "slugs": [
+        "1972-05-31-ajax-inter-cruijff"
+      ],
+      "why": "Op verzoek: nog meer raad-de-poster",
+      "status": "used",
+      "score": 0,
+      "label": "Raad de poster"
+    },
+    {
+      "id": "idea_mw28b0f52726f8",
+      "createdAt": "2026-11-04T14:45:27.905Z",
+      "format": "raad-de-poster",
+      "slugs": [
+        "2025-04-21-az-go-ahead-eagles-deijl"
+      ],
+      "why": "Op verzoek: nog meer raad-de-poster",
+      "status": "used",
+      "score": 0,
+      "label": "Raad de poster"
+    },
+    {
+      "id": "idea_mw28b1cn054efa",
+      "createdAt": "2026-11-04T14:45:29.111Z",
+      "format": "raad-de-poster",
+      "slugs": [
+        "1998-07-04-nederland-argentinie-bergkamp"
+      ],
+      "why": "Op verzoek: nog meer raad-de-poster",
+      "status": "used",
+      "score": 0,
+      "label": "Raad de poster"
+    },
+    {
+      "id": "idea_mw28b235ca9b09",
+      "createdAt": "2026-11-04T14:45:30.066Z",
+      "format": "raad-de-poster",
+      "slugs": [
+        "2023-12-21-hercules-ajax-grotenbreg"
+      ],
+      "why": "Op verzoek: nog meer raad-de-poster",
+      "status": "used",
+      "score": 0,
+      "label": "Raad de poster"
+    },
+    {
+      "id": "idea_mw28b2si83beb7",
+      "createdAt": "2026-11-04T14:45:30.978Z",
+      "format": "raad-de-poster",
+      "slugs": [
+        "1988-06-25-nederland-sovjet-unie-van-basten"
+      ],
+      "why": "Op verzoek: nog meer raad-de-poster",
+      "status": "used",
+      "score": 0,
+      "label": "Raad de poster"
     }
   ],
   "posts": [
@@ -1086,9 +1170,9 @@
         ],
         "needsApproval": false,
         "reasons": [],
-        "checkedAt": "2026-11-04T14:42:57.328Z"
+        "checkedAt": "2026-11-04T14:46:08.824Z"
       },
-      "updatedAt": "2026-11-04T14:42:57.379Z",
+      "updatedAt": "2026-11-04T14:46:08.825Z",
       "scheduledAt": "2026-11-05T15:00:00.000Z"
     },
     {
@@ -1239,9 +1323,9 @@
         ],
         "needsApproval": false,
         "reasons": [],
-        "checkedAt": "2026-11-04T14:42:58.266Z"
+        "checkedAt": "2026-11-04T14:46:09.788Z"
       },
-      "updatedAt": "2026-11-04T14:42:58.267Z",
+      "updatedAt": "2026-11-04T14:46:09.788Z",
       "scheduledAt": "2026-11-06T11:15:00.000Z"
     },
     {
@@ -1386,10 +1470,1169 @@
         ],
         "needsApproval": false,
         "reasons": [],
-        "checkedAt": "2026-11-04T14:42:59.172Z"
+        "checkedAt": "2026-11-04T14:46:10.737Z"
       },
-      "updatedAt": "2026-11-04T14:42:59.174Z",
+      "updatedAt": "2026-11-04T14:46:10.737Z",
       "scheduledAt": "2026-11-06T18:30:00.000Z"
+    },
+    {
+      "id": "post_mw28axrk943d0d",
+      "createdAt": "2026-11-04T14:45:24.464Z",
+      "status": "scheduled",
+      "format": "raad-de-poster",
+      "formatLabel": "Raad de poster",
+      "ideaId": "idea_mw28axr2d70e24",
+      "slugs": [
+        "1995-05-24-ajax-milan-kluivert"
+      ],
+      "signal": null,
+      "why": "Op verzoek: nog meer raad-de-poster",
+      "caption": "Herken jij dit shirt? 👀 Champions League, 1995. Gok eerst, swipe daarna.",
+      "title": "Raad de poster: welk moment is dit?",
+      "hashtags": [
+        "#fraternity",
+        "#voetbalposter",
+        "#raaddeposter",
+        "#voetbalquiz",
+        "#ajax",
+        "#championsleague"
+      ],
+      "captionSource": "template",
+      "slides": [
+        {
+          "file": "01-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28axrk943d0d/01-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+        },
+        {
+          "file": "02-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28axrk943d0d/02-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Hint 2 | Nog steeds niet? | Antwoord in de comments, dan swipen →"
+        },
+        {
+          "file": "03-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28axrk943d0d/03-poster.jpg",
+          "type": "poster",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "AJAX 1:0 MILAN · 24.05.1995"
+        },
+        {
+          "file": "04-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28axrk943d0d/04-cta.jpg",
+          "type": "cta",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Had jij hem? | Poster? Link in bio."
+        }
+      ],
+      "assets": [
+        {
+          "path": "/home/user/Fraternity/output/1995-05-24-ajax-milan-kluivert-frameless/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 1995-05-24-ajax-milan-kluivert (frameless)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        },
+        {
+          "path": "/home/user/Fraternity/output/1995-05-24-ajax-milan-kluivert-framed/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 1995-05-24-ajax-milan-kluivert (framed)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        }
+      ],
+      "sources": [
+        {
+          "title": "UEFA – Kluivert strikes as Ajax force changing of the guard",
+          "url": "https://www.uefa.com/uefachampionsleague/news/0131-0ea969a88ada-9aa85bac6453-1000--kluivert-strikes-as-ajax-force-changing-of-the-guard/",
+          "used_for": "result, goal",
+          "match": "1995-05-24-ajax-milan-kluivert"
+        },
+        {
+          "title": "en.wikipedia – 1995 UEFA Champions League final",
+          "url": "https://en.wikipedia.org/wiki/1995_UEFA_Champions_League_final",
+          "used_for": "result, kit",
+          "match": "1995-05-24-ajax-milan-kluivert"
+        },
+        {
+          "title": "BeSoccer – Ajax vs Milan line-ups",
+          "url": "https://www.besoccer.com/match/ajax/milan/199512749/lineups",
+          "used_for": "shirt numbers, substitutions",
+          "match": "1995-05-24-ajax-milan-kluivert"
+        },
+        {
+          "title": "football.fandom – 1995 UEFA Champions League Final",
+          "url": "https://football.fandom.com/wiki/1995_UEFA_Champions_League_Final",
+          "used_for": "line-ups",
+          "match": "1995-05-24-ajax-milan-kluivert"
+        },
+        {
+          "title": "sartorial.soccer – Ajax v Milan 1995 kits",
+          "url": "https://sartorial.soccer/2021/05/04/ajax-milan-1995/",
+          "used_for": "kits",
+          "match": "1995-05-24-ajax-milan-kluivert"
+        }
+      ],
+      "credits": [
+        "Fraternity poster 1995-05-24-ajax-milan-kluivert (frameless) – own-work",
+        "Fraternity poster 1995-05-24-ajax-milan-kluivert (framed) – own-work"
+      ],
+      "openChecks": [
+        "1995-05-24-ajax-milan-kluivert: Goal minute 85' vs 84' in one source – 85' used",
+        "1995-05-24-ajax-milan-kluivert: Milan XI not fully verified – line-ups not printed on this poster",
+        "1995-05-24-ajax-milan-kluivert: Kluivert #15 from two match listings, not an official UEFA sheet",
+        "1995-05-24-ajax-milan-kluivert: Umbro number lettering not verified – default lettering",
+        "1995-05-24-ajax-milan-kluivert: Crests, sponsors and manufacturer logos not reproduced (no licensed assets)"
+      ],
+      "aiGenerated": false,
+      "shopLinks": [],
+      "publishSettings": {
+        "privacyLevel": null,
+        "allowComments": true,
+        "brandOrganic": true,
+        "brandedContent": false
+      },
+      "qa": {
+        "ok": true,
+        "errors": [],
+        "warnings": [
+          "5 open punten in de posterdata (zie bronnen)"
+        ],
+        "needsApproval": false,
+        "reasons": [],
+        "checkedAt": "2026-11-04T14:46:11.845Z"
+      },
+      "updatedAt": "2026-11-04T14:46:11.845Z",
+      "scheduledAt": "2026-11-07T11:15:00.000Z"
+    },
+    {
+      "id": "post_mw28ayp9557f47",
+      "createdAt": "2026-11-04T14:45:25.677Z",
+      "status": "scheduled",
+      "format": "raad-de-poster",
+      "formatLabel": "Raad de poster",
+      "ideaId": "idea_mw28ayp5290ded",
+      "slugs": [
+        "2014-06-13-spanje-nederland-van-persie"
+      ],
+      "signal": null,
+      "why": "Op verzoek: nog meer raad-de-poster",
+      "caption": "Herken jij dit shirt? 👀 WK, 2014. Gok eerst, swipe daarna.",
+      "title": "Raad de poster: welk moment is dit?",
+      "hashtags": [
+        "#fraternity",
+        "#voetbalposter",
+        "#raaddeposter",
+        "#voetbalquiz",
+        "#oranje",
+        "#wk"
+      ],
+      "captionSource": "template",
+      "slides": [
+        {
+          "file": "01-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28ayp9557f47/01-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+        },
+        {
+          "file": "02-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28ayp9557f47/02-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Hint 2 | Nog steeds niet? | Antwoord in de comments, dan swipen →"
+        },
+        {
+          "file": "03-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28ayp9557f47/03-poster.jpg",
+          "type": "poster",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "SPANJE 1:5 NEDERLAND · 13.06.2014"
+        },
+        {
+          "file": "04-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28ayp9557f47/04-cta.jpg",
+          "type": "cta",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Had jij hem? | Poster? Link in bio."
+        }
+      ],
+      "assets": [
+        {
+          "path": "/home/user/Fraternity/output/2014-06-13-spanje-nederland-van-persie-frameless/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 2014-06-13-spanje-nederland-van-persie (frameless)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        },
+        {
+          "path": "/home/user/Fraternity/output/2014-06-13-spanje-nederland-van-persie-framed/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 2014-06-13-spanje-nederland-van-persie (framed)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        }
+      ],
+      "sources": [
+        {
+          "title": "ESPN – Spain 1-5 Netherlands",
+          "url": "https://www.espn.com/soccer/report?gameId=383301",
+          "used_for": "goals, minutes",
+          "match": "2014-06-13-spanje-nederland-van-persie"
+        },
+        {
+          "title": "Sky Sports – starting line-ups",
+          "url": "https://www.skysports.com/football/spain-vs-netherlands/teams/305744",
+          "used_for": "line-ups",
+          "match": "2014-06-13-spanje-nederland-van-persie"
+        },
+        {
+          "title": "Footballcritic – line-ups",
+          "url": "https://www.footballcritic.com/fifa-world-cup-spain-netherlands/lineups/377846",
+          "used_for": "line-ups",
+          "match": "2014-06-13-spanje-nederland-van-persie"
+        },
+        {
+          "title": "Historical Football Kits – 2014 group B",
+          "url": "https://www.historicalkits.co.uk/international/tournaments/fifa-world-cup/2014/2014_group_b.html",
+          "used_for": "kits",
+          "match": "2014-06-13-spanje-nederland-van-persie"
+        },
+        {
+          "title": "The Analyst – About that game",
+          "url": "https://theanalyst.com/articles/spain-1-5-netherlands-world-cup-2014",
+          "used_for": "formation",
+          "match": "2014-06-13-spanje-nederland-van-persie"
+        },
+        {
+          "title": "MLS – match recap",
+          "url": "https://www.mlssoccer.com/news/spain-1-netherlands-5-2014-fifa-world-cup-group-b-match-recap",
+          "used_for": "assists",
+          "match": "2014-06-13-spanje-nederland-van-persie"
+        }
+      ],
+      "credits": [
+        "Fraternity poster 2014-06-13-spanje-nederland-van-persie (frameless) – own-work",
+        "Fraternity poster 2014-06-13-spanje-nederland-van-persie (framed) – own-work"
+      ],
+      "openChecks": [
+        "2014-06-13-spanje-nederland-van-persie: De Vrij 65' (ESPN) vs 64' (Sky Sports) – 65' used",
+        "2014-06-13-spanje-nederland-van-persie: Van Persie #9 is well established but not seen on a line-up of this match in my sources",
+        "2014-06-13-spanje-nederland-van-persie: 2014 Nike number font approximated with the default lettering in orange",
+        "2014-06-13-spanje-nederland-van-persie: Line-up rows are a display arrangement (NED 5-3-2 per The Analyst)",
+        "2014-06-13-spanje-nederland-van-persie: Crests, sponsors and manufacturer logos not reproduced (no licensed assets)"
+      ],
+      "aiGenerated": false,
+      "shopLinks": [],
+      "publishSettings": {
+        "privacyLevel": null,
+        "allowComments": true,
+        "brandOrganic": true,
+        "brandedContent": false
+      },
+      "qa": {
+        "ok": true,
+        "errors": [],
+        "warnings": [
+          "5 open punten in de posterdata (zie bronnen)"
+        ],
+        "needsApproval": false,
+        "reasons": [],
+        "checkedAt": "2026-11-04T14:46:12.948Z"
+      },
+      "updatedAt": "2026-11-04T14:46:12.948Z",
+      "scheduledAt": "2026-11-08T11:15:00.000Z"
+    },
+    {
+      "id": "post_mw28azk2251da1",
+      "createdAt": "2026-11-04T14:45:26.786Z",
+      "status": "scheduled",
+      "format": "raad-de-poster",
+      "formatLabel": "Raad de poster",
+      "ideaId": "idea_mw28azjx254651",
+      "slugs": [
+        "1972-05-31-ajax-inter-cruijff"
+      ],
+      "signal": null,
+      "why": "Op verzoek: nog meer raad-de-poster",
+      "caption": "Eén cijfer, één shirt, één moment. European Cup, 1972. Weet jij welke poster dit is? Comment je antwoord vóór slide 3.",
+      "title": "Raad de poster: welk moment is dit?",
+      "hashtags": [
+        "#fraternity",
+        "#voetbalposter",
+        "#raaddeposter",
+        "#voetbalquiz",
+        "#ajax",
+        "#voetbal"
+      ],
+      "captionSource": "template",
+      "slides": [
+        {
+          "file": "01-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28azk2251da1/01-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+        },
+        {
+          "file": "02-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28azk2251da1/02-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Hint 2 | Nog steeds niet? | Antwoord in de comments, dan swipen →"
+        },
+        {
+          "file": "03-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28azk2251da1/03-poster.jpg",
+          "type": "poster",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "AJAX 2:0 INTER · 31.05.1972"
+        },
+        {
+          "file": "04-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28azk2251da1/04-cta.jpg",
+          "type": "cta",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Had jij hem? | Poster? Link in bio."
+        }
+      ],
+      "assets": [
+        {
+          "path": "/home/user/Fraternity/output/1972-05-31-ajax-inter-cruijff-frameless/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 1972-05-31-ajax-inter-cruijff (frameless)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        },
+        {
+          "path": "/home/user/Fraternity/output/1972-05-31-ajax-inter-cruijff-framed/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 1972-05-31-ajax-inter-cruijff (framed)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        }
+      ],
+      "sources": [
+        {
+          "title": "en.wikipedia – 1972 European Cup final",
+          "url": "https://en.wikipedia.org/wiki/1972_European_Cup_final",
+          "used_for": "result, goals, line-ups",
+          "match": "1972-05-31-ajax-inter-cruijff"
+        },
+        {
+          "title": "simple.wikipedia – 1972 European Cup final",
+          "url": "https://simple.wikipedia.org/wiki/1972_European_Cup_final",
+          "used_for": "line-ups, numbers",
+          "match": "1972-05-31-ajax-inter-cruijff"
+        },
+        {
+          "title": "Wikidata – 1972 European Cup Final",
+          "url": "https://www.wikidata.org/wiki/Q590815",
+          "used_for": "Cruijff #14",
+          "match": "1972-05-31-ajax-inter-cruijff"
+        },
+        {
+          "title": "StatsBomb – A data history of the European Cup: 1972",
+          "url": "https://blogarchive.statsbomb.com/articles/soccer/a-data-history-of-the-european-cup-1972-ajax-2-0-inter-milan/",
+          "used_for": "formations",
+          "match": "1972-05-31-ajax-inter-cruijff"
+        }
+      ],
+      "credits": [
+        "Fraternity poster 1972-05-31-ajax-inter-cruijff (frameless) – own-work",
+        "Fraternity poster 1972-05-31-ajax-inter-cruijff (framed) – own-work"
+      ],
+      "openChecks": [
+        "1972-05-31-ajax-inter-cruijff: Second goal noted as a header in several accounts – verify",
+        "1972-05-31-ajax-inter-cruijff: Ajax kit in the final (classic white with red band) not verified against match photos",
+        "1972-05-31-ajax-inter-cruijff: Line-up rows are a display arrangement (Inter 4-4-1-1 per StatsBomb)",
+        "1972-05-31-ajax-inter-cruijff: Crests, sponsors and manufacturer logos not reproduced (no licensed assets)",
+        "1972-05-31-ajax-inter-cruijff: Back-of-shirt lettering approximated – send a photo of the back print to match it exactly"
+      ],
+      "aiGenerated": false,
+      "shopLinks": [],
+      "publishSettings": {
+        "privacyLevel": null,
+        "allowComments": true,
+        "brandOrganic": true,
+        "brandedContent": false
+      },
+      "qa": {
+        "ok": true,
+        "errors": [],
+        "warnings": [
+          "5 open punten in de posterdata (zie bronnen)"
+        ],
+        "needsApproval": false,
+        "reasons": [],
+        "checkedAt": "2026-11-04T14:46:13.862Z"
+      },
+      "updatedAt": "2026-11-04T14:46:13.862Z",
+      "scheduledAt": "2026-11-09T17:00:00.000Z"
+    },
+    {
+      "id": "post_mw28b0f967aaef",
+      "createdAt": "2026-11-04T14:45:27.909Z",
+      "status": "scheduled",
+      "format": "raad-de-poster",
+      "formatLabel": "Raad de poster",
+      "ideaId": "idea_mw28b0f52726f8",
+      "slugs": [
+        "2025-04-21-az-go-ahead-eagles-deijl"
+      ],
+      "signal": null,
+      "why": "Op verzoek: nog meer raad-de-poster",
+      "caption": "Eén cijfer, één shirt, één moment. KNVB Beker, 2025. Weet jij welke poster dit is? Comment je antwoord vóór slide 3.",
+      "title": "Raad de poster: welk moment is dit?",
+      "hashtags": [
+        "#fraternity",
+        "#voetbalposter",
+        "#raaddeposter",
+        "#voetbalquiz",
+        "#az",
+        "#goaheadeagles"
+      ],
+      "captionSource": "template",
+      "slides": [
+        {
+          "file": "01-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b0f967aaef/01-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+        },
+        {
+          "file": "02-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b0f967aaef/02-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Hint 2 | Nog steeds niet? | Antwoord in de comments, dan swipen →"
+        },
+        {
+          "file": "03-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b0f967aaef/03-poster.jpg",
+          "type": "poster",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "AZ 1:1 GA EAGLES · 21.04.2025"
+        },
+        {
+          "file": "04-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b0f967aaef/04-cta.jpg",
+          "type": "cta",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Had jij hem? | Poster? Link in bio."
+        }
+      ],
+      "assets": [
+        {
+          "path": "/home/user/Fraternity/output/2025-04-21-az-go-ahead-eagles-deijl-frameless/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 2025-04-21-az-go-ahead-eagles-deijl (frameless)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        },
+        {
+          "path": "/home/user/Fraternity/output/2025-04-21-az-go-ahead-eagles-deijl-framed/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 2025-04-21-az-go-ahead-eagles-deijl (framed)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        }
+      ],
+      "sources": [
+        {
+          "title": "nl.wikipedia – Finale KNVB Beker 2025 (mannen)",
+          "url": "https://nl.wikipedia.org/wiki/Finale_KNVB_Beker_2025_(mannen)",
+          "used_for": "result, goals, attendance",
+          "match": "2025-04-21-az-go-ahead-eagles-deijl"
+        },
+        {
+          "title": "en.wikipedia – 2025 KNVB Cup final",
+          "url": "https://en.wikipedia.org/wiki/2025_KNVB_Cup_final",
+          "used_for": "cross-check",
+          "match": "2025-04-21-az-go-ahead-eagles-deijl"
+        },
+        {
+          "title": "NOS – Go Ahead Eagles wint eerste KNVB-beker in clubhistorie",
+          "url": "https://nos.nl/artikel/2564498",
+          "used_for": "result, first trophy",
+          "match": "2025-04-21-az-go-ahead-eagles-deijl"
+        },
+        {
+          "title": "fcupdate – opstellingen",
+          "url": "https://www.fcupdate.nl/voetbalcompetities/nederland/toto-knvb-beker/programma-uitslagen/2024-2025/az-go-ahead-eagles-21-04/opstellingen",
+          "used_for": "line-ups, substitutions",
+          "match": "2025-04-21-az-go-ahead-eagles-deijl"
+        },
+        {
+          "title": "Voetbalzone – opstellingen bekend",
+          "url": "https://www.voetbalzone.nl/nieuws/opstellingen-toto-knvb-beker-finale-bekendjordy-clasie-niet-in-basiselftal-az-tegen-go-ahead-eagles/blt872e398b6cf518b9",
+          "used_for": "starting XIs",
+          "match": "2025-04-21-az-go-ahead-eagles-deijl"
+        },
+        {
+          "title": "VI – Parrott benut strafschop in herkansing",
+          "url": "https://www.vi.nl/nieuws/bekerfinale-is-los-parrott-benut-strafschop-in-herkansing",
+          "used_for": "Parrott 54'",
+          "match": "2025-04-21-az-go-ahead-eagles-deijl"
+        },
+        {
+          "title": "The42 – Troy Parrott Dutch Cup final",
+          "url": "https://www.the42.ie/troy-parrott-dutch-cup-final-6683921-Apr2025",
+          "used_for": "Parrott 54'/55'",
+          "match": "2025-04-21-az-go-ahead-eagles-deijl"
+        },
+        {
+          "title": "Salland1 – Bekerfinale AZ - GAE 1-1 (2-4 ns)",
+          "url": "https://www.salland1.nl/bekerfinale-az-gae/",
+          "used_for": "Deijl 99', shootout",
+          "match": "2025-04-21-az-go-ahead-eagles-deijl"
+        },
+        {
+          "title": "Salland1 – Jacht op het paarse shirt",
+          "url": "https://www.salland1.nl/de-jacht-op-het-paarse-shirt-bas-beukema-doet-er-alles-aan/",
+          "used_for": "purple final shirt",
+          "match": "2025-04-21-az-go-ahead-eagles-deijl"
+        },
+        {
+          "title": "Go Ahead Eagles – paars bekershirt",
+          "url": "https://www.ga-eagles.nl/limited-edition-paars-bekershirt-via-webshop-te-koop/",
+          "used_for": "purple final shirt",
+          "match": "2025-04-21-az-go-ahead-eagles-deijl"
+        },
+        {
+          "title": "ESPN – Mats Deijl",
+          "url": "https://www.espn.com/soccer/player?id=218529",
+          "used_for": "shirt number 2",
+          "match": "2025-04-21-az-go-ahead-eagles-deijl"
+        },
+        {
+          "title": "Sofascore – Mats Deijl",
+          "url": "https://www.sofascore.com/football/player/mats-deijl/794013",
+          "used_for": "shirt number 2",
+          "match": "2025-04-21-az-go-ahead-eagles-deijl"
+        }
+      ],
+      "credits": [
+        "Fraternity poster 2025-04-21-az-go-ahead-eagles-deijl (frameless) – own-work",
+        "Fraternity poster 2025-04-21-az-go-ahead-eagles-deijl (framed) – own-work"
+      ],
+      "openChecks": [
+        "2025-04-21-az-go-ahead-eagles-deijl: Parrott's goal: 54' in most sources, one says 55' (scored on the retake) – 54' used",
+        "2025-04-21-az-go-ahead-eagles-deijl: One source spells the shootout 2–4 and others 4-2 from Go Ahead's view – AZ 2, Go Ahead Eagles 4 used",
+        "2025-04-21-az-go-ahead-eagles-deijl: VI's preview had Edvardsen up front; the published line-up (Voetbalzone) is used",
+        "2025-04-21-az-go-ahead-eagles-deijl: Line-up rows are a display arrangement, not verified positions",
+        "2025-04-21-az-go-ahead-eagles-deijl: Club crests, trophy and sponsors not reproduced (no licensed assets)",
+        "2025-04-21-az-go-ahead-eagles-deijl: Kit lettering is a club font; Squada One (OFL) + a thin gold parallel line approximates it. Purple #4A1C72 and gold #E8AB4A approximated from photos; leaf pattern not reproduced"
+      ],
+      "aiGenerated": false,
+      "shopLinks": [],
+      "publishSettings": {
+        "privacyLevel": null,
+        "allowComments": true,
+        "brandOrganic": true,
+        "brandedContent": false
+      },
+      "qa": {
+        "ok": true,
+        "errors": [],
+        "warnings": [
+          "6 open punten in de posterdata (zie bronnen)"
+        ],
+        "needsApproval": false,
+        "reasons": [],
+        "checkedAt": "2026-11-04T14:46:14.904Z"
+      },
+      "updatedAt": "2026-11-04T14:46:14.904Z",
+      "scheduledAt": "2026-11-10T17:00:00.000Z"
+    },
+    {
+      "id": "post_mw28b1cr5c18b9",
+      "createdAt": "2026-11-04T14:45:29.115Z",
+      "status": "scheduled",
+      "format": "raad-de-poster",
+      "formatLabel": "Raad de poster",
+      "ideaId": "idea_mw28b1cn054efa",
+      "slugs": [
+        "1998-07-04-nederland-argentinie-bergkamp"
+      ],
+      "signal": null,
+      "why": "Op verzoek: nog meer raad-de-poster",
+      "caption": "Eén cijfer, één shirt, één moment. WK, 1998. Weet jij welke poster dit is? Comment je antwoord vóór slide 3.",
+      "title": "Raad de poster: welk moment is dit?",
+      "hashtags": [
+        "#fraternity",
+        "#voetbalposter",
+        "#raaddeposter",
+        "#voetbalquiz",
+        "#oranje",
+        "#wk"
+      ],
+      "captionSource": "template",
+      "slides": [
+        {
+          "file": "01-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b1cr5c18b9/01-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+        },
+        {
+          "file": "02-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b1cr5c18b9/02-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Hint 2 | Nog steeds niet? | Antwoord in de comments, dan swipen →"
+        },
+        {
+          "file": "03-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b1cr5c18b9/03-poster.jpg",
+          "type": "poster",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "NEDERLAND 2:1 ARGENTINIË · 04.07.1998"
+        },
+        {
+          "file": "04-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b1cr5c18b9/04-cta.jpg",
+          "type": "cta",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Had jij hem? | Poster? Link in bio."
+        }
+      ],
+      "assets": [
+        {
+          "path": "/home/user/Fraternity/output/1998-07-04-nederland-argentinie-bergkamp-frameless/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 1998-07-04-nederland-argentinie-bergkamp (frameless)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        },
+        {
+          "path": "/home/user/Fraternity/output/1998-07-04-nederland-argentinie-bergkamp-framed/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 1998-07-04-nederland-argentinie-bergkamp (framed)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        }
+      ],
+      "sources": [
+        {
+          "title": "11v11 – Netherlands v Argentina 1998",
+          "url": "https://www.11v11.com/matches/netherlands-v-argentina-04-july-1998-265642/",
+          "used_for": "line-ups, substitutions",
+          "match": "1998-07-04-nederland-argentinie-bergkamp"
+        },
+        {
+          "title": "Planet World Cup – Argentina v Netherlands",
+          "url": "http://www.planetworldcup.com/CUPS/1998/qf_arg_v_hol.html",
+          "used_for": "goal minutes",
+          "match": "1998-07-04-nederland-argentinie-bergkamp"
+        },
+        {
+          "title": "thesoccerworldcups – Netherlands 2 Argentina 1",
+          "url": "https://www.thesoccerworldcups.com/games/1998_holland_argentina.php",
+          "used_for": "line-ups, shirt numbers",
+          "match": "1998-07-04-nederland-argentinie-bergkamp"
+        },
+        {
+          "title": "football-lineups – Netherlands - Argentina 1998",
+          "url": "https://m.football-lineups.com/match/40251",
+          "used_for": "goals, assists",
+          "match": "1998-07-04-nederland-argentinie-bergkamp"
+        },
+        {
+          "title": "ESPN – Netherlands 2-1 Argentina",
+          "url": "https://www.espn.co.uk/football/match/_/gameId/198151/argentina-netherlands",
+          "used_for": "minutes cross-check",
+          "match": "1998-07-04-nederland-argentinie-bergkamp"
+        }
+      ],
+      "credits": [
+        "Fraternity poster 1998-07-04-nederland-argentinie-bergkamp (frameless) – own-work",
+        "Fraternity poster 1998-07-04-nederland-argentinie-bergkamp (framed) – own-work"
+      ],
+      "openChecks": [
+        "1998-07-04-nederland-argentinie-bergkamp: Minutes 12'/17'/89' (Planet World Cup) vs 13'/18'/90' (ESPN) – majority used",
+        "1998-07-04-nederland-argentinie-bergkamp: Bergkamp's assist credited to F. de Boer in one source, R. de Boer in another – assist not printed",
+        "1998-07-04-nederland-argentinie-bergkamp: Orange 1998 shirt simplified; Nike 1998 number lettering not verified",
+        "1998-07-04-nederland-argentinie-bergkamp: Line-up rows are a display arrangement",
+        "1998-07-04-nederland-argentinie-bergkamp: Crests, sponsors and manufacturer logos not reproduced (no licensed assets)"
+      ],
+      "aiGenerated": false,
+      "shopLinks": [],
+      "publishSettings": {
+        "privacyLevel": null,
+        "allowComments": true,
+        "brandOrganic": true,
+        "brandedContent": false
+      },
+      "qa": {
+        "ok": true,
+        "errors": [],
+        "warnings": [
+          "5 open punten in de posterdata (zie bronnen)"
+        ],
+        "needsApproval": false,
+        "reasons": [],
+        "checkedAt": "2026-11-04T14:46:15.848Z"
+      },
+      "updatedAt": "2026-11-04T14:46:15.848Z",
+      "scheduledAt": "2026-11-11T17:00:00.000Z"
+    },
+    {
+      "id": "post_mw28b239fa078a",
+      "createdAt": "2026-11-04T14:45:30.069Z",
+      "status": "scheduled",
+      "format": "raad-de-poster",
+      "formatLabel": "Raad de poster",
+      "ideaId": "idea_mw28b235ca9b09",
+      "slugs": [
+        "2023-12-21-hercules-ajax-grotenbreg"
+      ],
+      "signal": null,
+      "why": "Op verzoek: nog meer raad-de-poster",
+      "caption": "Eén cijfer, één shirt, één moment. KNVB Beker, 2023. Weet jij welke poster dit is? Comment je antwoord vóór slide 3.",
+      "title": "Raad de poster: welk moment is dit?",
+      "hashtags": [
+        "#fraternity",
+        "#voetbalposter",
+        "#raaddeposter",
+        "#voetbalquiz",
+        "#ajax",
+        "#hercules"
+      ],
+      "captionSource": "template",
+      "slides": [
+        {
+          "file": "01-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b239fa078a/01-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+        },
+        {
+          "file": "02-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b239fa078a/02-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Hint 2 | Nog steeds niet? | Antwoord in de comments, dan swipen →"
+        },
+        {
+          "file": "03-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b239fa078a/03-poster.jpg",
+          "type": "poster",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "HERCULES 3:2 AJAX · 21.12.2023"
+        },
+        {
+          "file": "04-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b239fa078a/04-cta.jpg",
+          "type": "cta",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Had jij hem? | Poster? Link in bio."
+        }
+      ],
+      "assets": [
+        {
+          "path": "/home/user/Fraternity/output/2023-12-21-hercules-ajax-grotenbreg-frameless/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 2023-12-21-hercules-ajax-grotenbreg (frameless)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        },
+        {
+          "path": "/home/user/Fraternity/output/2023-12-21-hercules-ajax-grotenbreg-framed/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 2023-12-21-hercules-ajax-grotenbreg (framed)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        }
+      ],
+      "sources": [
+        {
+          "title": "ESPN – USV Hercules 3-2 Ajax line-ups",
+          "url": "https://www.espn.com/soccer/lineups/_/gameId/689950",
+          "used_for": "line-ups, attendance",
+          "match": "2023-12-21-hercules-ajax-grotenbreg"
+        },
+        {
+          "title": "ESPN NL – verslag",
+          "url": "https://www.espn.nl/voetbal/verslag/_/wedstrijdId/689950",
+          "used_for": "goal minutes, substitutions",
+          "match": "2023-12-21-hercules-ajax-grotenbreg"
+        },
+        {
+          "title": "RTV Utrecht – Wat een sensatie",
+          "url": "https://www.rtvutrecht.nl/sport/3674898/wat-een-sensatie-amateurs-hercules-stunten-in-de-beker-met-3-2-zege-op-ajax",
+          "used_for": "Hercules XI, venue",
+          "match": "2023-12-21-hercules-ajax-grotenbreg"
+        },
+        {
+          "title": "fcupdate – opstellingen",
+          "url": "https://www.fcupdate.nl/voetbalcompetities/nederland/toto-knvb-beker/programma-uitslagen/2023-2024/usv-hercules-ajax-21-12/opstellingen",
+          "used_for": "shirt number 4, substitutions",
+          "match": "2023-12-21-hercules-ajax-grotenbreg"
+        },
+        {
+          "title": "Voetbal.com – liveticker",
+          "url": "https://www.voetbal.com/wedstrijdverslag/knvb-beker-2023-2024-2-runde-usv-hercules-afc-ajax/liveticker/",
+          "used_for": "goal minutes, substitutions",
+          "match": "2023-12-21-hercules-ajax-grotenbreg"
+        },
+        {
+          "title": "VI – match page",
+          "url": "https://www.vi.nl/wedstrijden/2023-12-21/usv-hercules-vs-ajax",
+          "used_for": "coaches",
+          "match": "2023-12-21-hercules-ajax-grotenbreg"
+        },
+        {
+          "title": "Ajax Showtime – match report",
+          "url": "https://www.ajaxshowtime.com/hoofdnieuws/dramatisch-ajax-uitgeschakeld-in-beker-na-blamage-tegen-usv-hercules",
+          "used_for": "line-ups, minutes cross-check",
+          "match": "2023-12-21-hercules-ajax-grotenbreg"
+        },
+        {
+          "title": "afc-ajax.info – Hercules - Ajax",
+          "url": "https://www.afc-ajax.info/nl/wedstrijd/2023-12-21-Hercules-Ajax",
+          "used_for": "minutes cross-check",
+          "match": "2023-12-21-hercules-ajax-grotenbreg"
+        },
+        {
+          "title": "NOS – Blamage voor Ajax",
+          "url": "https://nos.nl/artikel/2502455-blamage-voor-ajax-nederlaag-tegen-amateurs-hercules-in-bekertoernooi",
+          "used_for": "result, narrative",
+          "match": "2023-12-21-hercules-ajax-grotenbreg"
+        },
+        {
+          "title": "Sportsmole – result",
+          "url": "https://www.sportsmole.co.uk/football/usv-hercules/knvb-beker/result/ajax-dumped-out-of-knvb-beker-by-fourth-tier-amateur-side_531928.html",
+          "used_for": "result, fourth tier",
+          "match": "2023-12-21-hercules-ajax-grotenbreg"
+        },
+        {
+          "title": "USV Hercules – Geschiedenis",
+          "url": "https://www.usvhercules.nl/algemeen/geschiedenis/",
+          "used_for": "club colours",
+          "match": "2023-12-21-hercules-ajax-grotenbreg"
+        },
+        {
+          "title": "Voetbalarchieven – Hercules (Utrecht)",
+          "url": "https://www.voetbalarchieven.nl/clubs/hercules-utrecht/",
+          "used_for": "kit description",
+          "match": "2023-12-21-hercules-ajax-grotenbreg"
+        },
+        {
+          "title": "ESPN NL – Mats Grotenbreg",
+          "url": "https://www.espn.nl/voetbal/speler/_/id/260803/mats-grotenbreg",
+          "used_for": "shirt number, position",
+          "match": "2023-12-21-hercules-ajax-grotenbreg"
+        }
+      ],
+      "credits": [
+        "Fraternity poster 2023-12-21-hercules-ajax-grotenbreg (frameless) – own-work",
+        "Fraternity poster 2023-12-21-hercules-ajax-grotenbreg (framed) – own-work"
+      ],
+      "openChecks": [
+        "2023-12-21-hercules-ajax-grotenbreg: Pieters' first goal: 16' (ESPN) vs 15' (afc-ajax.info) vs 17' (Ajax Showtime) – 16' used",
+        "2023-12-21-hercules-ajax-grotenbreg: Grotenbreg #4: two sources (fcupdate, ESPN), not confirmed by Hercules itself",
+        "2023-12-21-hercules-ajax-grotenbreg: Hercules sub spelled 'Streng' (Voetbal.com) and 'Steng' (ESPN) – not printed",
+        "2023-12-21-hercules-ajax-grotenbreg: Ajax substitution minutes differ between sources (half-time vs ~67') – not printed",
+        "2023-12-21-hercules-ajax-grotenbreg: Line-up rows are a display arrangement, not verified positions",
+        "2023-12-21-hercules-ajax-grotenbreg: Hercules/Ajax crests and sponsors not reproduced (no licensed assets)",
+        "2023-12-21-hercules-ajax-grotenbreg: Mats Grotenbreg passed away on 25 June 2026 – consider consulting USV Hercules / his family before selling this poster",
+        "2023-12-21-hercules-ajax-grotenbreg: Kit design supplied is assumed to be the 2023-24 shirt worn against Ajax – confirm the season"
+      ],
+      "aiGenerated": false,
+      "shopLinks": [],
+      "publishSettings": {
+        "privacyLevel": null,
+        "allowComments": true,
+        "brandOrganic": true,
+        "brandedContent": false
+      },
+      "qa": {
+        "ok": true,
+        "errors": [],
+        "warnings": [
+          "8 open punten in de posterdata (zie bronnen)"
+        ],
+        "needsApproval": false,
+        "reasons": [],
+        "checkedAt": "2026-11-04T14:46:16.886Z"
+      },
+      "updatedAt": "2026-11-04T14:46:16.886Z",
+      "scheduledAt": "2026-11-12T17:00:00.000Z"
+    },
+    {
+      "id": "post_mw28b2smeefd8d",
+      "createdAt": "2026-11-04T14:45:30.982Z",
+      "status": "scheduled",
+      "format": "raad-de-poster",
+      "formatLabel": "Raad de poster",
+      "ideaId": "idea_mw28b2si83beb7",
+      "slugs": [
+        "1988-06-25-nederland-sovjet-unie-van-basten"
+      ],
+      "signal": null,
+      "why": "Op verzoek: nog meer raad-de-poster",
+      "caption": "Raad de poster 🔍 Hint: EK, 1988. Welk moment zit hierachter? Zet je gok in de comments vóór je doorswipet.",
+      "title": "Raad de poster: welk moment is dit?",
+      "hashtags": [
+        "#fraternity",
+        "#voetbalposter",
+        "#raaddeposter",
+        "#voetbalquiz",
+        "#oranje",
+        "#voetbal"
+      ],
+      "captionSource": "template",
+      "slides": [
+        {
+          "file": "01-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b2smeefd8d/01-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Raad de poster · hint 1 | Welk moment is dit? | Swipe voor hint 2 →"
+        },
+        {
+          "file": "02-clue.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b2smeefd8d/02-clue.jpg",
+          "type": "clue",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Hint 2 | Nog steeds niet? | Antwoord in de comments, dan swipen →"
+        },
+        {
+          "file": "03-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b2smeefd8d/03-poster.jpg",
+          "type": "poster",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "USSR 0:2 NEDERLAND · 25.06.1988"
+        },
+        {
+          "file": "04-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw28b2smeefd8d/04-cta.jpg",
+          "type": "cta",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Had jij hem? | Poster? Link in bio."
+        }
+      ],
+      "assets": [
+        {
+          "path": "/home/user/Fraternity/output/1988-06-25-nederland-sovjet-unie-van-basten-frameless/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 1988-06-25-nederland-sovjet-unie-van-basten (frameless)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        },
+        {
+          "path": "/home/user/Fraternity/output/1988-06-25-nederland-sovjet-unie-van-basten-framed/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 1988-06-25-nederland-sovjet-unie-van-basten (framed)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        }
+      ],
+      "sources": [
+        {
+          "title": "UEFA – Van Basten volley crowns Netherlands",
+          "url": "https://www.uefa.com/uefaeuro/history/news/0253-0d7b2f78ca99-40f24ef873fd-1000--van-basten-volley-crowns-netherlands-euro-1988-final-win/",
+          "used_for": "result, goals, NED XI",
+          "match": "1988-06-25-nederland-sovjet-unie-van-basten"
+        },
+        {
+          "title": "en.wikipedia – UEFA Euro 1988 final",
+          "url": "https://en.wikipedia.org/wiki/UEFA_Euro_1988_Final",
+          "used_for": "line-ups, shirt numbers",
+          "match": "1988-06-25-nederland-sovjet-unie-van-basten"
+        },
+        {
+          "title": "Museum of Jerseys – Netherlands EURO numbering",
+          "url": "https://museumofjerseys.com/2021/06/15/a-look-at-the-netherlands-european-championship-numbering/",
+          "used_for": "Van Basten #12",
+          "match": "1988-06-25-nederland-sovjet-unie-van-basten"
+        },
+        {
+          "title": "football.fandom – UEFA Euro 1988 Final",
+          "url": "https://football.fandom.com/wiki/UEFA_Euro_1988_Final",
+          "used_for": "USSR XI, substitutions",
+          "match": "1988-06-25-nederland-sovjet-unie-van-basten"
+        }
+      ],
+      "credits": [
+        "Fraternity poster 1988-06-25-nederland-sovjet-unie-van-basten (frameless) – own-work",
+        "Fraternity poster 1988-06-25-nederland-sovjet-unie-van-basten (framed) – own-work"
+      ],
+      "openChecks": [
+        "1988-06-25-nederland-sovjet-unie-van-basten: Van Basten 54' (UEFA highlights) vs 52' (other UEFA article) – 54' used",
+        "1988-06-25-nederland-sovjet-unie-van-basten: Home/away order: the USSR were the nominal home side on the official match sheet – verify; poster lists USSR first",
+        "1988-06-25-nederland-sovjet-unie-van-basten: Orange 1988 shirt simplified (sleeve pattern not reproduced); 1988 number lettering not verified",
+        "1988-06-25-nederland-sovjet-unie-van-basten: Line-up rows are a display arrangement (USSR positions estimated)",
+        "1988-06-25-nederland-sovjet-unie-van-basten: Crests, sponsors and manufacturer logos not reproduced (no licensed assets)"
+      ],
+      "aiGenerated": false,
+      "shopLinks": [],
+      "publishSettings": {
+        "privacyLevel": null,
+        "allowComments": true,
+        "brandOrganic": true,
+        "brandedContent": false
+      },
+      "qa": {
+        "ok": true,
+        "errors": [],
+        "warnings": [
+          "5 open punten in de posterdata (zie bronnen)"
+        ],
+        "needsApproval": false,
+        "reasons": [],
+        "checkedAt": "2026-11-04T14:46:17.994Z"
+      },
+      "updatedAt": "2026-11-04T14:46:17.994Z",
+      "scheduledAt": "2026-11-13T17:00:00.000Z"
     }
   ],
   "assets": [],
