@@ -49,4 +49,19 @@ async function buildPost(ctx, idea, { browser }) {
   store.update('posts', post.id, post);
   return post;
 }
-module.exports = { buildPost };
+// Re-render the slides of an existing post (e.g. in a new cloud session where the files are gone).
+// Caption, hashtags, schedule and user edits stay as they are.
+async function rebuildSlides(ctx, post, { browser }) {
+  const { config, store } = ctx;
+  const catalog = Object.fromEntries(loadCatalog(config).map((m) => [m.slug, m]));
+  const entries = post.slugs.map((s) => catalog[s]);
+  if (entries.some((x) => !x)) throw new Error('wedstrijd niet meer in de catalogus');
+  const f = FORMATS[post.format];
+  const posterProvider = registry.create('images', 'fraternity-poster', ctx);
+  const sctx = { config, poster: async (m, v) => (await posterProvider.forMatch(m, v)).path };
+  const specs = await f.slides(f.group ? entries : entries[0], sctx, post.signal);
+  const slides = await renderSlides(specs, { outDir: path.join(config.paths.posts, post.id), theme: entries[0].theme, config, browser });
+  const updated = { ...post, slides };
+  return store.update('posts', post.id, { slides, qa: runQa(updated, ctx) });
+}
+module.exports = { buildPost, rebuildSlides };

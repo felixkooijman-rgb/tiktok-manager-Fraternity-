@@ -128,6 +128,26 @@ const FORMATS = {
     title: () => 'Tot het laatste fluitsignaal',
   },
 
+  // Two (or more) chosen posters, two photos each (with and without frame). Built on request.
+  duo: {
+    label: 'Posters naast elkaar', group: 2, manual: true,
+    eligible: (m) => !!(m.posters.framed && m.posters.frameless),
+    async slides(ms, ctx) {
+      const out = [];
+      const first = await posterImg(ms[0], ctx, 'framed');
+      out.push({ type: 'hook', bg: first, kicker: ms.map((m) => `${hero(m).short}`).join(' · '), title: ms.map((m) => hero(m).minute || hero(m).short).join(' & '), sub: ms.map((m) => `${scoreUp(m)} · ${m.match.date.slice(0, 4)}`).join('  |  ').replace(/\s{2,}/g, ' '), size: 190 });
+      for (const m of ms) {
+        const h = hero(m);
+        out.push({ type: 'poster', image: await posterImg(m, ctx, 'framed'), label: `${h.short} ${h.minute || ''}`.trim(), sub: `${scoreUp(m)} · met lijst` });
+        out.push({ type: 'poster', image: await posterImg(m, ctx, 'frameless'), label: `${h.short} ${h.minute || ''}`.trim(), sub: `${scoreUp(m)} · zonder lijst` });
+      }
+      out.push({ type: 'cta', title: 'Welke hang jij op?', sub: ctx.config.brand.cta });
+      return out;
+    },
+    caption: (ms) => `${ms.map((m) => `${hero(m).name} in ${momentText(m)} van ${score(m)} (${comp(m)}${/\d{4}/.test(comp(m)) ? '' : `, ${m.match.date.slice(0, 4)}`})`).join(' en ')}. Met of zonder lijst, en welke hang jij op? 👇`,
+    title: (ms) => ms.map((m) => `${hero(m).short} ${hero(m).minute || ''}`.trim()).join(' & '),
+  },
+
   'design-breakdown': {
     label: 'Van shirt naar poster', eligible: (m) => m.hasPoster && !!m.theme?.shirt,
     async slides(m, ctx) {

@@ -14,14 +14,20 @@ async function runDaily(ctx, opts = {}) {
   const { store, log, config } = ctx;
   const run = store.insert('runs', { kind: 'daily', startedAt: new Date().toISOString(), steps: [] });
   const step = (n, t, info) => { log.step(n, t); run.steps.push({ n, t, at: new Date().toISOString(), ...(info || {}) }); };
-  // Posts whose slide files are gone (e.g. made in an earlier, already recycled cloud session)
-  // can no longer be posted: mark them expired so they do not block today's calendar.
   const fs = require('fs');
-  for (const p of store.all('posts', (x) => ['scheduled', 'ready', 'pending-approval', 'export-ready'].includes(x.status))) {
-    if (!(p.slides || []).every((sl) => fs.existsSync(sl.path))) store.update('posts', p.id, { status: 'expired' });
-  }
+  const { localYmd } = require('../core/util');
   const browser = await chromium.launch();
   try {
+    // Posts whose slide files are gone (made in an earlier, recycled cloud session): re-render
+    // them when they are still due today or later, expire them when their day has passed.
+    const today = localYmd(new Date(), config.schedule.timezone);
+    for (const p of store.all('posts', (x) => ['scheduled', 'ready', 'pending-approval', 'export-ready'].includes(x.status))) {
+      if ((p.slides || []).every((sl) => fs.existsSync(sl.path))) continue;
+      if (p.scheduledAt && localYmd(new Date(p.scheduledAt), config.schedule.timezone) >= today) {
+        try { await require('../modules/post-builder').rebuildSlides(ctx, p, { browser }); log.info(`slides opnieuw gemaakt: ${p.id}`); }
+        catch (e) { log.warn(`rebuild ${p.id}: ${e.message}`); store.update('posts', p.id, { status: 'expired' }); }
+      } else store.update('posts', p.id, { status: 'expired' });
+    }
     // 8 + 9 first: learn from yesterday before deciding today.
     step(8, 'Prestaties van gepubliceerde posts ophalen');
     try { const n = await collectMetrics(ctx); run.steps.at(-1).metrics = n; } catch (e) { log.warn(`metrics: ${e.message}`); }
@@ -32,7 +38,9 @@ async function runDaily(ctx, opts = {}) {
     const signals = await runResearch(ctx, opts);
     step(2, 'Contentideeën bedenken');
     const ideas = await generateIdeas(ctx, signals);
-    const n = opts.count || capacity(store, config);
+    // --count n = aim for n posts today in total (posts already planned for today count).
+    const planned = store.all('posts', (p) => p.scheduledAt && ['scheduled', 'ready', 'pending-approval', 'export-ready'].includes(p.status) && localYmd(new Date(p.scheduledAt), config.schedule.timezone) === today).length;
+    const n = opts.count ? Math.max(0, opts.count - planned) : capacity(store, config);
     step(3, `Beste ${n} ideeën selecteren uit ${ideas.length}`);
     const chosen = new Set(selectIdeas(ideas, n, config));
     const saved = ideas.map((i) => store.insert('ideas', { ...i, status: chosen.has(i) ? 'selected' : (i.format === 'poster-request' ? 'backlog' : 'candidate'), runId: run.id }));

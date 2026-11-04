@@ -193,6 +193,19 @@
       "label": "Last-minute ranking",
       "status": "candidate",
       "runId": "run_mw27pvcxee9552"
+    },
+    {
+      "id": "idea_mw27wq4o973ae7",
+      "createdAt": "2026-11-04T14:34:21.384Z",
+      "format": "duo",
+      "slugs": [
+        "2022-12-09-nederland-argentinie-weghorst",
+        "2024-05-10-willem-ii-telstar-meerveld"
+      ],
+      "why": "Op verzoek: Weghorst en Willem II in één post, 2 foto's per poster",
+      "status": "used",
+      "score": 0,
+      "label": "Posters naast elkaar"
     }
   ],
   "posts": [
@@ -639,6 +652,254 @@
       },
       "updatedAt": "2026-11-04T14:29:04.443Z",
       "scheduledAt": "2026-11-05T07:30:00.000Z"
+    },
+    {
+      "id": "post_mw27wq5bfaf0e8",
+      "createdAt": "2026-11-04T14:34:21.407Z",
+      "status": "scheduled",
+      "format": "duo",
+      "formatLabel": "Posters naast elkaar",
+      "ideaId": "idea_mw27wq4o973ae7",
+      "slugs": [
+        "2022-12-09-nederland-argentinie-weghorst",
+        "2024-05-10-willem-ii-telstar-meerveld"
+      ],
+      "signal": null,
+      "why": "Op verzoek: Weghorst en Willem II in één post, 2 foto's per poster",
+      "caption": "Wout Weghorst in de 90+11' van Nederland 2-2 Argentinië (WK 2022) en Ringo Meerveld in de 90+3' van Willem II 3-2 Telstar (Keuken Kampioen Divisie, 2024). Met of zonder lijst, en welke hang jij op? 👇",
+      "title": "WEGHORST 90+11' & MEERVELD 90+3'",
+      "hashtags": [
+        "#fraternity",
+        "#voetbalposter",
+        "#oranje",
+        "#wk",
+        "#willemii",
+        "#telstar"
+      ],
+      "captionSource": "template",
+      "slides": [
+        {
+          "file": "01-hook.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw27wq5bfaf0e8/01-hook.jpg",
+          "type": "hook",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "WEGHORST · MEERVELD | 90+11' & 90+3' | NEDERLAND 2:2 ARGENTINIË · 2022 | WILLEM II 3:2 TELSTAR · 2024"
+        },
+        {
+          "file": "02-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw27wq5bfaf0e8/02-poster.jpg",
+          "type": "poster",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "NEDERLAND 2:2 ARGENTINIË · met lijst"
+        },
+        {
+          "file": "03-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw27wq5bfaf0e8/03-poster.jpg",
+          "type": "poster",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "NEDERLAND 2:2 ARGENTINIË · zonder lijst"
+        },
+        {
+          "file": "04-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw27wq5bfaf0e8/04-poster.jpg",
+          "type": "poster",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "WILLEM II 3:2 TELSTAR · met lijst"
+        },
+        {
+          "file": "05-poster.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw27wq5bfaf0e8/05-poster.jpg",
+          "type": "poster",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "WILLEM II 3:2 TELSTAR · zonder lijst"
+        },
+        {
+          "file": "06-cta.jpg",
+          "path": "/tmp/claude-0/-home-user/afddb182-b172-5bc3-8b32-79b65e116c50/scratchpad/live/posts/post_mw27wq5bfaf0e8/06-cta.jpg",
+          "type": "cta",
+          "width": 1080,
+          "height": 1920,
+          "overflow": [],
+          "text": "Welke hang jij op? | Poster? Link in bio."
+        }
+      ],
+      "assets": [
+        {
+          "path": "/home/user/Fraternity/output/2022-12-09-nederland-argentinie-weghorst-framed/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 2022-12-09-nederland-argentinie-weghorst (framed)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        },
+        {
+          "path": "/home/user/Fraternity/output/2022-12-09-nederland-argentinie-weghorst-frameless/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 2022-12-09-nederland-argentinie-weghorst (frameless)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        },
+        {
+          "path": "/home/user/Fraternity/output/2024-05-10-willem-ii-telstar-meerveld-framed/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 2024-05-10-willem-ii-telstar-meerveld (framed)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        },
+        {
+          "path": "/home/user/Fraternity/output/2024-05-10-willem-ii-telstar-meerveld-frameless/preview.jpg",
+          "provider": "fraternity-poster",
+          "source": "Fraternity poster 2024-05-10-willem-ii-telstar-meerveld (frameless)",
+          "sourceUrl": null,
+          "license": {
+            "type": "own-work",
+            "holder": "Fraternity",
+            "commercialUse": true,
+            "attributionRequired": false
+          },
+          "aiGenerated": false
+        }
+      ],
+      "sources": [
+        {
+          "title": "FIFA – Netherlands v Argentina",
+          "url": "https://www.fifa.com/en/match-centre/match/17/255711/285074/400128139",
+          "used_for": "result, goals",
+          "match": "2022-12-09-nederland-argentinie-weghorst"
+        },
+        {
+          "title": "ESPN – Netherlands 2-2 Argentina",
+          "url": "https://www.espn.com/soccer/match/_/gameId/633844/argentina-netherlands",
+          "used_for": "goals, shirt numbers",
+          "match": "2022-12-09-nederland-argentinie-weghorst"
+        },
+        {
+          "title": "Sky Sports – starting line-ups",
+          "url": "https://www.skysports.com/football/netherlands-vs-argentina/teams/463021",
+          "used_for": "line-ups",
+          "match": "2022-12-09-nederland-argentinie-weghorst"
+        },
+        {
+          "title": "The Star – starting line-ups",
+          "url": "https://www.the-star.co.ke/sports/football/2022-12-09-netherlands-v-argentina-world-cup-starting-line-ups/",
+          "used_for": "line-ups",
+          "match": "2022-12-09-nederland-argentinie-weghorst"
+        },
+        {
+          "title": "Footy Headlines – Netherlands 2022 kits",
+          "url": "https://www.footyheadlines.com/2021/11/netherlands-2022-world-cup-home-kit.html",
+          "used_for": "kit",
+          "match": "2022-12-09-nederland-argentinie-weghorst"
+        },
+        {
+          "title": "ESPN – Willem II 3-2 Telstar",
+          "url": "https://www.espn.com/soccer/match/_/gameId/675972/telstar-willem-ii",
+          "used_for": "result, goals, assists",
+          "match": "2024-05-10-willem-ii-telstar-meerveld"
+        },
+        {
+          "title": "ESPN NL – opstellingen",
+          "url": "https://www.espn.nl/voetbal/lineups/_/wedstrijdId/675972",
+          "used_for": "line-ups",
+          "match": "2024-05-10-willem-ii-telstar-meerveld"
+        },
+        {
+          "title": "Voetbaluitslagen.be – Willem II tegen Telstar",
+          "url": "https://voetbaluitslagen.be/wedstrijd/eerste-divisie/2023/525118/",
+          "used_for": "line-ups",
+          "match": "2024-05-10-willem-ii-telstar-meerveld"
+        },
+        {
+          "title": "fcupdate – Willem II kampioen",
+          "url": "https://www.fcupdate.nl/voetbalnieuws/2024/05/willem-ii-kampioen-van-de-keuken-kampioen-divisie-tilburg-uit-zijn-dak",
+          "used_for": "title context",
+          "match": "2024-05-10-willem-ii-telstar-meerveld"
+        },
+        {
+          "title": "Voetbalprimeur – Willem II kroont zich tot kampioen",
+          "url": "https://www.voetbalprimeur.nl/nieuws/1199012/willem-ii-kroont-zich-tot-kampioen-na-knappe-comeback-tegen-telstar.html",
+          "used_for": "comeback narrative",
+          "match": "2024-05-10-willem-ii-telstar-meerveld"
+        },
+        {
+          "title": "Willem II webshop – thuisshirt 2023-2024",
+          "url": "https://webshop.willem-ii.nl/nl/thuisshirt-2023-2024-junior.html?id=286411151",
+          "used_for": "kit description",
+          "match": "2024-05-10-willem-ii-telstar-meerveld"
+        },
+        {
+          "title": "Wikipedia – Ringo Meerveld",
+          "url": "https://en.wikipedia.org/wiki/Ringo_Meerveld",
+          "used_for": "shirt number",
+          "match": "2024-05-10-willem-ii-telstar-meerveld"
+        }
+      ],
+      "credits": [
+        "Fraternity poster 2022-12-09-nederland-argentinie-weghorst (framed) – own-work",
+        "Fraternity poster 2022-12-09-nederland-argentinie-weghorst (frameless) – own-work",
+        "Fraternity poster 2024-05-10-willem-ii-telstar-meerveld (framed) – own-work",
+        "Fraternity poster 2024-05-10-willem-ii-telstar-meerveld (frameless) – own-work"
+      ],
+      "openChecks": [
+        "2022-12-09-nederland-argentinie-weghorst: Weghorst's 83' was a header – verify",
+        "2022-12-09-nederland-argentinie-weghorst: Netherlands wore the 2022 orange home kit vs Argentina – confirm with a photo; 2022 number colour (navy) to be confirmed",
+        "2022-12-09-nederland-argentinie-weghorst: Line-up rows are a display arrangement (NED 3-4-3, ARG 5-3-2)",
+        "2022-12-09-nederland-argentinie-weghorst: Crests, sponsors and manufacturer logos not reproduced (no licensed assets)",
+        "2022-12-09-nederland-argentinie-weghorst: Back-of-shirt lettering approximated – send a photo of the back print to match it exactly",
+        "2024-05-10-willem-ii-telstar-meerveld: Matchday: final round of a 20-team Eerste Divisie = matchday 38 (the reference poster says 34) – verify",
+        "2024-05-10-willem-ii-telstar-meerveld: Meerveld #16 from Wikipedia infobox, not an official squad list",
+        "2024-05-10-willem-ii-telstar-meerveld: Stripe order/widths taken from the reference poster and club description – confirm against a match photo",
+        "2024-05-10-willem-ii-telstar-meerveld: Back lettering: varsity style approximated with Graduate (OFL), emboldened",
+        "2024-05-10-willem-ii-telstar-meerveld: Formation rows are a display arrangement",
+        "2024-05-10-willem-ii-telstar-meerveld: Crests, sponsors and manufacturer logos not reproduced (no licensed assets)"
+      ],
+      "aiGenerated": false,
+      "shopLinks": [],
+      "publishSettings": {
+        "privacyLevel": null,
+        "allowComments": true,
+        "brandOrganic": true,
+        "brandedContent": false
+      },
+      "qa": {
+        "ok": true,
+        "errors": [],
+        "warnings": [
+          "11 open punten in de posterdata (zie bronnen)"
+        ],
+        "needsApproval": false,
+        "reasons": [],
+        "checkedAt": "2026-11-04T14:34:34.993Z"
+      },
+      "updatedAt": "2026-11-04T14:34:34.993Z",
+      "scheduledAt": "2026-11-05T18:30:00.000Z"
     }
   ],
   "assets": [],
